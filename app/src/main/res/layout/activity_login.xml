@@ -5,24 +5,84 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vinothjoshua.siv.LoginActivity">
-    <LinearLayout
+    tools:context="com.example.vinothjoshua.siv.LoginActivity"
+    android:background="#f1ffc6"
+    android:padding="20dp"
+    >
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/amla"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="30dp"
+                />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:drawableLeft="@drawable/username"
+                android:layout_marginTop="40dp"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:drawableLeft="@drawable/password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                />
 
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/forgot_password"
+               android:layout_gravity="right"
+               />
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="#919978"
+                android:textColor="#fff"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:onClick="dashboard"
+                />
+
+        </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        >
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" android:gravity="center" >
         <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/amla" android:layout_marginRight="10dp"/>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/amla"/>
-        </LinearLayout>
-
+            android:text="Powered By GB Corp."
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            />
     </LinearLayout>
+
 
 </RelativeLayout>
