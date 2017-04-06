@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void dashboard(View view){
-        Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+        Intent intent = new Intent(LoginActivity.this,OfficeDashboardActivity.class);
         startActivity(intent);
     }
 }
