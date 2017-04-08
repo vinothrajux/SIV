@@ -37,7 +37,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/accounts1"
+                        android:src="@drawable/vendor"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -66,7 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/student"
+                        android:src="@drawable/purchase"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -95,7 +95,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/staff"
+                        android:src="@drawable/sale"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -127,13 +127,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/follower"
+                        android:src="@drawable/Report1"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Report"
+                        android:text="Reports"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
