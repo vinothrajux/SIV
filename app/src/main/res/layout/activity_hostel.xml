@@ -36,13 +36,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/accounts1"
+                        android:src="@drawable/PersonalInf"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Fees Payment"
+                        android:text="Personal"
                         android:textColor="#ffffff"
                         android:textAlignment="center"
                         />
@@ -68,13 +68,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/examfees"
+                        android:src="@drawable/facility"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exam Fees"
+                        android:text="Facilities"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -100,13 +100,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/balance"
+                        android:src="@drawable/examfees"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Balance Check"
+                        android:text="Payment"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -132,13 +132,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/follower"
+                        android:src="@drawable/leaveletter"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Followup"
+                        android:text="Leave"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -171,6 +171,137 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
+                        android:src="@drawable/visitor"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visitor"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>  <!-- This is for Fifth Icon End Row 2 Col 1 -->
+
+                <!-- This is for Sixth Icon Start Row 2 Col 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border_radius_orange"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/food"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Food"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>  <!-- This is for Sixth Icon End Row 2 Col 2 -->
+
+                <!-- This is for Seventh Icon Start Row 2 Col 3 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border_radius_orange"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/medical"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medical"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>  <!-- This is for Seventh Icon Start Row 2 Col 4 -->
+
+                <!-- This is for Eighth Icon End Row 2 Col 4 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border_radius_orange"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/Complaint"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>  <!-- This is for Eighth Icon End Row 2 Col 4 -->
+
+            </LinearLayout>  <!-- This is for Second Row End-->
+
+            <!-- This is for Third Row Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- This is for Nineth Icon Start Row 3 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border_radius_orange"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
                         android:src="@drawable/Report1"
                         android:layout_marginBottom="10dp"
                         />
@@ -181,7 +312,7 @@
                         android:textColor="#ffffff"
                         android:textAlignment="center"
                         />
-                </LinearLayout>  <!-- This is for Fifth Icon End Row 2 Col 1 -->
+                </LinearLayout>  <!-- This is for Nineth Icon End Row 3 Col 1 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -227,6 +358,6 @@
 
                 </LinearLayout>  <!-- This is for Twelth Icon End Row 3 Col 4-->
             </LinearLayout>
-            </LinearLayout>  <!-- This is for Main Linear Layout End -->
+        </LinearLayout>  <!-- This is for Main Linear Layout End -->
     </ScrollView>
 </RelativeLayout>
