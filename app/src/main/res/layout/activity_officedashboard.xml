@@ -20,6 +20,7 @@
                 android:layout_marginBottom="10dp">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
                 <LinearLayout
+                    android:id="@+id/admissionBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -51,6 +52,7 @@
 
                 <!-- This is for Second Icon Start Row 1 Col 2 -->
                 <LinearLayout
+                    android:id="@+id/studentBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -83,6 +85,7 @@
 
                 <!-- This is for Third Icon Start Row 1 Col 3 -->
                 <LinearLayout
+                    android:id="@+id/staffDataBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -116,6 +119,7 @@
 
                 <!-- This is for Fourth Icon Start Row 1 Col 4 -->
                 <LinearLayout
+                    android:id="@+id/feeCounterBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -155,6 +159,7 @@
                 >
                 <!-- This is for Fifth Icon Start Row 2 Col 1 -->
                 <LinearLayout
+                    android:id="@+id/storeBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -185,6 +190,7 @@
 
                 <!-- This is for Sixth Icon Start Row 2 Col 2 -->
                 <LinearLayout
+                    android:id="@+id/transportBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -217,6 +223,7 @@
                 <!-- This is for Seventh Icon Start Row 2 Col 3 -->
 
                 <LinearLayout
+                    android:id="@+id/hostelBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -248,6 +255,7 @@
 
                 <!-- This is for Eighth Icon End Row 2 Col 4 -->
                 <LinearLayout
+                    android:id="@+id/examBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -286,6 +294,7 @@
 
                 <!-- This is for Nineth Icon Start Row 3 Col 1 -->
                 <LinearLayout
+                    android:id="@+id/eGovernanceBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -316,6 +325,7 @@
 
                 <!-- This is for Tenth Icon Start Row 3 Col 2 -->
                 <LinearLayout
+                    android:id="@+id/eventsBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -347,6 +357,7 @@
 
                 <!-- This is for Eleventh Icon Start Row 3 Col 3-->
                 <LinearLayout
+                    android:id="@+id/circularBox"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"

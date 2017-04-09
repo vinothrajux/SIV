@@ -11,7 +11,7 @@ public class PrincipalDashBoardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.principaldashboard);
+        setContentView(R.layout.activity_principaldashboard);
     }
 
 }

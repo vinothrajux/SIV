@@ -56,7 +56,13 @@
             android:label="Stores">
         </activity>
         <activity android:name=".TransportActivity"
-            android:label="Transoport">
+            android:label="Transport">
+        </activity>
+        <activity android:name=".ExamActivity"
+            android:label="Exam">
+        </activity>
+        <activity android:name=".EGovernanceActivity"
+            android:label="E-Governance">
         </activity>
     </application>
 

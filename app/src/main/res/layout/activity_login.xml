@@ -11,13 +11,19 @@
     >
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingBottom="40dp"
+            android:weightSum="1"
             >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                >
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -63,26 +69,25 @@
                 android:paddingRight="60dp"
                 android:onClick="dashboard"
                 />
-
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.1" android:gravity="center" android:layout_marginTop="30dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/amla" android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered By GB Corp."
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" android:gravity="center" >
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/amla" android:layout_marginRight="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Powered By GB Corp."
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            />
-    </LinearLayout>
+
 
 
 </RelativeLayout>
