@@ -43,7 +43,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Subject Entry"
+                        android:text="Student Daily Attendance"
                         android:textColor="#ffffff"
                         android:textAlignment="center"
                         />
@@ -75,7 +75,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Time Table"
+                        android:text="Exam Mark Entry"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -107,7 +107,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Att.Entry Monitor"
+                        android:text="Subject Entry"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -139,7 +139,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Internal Exam Time Table"
+                        android:text="Time Table"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -178,7 +178,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Board Exam Time Table"
+                        android:text="Exam Time Table"
                         android:textColor="#ffffff"
                         android:textAlignment="center"
                         />
@@ -241,7 +241,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Student Remarks"
+                        android:text="Attendance Monitor"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -271,7 +271,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Report"
+                        android:text="Student Remarks"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -280,6 +280,88 @@
             </LinearLayout>  <!-- This is for Second Row End-->
 
             <!-- This is for Third Row Start-->
+            <!-- This is for Third Row Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- This is for Nineth Icon Start Row 3 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border_radius_orange"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/governance"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>  <!-- This is for Nineth Icon End Row 3 Col 1 -->
+
+                <!-- This is for Tenth Icon Start Row 3 Col 2 -->
+
+                <!-- This is for Twelth Icon Start Row 3 Col 4-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                </LinearLayout>  <!-- This is for Twelth Icon End Row 3 Col 4-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                </LinearLayout>
+            </LinearLayout>  <!-- This is for Third Row End-->
         </LinearLayout>  <!-- This is for Main Linear Layout End -->
     </ScrollView>
 </RelativeLayout>
