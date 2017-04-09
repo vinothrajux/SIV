@@ -7,11 +7,11 @@ import android.support.v7.app.AppCompatActivity;
  * Created by GBCorp on 4/9/2017.
  */
 
-public class CirularsActivity extends AppCompatActivity {
+public class CircularsActivity extends AppCompatActivity {
     @Override
     protected void onCreate (Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circulars)
+        setContentView(R.layout.activity_circulars);
     }
 }

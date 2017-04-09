@@ -16,7 +16,47 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OfficeDashboardActivity" >
+        <activity android:name=".OfficeDashboardActivity"
+            android:label="Office Dashboard">
+        </activity>
+        <activity android:name=".DashboardDemoActivity"
+            android:label="DEMO">
+        </activity>
+        <activity android:name=".DeptStaffActivity"
+            android:label="Department Staff Dashboard">
+        </activity>
+        <activity android:name=".PrincipalDashBoardActivity"
+            android:label="Principal Dashboard">
+        </activity>
+        <activity android:name=".AdmissionActivity"
+            android:label="Admission">
+        </activity>
+        <activity android:name=".CircularsActivity"
+            android:label="Circulars">
+        </activity>
+        <activity android:name=".EventHandlerActivity"
+            android:label="Events">
+        </activity>
+        <activity android:name=".FeeCounterActivity"
+            android:label="Fee Counter">
+        </activity>
+        <activity android:name=".HostelActivity"
+            android:label="Hostel">
+        </activity>
+        <activity android:name=".OfficeStaffInfoActivity"
+            android:label="Office Staff Information">
+        </activity>
+        <activity android:name=".OfficeStudentInfoActivity"
+            android:label="Office Student Information">
+        </activity>
+        <activity android:name=".SportsActivity"
+            android:label="Sports">
+        </activity>
+        <activity android:name=".StoresActivity"
+            android:label="Stores">
+        </activity>
+        <activity android:name=".TransportActivity"
+            android:label="Transoport">
         </activity>
     </application>
 

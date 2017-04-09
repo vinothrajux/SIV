@@ -36,7 +36,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/PersonalInf"
+                        android:src="@drawable/personalinf"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Academic"
+                        android:src="@drawable/academic"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -100,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Fees"
+                        android:src="@drawable/fees"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -171,7 +171,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Attendance"
+                        android:src="@drawable/attendance"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -202,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Sem"
+                        android:src="@drawable/sem"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -234,7 +234,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Internal"
+                        android:src="@drawable/internal"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -264,7 +264,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Complaint"
+                        android:src="@drawable/complaint"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView

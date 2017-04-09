@@ -12,6 +12,6 @@ public class FeeCounterActivity extends AppCompatActivity {
     protected void onCreate (Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feecounter)
+        setContentView(R.layout.activity_feecounter);
     }
 }

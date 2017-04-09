@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Academic"
+                        android:src="@drawable/academic"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -101,7 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Fees"
+                        android:src="@drawable/fees"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -172,7 +172,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Attendance"
+                        android:src="@drawable/attendance"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
@@ -203,7 +203,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Report1"
+                        android:src="@drawable/report1"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView

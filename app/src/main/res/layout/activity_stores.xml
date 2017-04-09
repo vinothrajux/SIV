@@ -127,7 +127,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Report1"
+                        android:src="@drawable/report1"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
