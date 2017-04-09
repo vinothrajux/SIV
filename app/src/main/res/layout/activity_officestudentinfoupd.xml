@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     android:padding="10dp"
     android:background="#f1ffc6"
     >
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="301dp"
-        android:layout_marginBottom="341dp">
+        android:layout_height="match_parent">
         <!-- LinearLayout Rows-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,9 +21,9 @@
                 <!-- This is for First Icon Start Row 1 Col 1 -->
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="468dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_weight="4761.63"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:background="@drawable/border_radius_orange"
                     android:layout_marginRight="5dp"
@@ -41,13 +36,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/PersonalInf"
+                        android:src="@drawable/admission"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Personal"
+                        android:text="College ID"
                         android:textColor="#ffffff"
                         android:textAlignment="center"
                         />
@@ -73,13 +68,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Academic"
+                        android:src="@drawable/student"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Academic"
+                        android:text="Bonafide"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -105,13 +100,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/subject"
+                        android:src="@drawable/staff"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Subjects"
+                        android:text="Call Letter"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -137,13 +132,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/transport"
+                        android:src="@drawable/accounts"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Transport"
+                        android:text="TC"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -176,13 +171,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Attendance"
+                        android:src="@drawable/stores"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Attendance"
+                        android:text="Name List"
                         android:textColor="#ffffff"
                         android:textAlignment="center"
                         />
@@ -207,13 +202,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/leaveletter"
+                        android:src="@drawable/transport"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Leave Entry"
+                        android:text="First Aid"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -239,13 +234,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Report1"
+                        android:src="@drawable/hostel"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Reports"
+                        android:text="Certficates"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -269,13 +264,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/Complaint"
+                        android:src="@drawable/exam"
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Remarks"
+                        android:text="RegNo"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
                         />
@@ -284,6 +279,88 @@
             </LinearLayout>  <!-- This is for Second Row End-->
 
             <!-- This is for Third Row Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- This is for Nineth Icon Start Row 3 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border_radius_orange"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/governance"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student Detail"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>  <!-- This is for Nineth Icon End Row 3 Col 1 -->
+
+                 <!-- This is for Eleventh Icon End Row 3 Col 3-->
+
+                <!-- This is for Twelth Icon Start Row 3 Col 4-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                </LinearLayout>  <!-- This is for Twelth Icon End Row 3 Col 4-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                </LinearLayout>
+            </LinearLayout>  <!-- This is for Third Row End-->
+
         </LinearLayout>  <!-- This is for Main Linear Layout End -->
     </ScrollView>
 </RelativeLayout>
