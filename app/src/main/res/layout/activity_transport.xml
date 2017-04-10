@@ -41,11 +41,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="TransportID"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
@@ -73,11 +70,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Route Change"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Second Icon End Row 1 Col 2 -->
 
@@ -105,11 +99,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="MTC Concession"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Third Icon End Row 1 Col 3 -->
 
@@ -137,11 +128,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Train Concession"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Fourth Icon End Row 1 Col 4 -->
 
@@ -176,11 +164,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Route Verification"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for Fifth Icon End Row 2 Col 1 -->
 
@@ -207,11 +192,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Reports"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Sixth Icon End Row 2 Col 2 -->
                 <LinearLayout

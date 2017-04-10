@@ -23,10 +23,16 @@ public class DashboardDemoActivity extends AppCompatActivity implements View.OnC
         Button principalDashboardBtn = (Button) findViewById(R.id.principalDashboard);
         Button officeDashboardBtn = (Button) findViewById(R.id.officeDashboard);
         Button deptStaffBtn = (Button) findViewById(R.id.deptStaffDashboard);
+        Button managementBtn = (Button) findViewById(R.id.managementDashboard);
+        Button placementBtn = (Button) findViewById(R.id.placementDashboard);
+        Button sportsBtn = (Button) findViewById(R.id.sportsDashboard);
 
         principalDashboardBtn.setOnClickListener(this);
         officeDashboardBtn.setOnClickListener(this);
         deptStaffBtn.setOnClickListener(this);
+        managementBtn.setOnClickListener(this);
+        placementBtn.setOnClickListener(this);
+        sportsBtn.setOnClickListener(this);
 
 
 
@@ -46,6 +52,18 @@ public class DashboardDemoActivity extends AppCompatActivity implements View.OnC
             case R.id.deptStaffDashboard:
                 Intent intent3 = new Intent(this, DeptStaffActivity.class);
                 startActivity(intent3);
+                break;
+            case R.id.managementDashboard:
+                Intent intent4 = new Intent(this, ManagementActivity.class);
+                startActivity(intent4);
+                break;
+            case R.id.placementDashboard:
+                Intent intent5 = new Intent(this, PlacementActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.sportsDashboard:
+                Intent intent6 = new Intent(this, SportsActivity.class);
+                startActivity(intent6);
                 break;
             default:
                 break;

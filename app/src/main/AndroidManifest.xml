@@ -50,7 +50,7 @@
             android:label="Office Student Information">
         </activity>
         <activity android:name=".SportsActivity"
-            android:label="Sports">
+            android:label="Sports Dashboard">
         </activity>
         <activity android:name=".StoresActivity"
             android:label="Stores">
@@ -63,6 +63,12 @@
         </activity>
         <activity android:name=".EGovernanceActivity"
             android:label="E-Governance">
+        </activity>
+        <activity android:name=".PlacementActivity"
+            android:label="Placement Dashboard">
+        </activity>
+        <activity android:name=".ManagementActivity"
+            android:label="Management Dashboard">
         </activity>
     </application>
 

@@ -40,11 +40,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Corporates"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -70,12 +67,9 @@
                         />
 
                     <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Campus Request"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff" />
+                        />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -99,11 +93,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Schedule"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -127,11 +118,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Folowup"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -163,11 +151,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Seminars"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -192,11 +177,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Inplant Training"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -221,11 +203,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Job Links"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -249,11 +228,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Reports"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
 

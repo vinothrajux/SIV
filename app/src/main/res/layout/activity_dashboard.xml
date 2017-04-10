@@ -40,11 +40,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Admission"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -69,11 +66,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Student Data"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -98,11 +92,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Staff Data"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -126,11 +117,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Accounts"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -162,11 +150,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Stores"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -191,11 +176,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Transport"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -220,11 +202,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Hostel"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -248,11 +227,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Exam"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
 
@@ -283,11 +259,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="E-Governance"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -312,11 +285,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Events"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -341,11 +311,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Circulars"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>
                 <LinearLayout

@@ -41,11 +41,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Staff Attendance"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
@@ -73,11 +70,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Student Attendance"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Second Icon End Row 1 Col 2 -->
 
@@ -105,11 +99,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Staff Performance"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Third Icon End Row 1 Col 3 -->
 
@@ -137,11 +128,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Department Performance"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Fourth Icon End Row 1 Col 4 -->
 
@@ -176,11 +164,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Staff Requirement"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for Fifth Icon End Row 2 Col 1 -->
 
@@ -207,11 +192,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Staff WorkLoad"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Sixth Icon End Row 2 Col 2 -->
 
@@ -239,11 +221,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Staff Status"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Seventh Icon Start Row 2 Col 4 -->
 
@@ -269,11 +248,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Hostel student Performance"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Eighth Icon End Row 2 Col 4 -->
 
@@ -306,11 +282,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Placement Performance"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for Nineth Icon End Row 3 Col 1 -->
 
@@ -337,11 +310,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Sports Performance"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Tenth Icon End Row 3 Col 2 -->
 

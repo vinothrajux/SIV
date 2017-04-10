@@ -31,4 +31,31 @@
         android:textColor="#ffffff"
         android:layout_marginBottom="20dp"
         />
+    <Button
+        android:id="@+id/managementDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Management Dashboard"
+        android:background="#00c4ff"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/placementDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placement Dashboard"
+        android:background="#00c4ff"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/sportsDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sports Dashboard"
+        android:background="#00c4ff"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        />
 </LinearLayout>

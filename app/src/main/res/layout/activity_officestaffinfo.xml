@@ -7,11 +7,7 @@
     >
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="301dp"
-        android:layout_marginBottom="341dp">
+        android:layout_height="match_parent">
         <!-- LinearLayout Rows-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,9 +22,9 @@
                 <!-- This is for First Icon Start Row 1 Col 1 -->
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="468dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="4761.63"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:background="@drawable/border_radius_orange"
                     android:layout_marginRight="5dp"
@@ -45,11 +41,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Personal"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
@@ -77,11 +70,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Academic"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Second Icon End Row 1 Col 2 -->
 
@@ -109,11 +99,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Subjects"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Third Icon End Row 1 Col 3 -->
 
@@ -141,11 +128,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Transport"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Fourth Icon End Row 1 Col 4 -->
 
@@ -180,11 +164,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Attendance"
-                        android:textColor="#ffffff"
-                        android:textAlignment="center"
                         />
                 </LinearLayout>  <!-- This is for Fifth Icon End Row 2 Col 1 -->
 
@@ -211,11 +192,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Leave Entry"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Sixth Icon End Row 2 Col 2 -->
 
@@ -243,11 +221,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Reports"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Seventh Icon Start Row 2 Col 4 -->
 
@@ -273,11 +248,8 @@
                         android:layout_marginBottom="10dp"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/icon_label"
                         android:text="Remarks"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
                         />
                 </LinearLayout>  <!-- This is for Eighth Icon End Row 2 Col 4 -->
 
