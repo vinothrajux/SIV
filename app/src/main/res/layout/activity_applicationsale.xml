@@ -20,93 +20,388 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
-
-
+                android:layout_marginBottom="5dp">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
-                <TextView
-                    android:layout_width ="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Date"
-                    android:textSize = "20sp"
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
-                    android:layout_marginRight="5dp"
-
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="4"
-                    android:layout_marginRight="5dp"
-
-                    />
-                <RadioGroup
-                    android:id="@+id/radioGroup1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-
-                    <RadioButton
-                        android:id="@+id/radio0"
-                        android:layout_width="wrap_content"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
                         android:layout_marginRight="5dp"
 
-                        android:text="ENQUIRY" />
-
-                    <RadioButton
-                        android:id="@+id/radio1"
+                        />
+                    <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingRight="5dp"
+                        android:ems="7"
+                        android:layout_marginRight="5dp"
+                        />
+                </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
-                        android:text="APPLICATION" />
+            </LinearLayout>  <!-- This if for End the First Row -->
 
-                </RadioGroup>
-
-                       <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
-
-
+                android:layout_marginBottom="2dp">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
-                <TextView
-                    android:layout_width ="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Enq.No"
-                    android:textSize = "20sp"
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:paddingRight="5dp">
 
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="4"
-                    android:layout_marginRight="5dp"
-                     />
-                           <TextView
-                               android:layout_width ="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Appln.No"
-                               android:textSize = "20sp"
-                               android:paddingLeft="5dp"
-                               android:layout_marginRight="5dp"
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"/>
 
-                               />
-                           <EditText
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:ems="4"
-                               android:layout_marginRight="5dp"
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal">
 
-                               />
+                        <RadioButton
+                            android:id="@+id/radio0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="ENQUIRY"/>
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="APPLICATION" />
+                    </RadioGroup>
+
+                </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Application For"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
 
+                        />
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
+
+            </LinearLayout>  <!-- This if for End the First Row -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enquiry No"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="7"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Application No"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="7"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="20"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="7"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fathers Name"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="20"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mothers Name"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="7"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>  <!-- Fathers Name  and Mothers Name End -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize = "20sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <RadioButton
+                            android:id="@+id/radio3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+
+                            android:text="MALE" />
+
+                        <RadioButton
+                            android:id="@+id/radio4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="FE-MALE" />
+
+                    </RadioGroup>
+                </LinearLayout>  <!-- Gender End -->
+            </LinearLayout>  <!--  -->
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
