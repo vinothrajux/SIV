@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/principalDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily College Fees Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/deptStaffDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Transport Fees Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/officeDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Hostel Fees Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Food Fees Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily TextBook and Stationary Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Exam Fees Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Cumulative Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Fees Not Paid Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Fees with Fine Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Fees Tatkal Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College Fees Outstanding Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>
