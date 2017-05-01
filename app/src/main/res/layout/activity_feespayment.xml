@@ -106,7 +106,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -115,14 +115,60 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Fees paid"
+                        android:text="ABC"
                         />
 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/TextViewLabel"
+                        android:text="Tution Fees" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -144,19 +190,18 @@
                     android:paddingRight="5dp">
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Tution Fees"/>
+                        android:text="ActualFees"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
                 </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for First Icon Start Row 1 Col 1 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -165,11 +210,14 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -204,7 +252,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -213,11 +261,35 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
                 </LinearLayout>
             </LinearLayout>
         <LinearLayout
@@ -276,7 +348,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -284,18 +356,35 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -317,13 +406,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Food Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -336,7 +420,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -344,18 +428,35 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -377,8 +478,7 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Text Book and Stationary Fees"
                         android:textSize = "20sp"
                         android:paddingLeft="5dp"
@@ -396,7 +496,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -405,11 +505,34 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -445,7 +568,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -454,11 +577,34 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -494,7 +640,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -503,11 +649,34 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -544,7 +713,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -553,11 +722,34 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -593,7 +785,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -602,11 +794,35 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -641,7 +857,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -650,11 +866,34 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -690,7 +929,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -699,11 +938,34 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -739,7 +1001,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -748,11 +1010,35 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="Total Fees"/>
+                        style="@style/TextViewLabel"
+                        android:text="ActualFees"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="Paid"/>
+                        android:text="ABC"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees Paid"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
                 </LinearLayout>
             </LinearLayout>
         <LinearLayout
