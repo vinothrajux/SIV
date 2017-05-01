@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#f1ffc6"
+    android:background="@color/bodybg"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -35,14 +35,15 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Reg.No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
 
                         />
+
+                    <SearchView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -50,19 +51,12 @@
                         android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Admission .No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC1234546"
                         />
                     <TextView
                         android:layout_width ="wrap_content"
