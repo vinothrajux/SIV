@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#f1ffc6"
+    android:background="@color/bodybg"
     >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentEnd="true">
         <!-- LinearLayout Rows-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,195 +21,130 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="5dp">
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
+                    android:orientation="vertical"
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Date"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reg .No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admin No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Name"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Branch Code"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Branch"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Semester"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="scheme"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Student Type"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Paid Mode"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                    android:paddingTop="5dp">
 
                     <TextView
-                        android:layout_width ="wrap_content"
+                        style="@style/TextViewLabel"
+                        android:text="Date" />
+
+                    <EditText
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:ems="14" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Register No" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Admission No" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Name" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch Code" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Semester" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Scheme" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Student Type" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Paid Mode" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="5dp"
                         android:text="Fees Details"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Application Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        android:textSize="20sp" />
 
-                 </LinearLayout>
-             </LinearLayout>
-        <LinearLayout
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Application Fees" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="5dp"
+                        android:text="Application Fees"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -225,19 +161,12 @@
                 android:paddingBottom="5dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp">
-
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="7"
-                    android:layout_marginRight="5dp"/>
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="7"
-                    android:layout_marginRight="5dp"/>
-
+                <TextView
+                    style="@style/TextViewContent"
+                    android:text="ABC123"/>
+                <TextView
+                    style="@style/TextViewContent"
+                    android:text="ABC123"/>
             </LinearLayout>
          </LinearLayout>
         <LinearLayout
@@ -260,14 +189,8 @@
             android:paddingRight="5dp"
             >
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MarkSheet Fees"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
+                style="@style/TextViewLabel"
+                android:text="Marksheet Fees"/>
             </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -287,19 +210,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -322,14 +238,8 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Exam Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Exam Fees"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -349,18 +259,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -411,18 +315,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -446,8 +344,7 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@sty"
                         android:text="Provisional Certficate"
                         android:textSize = "20sp"
                         android:paddingLeft="5dp"
@@ -473,19 +370,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -508,13 +398,8 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Convacation"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -535,18 +420,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -597,18 +476,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -632,13 +505,8 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Penalty"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -659,19 +527,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Actual Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid Fees"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -694,14 +555,9 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                       style="@style/TextViewLabel"
                         android:text="Total"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
+                         />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -721,18 +577,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Actual Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Fees Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
