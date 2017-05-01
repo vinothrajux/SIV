@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#f1ffc6"
+    android:background="@color/bodybg"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -36,148 +36,68 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Regno"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
+                        style="@style/TextViewLabel"
+                        android:text="Reg NO"
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Admission No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Name"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Branch Code"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Branch"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Semester"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Academic Year"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Student Type"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Folio No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Polio No"
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
 
                 </LinearLayout>  <!-- This is for Date TV and ET End -->
@@ -203,15 +123,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="Marksheet Original"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
+                        />
 
                     <CheckBox
                         android:id="@+id/checkBox1"
@@ -237,21 +152,12 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
 
@@ -276,16 +182,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="TC Original"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox2"
                         android:layout_width="wrap_content"
@@ -310,20 +210,12 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
@@ -349,16 +241,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="Community Original"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox3"
                         android:layout_width="wrap_content"
@@ -383,20 +269,12 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
@@ -422,15 +300,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:text="Marksheet Xerox"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
+                        style="@style/TextViewLabel"
+                        android:text="Mark Sheet Xerox"
+                        />
 
                     <CheckBox
                         android:id="@+id/checkBox4"
@@ -456,27 +329,16 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
 
             </LinearLayout> <!-- INNER Fourth ROW LO END-->
-
-
             <!-- INNER Fourth ROW LO Start-->
 
             <LinearLayout
@@ -496,16 +358,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="TC Xerox"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -530,20 +386,12 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
@@ -569,16 +417,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="Community Xerox"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -603,20 +445,70 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+
+                </LinearLayout> <!-- This is for Alterno TV and ED End -->
+
+            </LinearLayout> <!-- INNER Fourth ROW LO END-->
+
+            <!-- INNER Fourth ROW LO Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <!-- This is for Mobno TV and ED Start -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Migration Certification"
+                        />
+                    <CheckBox
+                        android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
+                        android:text="Submitted"
+                        android:layout_above="@+id/button"
+                        android:layout_centerHorizontal="true" />
+                </LinearLayout> <!-- This is for Mobno TV and ED End -->
+
+                <!-- This is for Alterno TV and ED Start -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Nos"
                         />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
@@ -642,89 +534,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:text="Migration Certificate"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
-                    <CheckBox
-                        android:id="@+id/checkBox1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Submitted"
-                        android:layout_above="@+id/button"
-                        android:layout_centerHorizontal="true" />
-                </LinearLayout> <!-- This is for Mobno TV and ED End -->
-
-                <!-- This is for Alterno TV and ED Start -->
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
-
-                </LinearLayout> <!-- This is for Alterno TV and ED End -->
-
-            </LinearLayout> <!-- INNER Fourth ROW LO END-->
-
-            <!-- INNER Fourth ROW LO Start-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for Mobno TV and ED Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
-
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="Conduct Certificate"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -749,22 +562,12 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
 
             </LinearLayout> <!-- INNER Fourth ROW LO END-->
@@ -788,16 +591,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="Stamp Size Photo"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -822,20 +619,13 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        />
 
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
@@ -861,16 +651,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:text="Passport Size Photos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        style="@style/TextViewLabel"
+                        android:text="Passport Size Photo"
+                        />
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -895,21 +679,12 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
 
@@ -934,16 +709,10 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
+                        style="@style/TextViewLabel"
                         android:text="Affidavity Form"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+                        />
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -967,22 +736,14 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Nos"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
 
                 </LinearLayout> <!-- This is for Alterno TV and ED End -->
 
