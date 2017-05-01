@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#f1ffc6"
+    android:background="@color/bodybg"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -35,150 +35,66 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Date"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Date"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bill No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reg.No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Bill No"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Register No"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Admission No"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
 
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        android:id="@+id/textView"
+                        style="@style/TextViewLabel"
+                        android:text="Name" />
+
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Name"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Branch Code"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Branch Code"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Branch"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Academic Year"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Branch"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Payment Method"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
-                        />
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
+                        android:text="Academic Year"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Payment Method"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Admission Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
+                         />
                 </LinearLayout>
                 </LinearLayout>
             <LinearLayout
@@ -198,18 +114,14 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Fees paid"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -231,14 +143,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tution Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Tution Fees"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -258,19 +164,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -291,14 +190,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Transport Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        style="@style/TextViewLabel"
+                        android:text="Transport Fees"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -319,19 +212,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
                 </LinearLayout>
             </LinearLayout>
         <LinearLayout
@@ -353,13 +239,8 @@
             android:paddingRight="5dp"
             >
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewLabel"
                 android:text="Show Transport Details"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
                 />
             </LinearLayout>
             </LinearLayout>
@@ -381,14 +262,9 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                       style="@style/TextViewLabel"
                         android:text="Hostel Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
+                     />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -528,18 +404,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -561,13 +431,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Miscallenous Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -588,18 +453,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -621,13 +480,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Special Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -648,18 +502,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -681,13 +529,9 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Penalty"
                         android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -708,18 +552,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -741,13 +579,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Previous Balance"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -768,19 +601,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -801,13 +627,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Group Insurance"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -828,18 +649,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -861,13 +676,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Others"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -888,18 +698,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -921,13 +725,8 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Total Fees"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -948,19 +747,12 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Total Fees"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        android:hint="Paid"/>
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Total Fees"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="Paid"/>
                 </LinearLayout>
             </LinearLayout>
         <LinearLayout
@@ -982,118 +774,68 @@
             android:paddingRight="5dp"
             >
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewLabel"
                 android:text="Amount Paid"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewContent"
+                android:text="ABC 123"
+                />
+            <TextView
+                style="@style/TextViewLabel"
                 android:text="Balance"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewContent"
+                android:text="ABC 123"
+                />
+            <TextView
+                style="@style/TextViewLabel"
                 android:text="Due Date"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mode of payment"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
+                style="@style/TextViewContent"
+                android:text="ABC 123"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewLabel"
+                android:text="Mode Of Payment"
+                />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="ABC 123"
+                />
+            <TextView
+                style="@style/TextViewLabel"
                 android:text="Cheque No (or) DD No"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewContent"
+                android:text="ABC 123"
+                />
+            <TextView
+                style="@style/TextViewLabel"
                 android:text="Cheque Date"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewContent"
+                android:text="ABC 123"
+                />
+            <TextView
+                style="@style/TextViewLabel"
                 android:text="Bank Name"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="14"
-                android:layout_marginRight="5dp"
                 />
             <TextView
-                android:layout_width ="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextViewContent"
+                android:text="ABC 123"
+                />
+            <TextView
+                style="@style/TextViewLabel"
                 android:text="Denomination"
-                android:textSize = "20sp"
-                android:paddingLeft="5dp"
-                android:layout_marginRight="5dp"
-
+                />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="ABC 123"
                 />
             <Button
                 android:id="@+id/loginButton"

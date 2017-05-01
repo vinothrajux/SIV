@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#f1ffc6"
+    android:background="@color/bodybg"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -35,13 +35,8 @@
                     android:paddingRight="5dp"
                     >
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Date"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
                         />
                     <EditText
                         android:layout_width="match_parent"
@@ -50,111 +45,61 @@
                         android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Bill No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reg.No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
+                        android:text="Register No"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Admission No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Name"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Semester"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Branch Code"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Branch"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
                         />
-
                     <GridView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -166,36 +111,21 @@
                         android:gravity="center"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewLabel"
                         android:text="Payment Status"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
                         />
                     <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Total Amount"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="14"
-                        android:layout_marginRight="5dp"
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"
                         />
-
                     <Button
                         android:id="@+id/loginButton1"
                         android:layout_width="wrap_content"
