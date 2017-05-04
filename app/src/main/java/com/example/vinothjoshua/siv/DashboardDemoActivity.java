@@ -46,7 +46,7 @@ public class DashboardDemoActivity extends AppCompatActivity implements View.OnC
                 startActivity(intent1);
                 break;
             case R.id.officeDashboard:
-                Intent intent2 = new Intent(this, OfficeDashboardActivity.class);
+                Intent intent2 = new Intent(this, DashboardActivity.class);
                 startActivity(intent2);
                 break;
             case R.id.deptStaffDashboard:
