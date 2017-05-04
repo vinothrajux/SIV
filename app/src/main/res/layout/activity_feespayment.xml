@@ -99,14 +99,14 @@
                 </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="2dp">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_marginRight="5dp"
@@ -115,14 +115,31 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp">
                     <TextView
-                        style="@style/TextViewContent"
+                        style="@style/TextViewLabel"
                         android:text="Total Fees"
                         />
                     <TextView
                         style="@style/TextViewContent"
+                        android:text="ABC 123"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Fees paid"
                         />
-
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
