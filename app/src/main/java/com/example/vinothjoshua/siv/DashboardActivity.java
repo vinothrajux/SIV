@@ -102,7 +102,7 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Teaching Staff":
+            case "HOD":
                 data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryActivity"));
                 data.add(new Item("Subject Entry", R.drawable.admission,".SubjectEntryActivity"));
                 data.add(new Item("Subject Allocation", R.drawable.admission,".SubjectAllocationActivity"));
@@ -121,6 +121,76 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
+            case "Placement officer":
+                data.add(new Item("Corporates Detail", R.drawable.admission,".CorporateDetActivity"));
+                data.add(new Item("Campus Request", R.drawable.admission,".CampusReqActivity"));
+                data.add(new Item("Schedules", R.drawable.admission,".SchedulesActivity"));
+                data.add(new Item("Followup", R.drawable.admission,".FollowupActivity"));
+                data.add(new Item("Seminars", R.drawable.admission,".SeminarsActivity"));
+                data.add(new Item("Inplant Training", R.drawable.admission,".InplantActivity"));
+                data.add(new Item("Job Links", R.drawable.admission,".JobLinksActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".PlacementReportsActivity"));
+
+                break;
+
+            case "Sports":
+                data.add(new Item("Athelete Data", R.drawable.admission,".AtheleteDataActivity"));
+                data.add(new Item("Tournament Data", R.drawable.admission,".TournamentDataActivity"));
+                data.add(new Item("Kits Stock", R.drawable.admission,".KitsStockActivity"));
+                data.add(new Item("Kits Requirement", R.drawable.admission,".KitsReqActivity"));
+                data.add(new Item("O.D.Form", R.drawable.admission,".ODFormActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".SportsReportsActivity"));
+
+                break;
+
+            case "Library":
+                data.add(new Item("Member Data", R.drawable.admission,".MemberDataActivity"));
+                data.add(new Item("Books Data", R.drawable.admission,".BooksDataActivity"));
+                data.add(new Item("CD Data", R.drawable.admission,".CDDataActivity"));
+                data.add(new Item("Magazines Data", R.drawable.admission,".MagazinesDataActivity"));
+                data.add(new Item("Books Purchase", R.drawable.admission,".BooksPurchaseActivity"));
+                data.add(new Item("Books Availability", R.drawable.admission,".BooksAvailActivity"));
+                data.add(new Item("Issuing Books", R.drawable.admission,".IssuingBooksActivity"));
+                data.add(new Item("Returning Books", R.drawable.admission,".ReturningBooksActivity"));
+                data.add(new Item("Library Usage", R.drawable.admission,".LibraryUsageActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".LibraryReportsActivity"));
+
+                break;
+
+            case "Hostel":
+                data.add(new Item("Student Data", R.drawable.admission,".HostelStudDataActivity"));
+                data.add(new Item("Facilities Data", R.drawable.admission,".FacilitiesDataActivity"));
+                data.add(new Item("Payment Data", R.drawable.admission,".HostelPayDataActivity"));
+                data.add(new Item("Leave Data", R.drawable.admission,".HostelStudLeaveDataActivity"));
+                data.add(new Item("Visitor Data", R.drawable.admission,".VisitorDataActivity"));
+                data.add(new Item("Food Data", R.drawable.admission,".HostelFoodDataActivity"));
+                data.add(new Item("Medical Data", R.drawable.admission,".HostelMedicalDataActivity"));
+                data.add(new Item("Remarks", R.drawable.admission,".HostelStudRemActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".HostelReportsActivity"));
+
+                break;
+
+            case "Parent":
+                data.add(new Item("Profile", R.drawable.admission,".ProfileActivity"));
+                data.add(new Item("Daily Attendance", R.drawable.admission,".ParentDailyAttActivity"));
+                data.add(new Item("Test Performance", R.drawable.admission,".ParentTestPerActivity"));
+                data.add(new Item("Exam Performance", R.drawable.admission,".ParentExamPerActivity"));
+                data.add(new Item("Fees Payment", R.drawable.admission,".ParentFeesPaymentActivity"));
+                data.add(new Item("Home Work", R.drawable.admission,".ParentHomeWorkActivity"));
+                data.add(new Item("Leave Request", R.drawable.admission,".ParentLeaveReqActivity"));
+                data.add(new Item("Events", R.drawable.admission,".ParentEventActivity"));
+                data.add(new Item("Feed Back", R.drawable.admission,".FeedBackActivity"));
+                data.add(new Item("Remarks", R.drawable.admission,".ParentRemarksActivity"));
+
+                break;
+
+            case "System Admin":
+                data.add(new Item("Add User", R.drawable.admission,".AddUserActivity"));
+                data.add(new Item("Modify User",R.drawable.admission,".ModifyUserActivity"));
+                data.add(new Item("Remove User", R.drawable.admission,".RemoveUserActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".SysAdminReportsActivity"));
+
+                break;
         }
 
     }
