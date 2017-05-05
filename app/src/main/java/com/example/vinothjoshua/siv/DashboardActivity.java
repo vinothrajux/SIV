@@ -75,7 +75,7 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Office Staff":
+            case "Office Admin":
                 data.add(new Item("Admission", R.drawable.admission,".AdmissionActivity"));
                 data.add(new Item("Student Data", R.drawable.admission,".OfficeStudentInfoUpdActivity"));
                 data.add(new Item("Staff Data", R.drawable.admission,".OfficeStaffInfoActivity"));
@@ -89,6 +89,31 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Circulars", R.drawable.admission,".CircularsActivity"));
 
                 break;
+
+            case "Office Admission":
+                data.add(new Item("Application Sale", R.drawable.admission,".ApplicationSaleActivity"));
+                data.add(new Item("Admission Entry", R.drawable.admission,".AdmissionEntryActivity"));
+                data.add(new Item("Follow up", R.drawable.admission,".ApplicationFollowActivity"));
+                data.add(new Item("College ID", R.drawable.admission,".CollegeIdCardActivity"));
+                data.add(new Item("Bonafide", R.drawable.admission,".BonafideActivity"));
+                data.add(new Item("TC", R.drawable.admission,".TcGenerateActivity"));
+                data.add(new Item("Name List", R.drawable.admission,".NameListActivity"));
+                data.add(new Item("First Aid", R.drawable.admission,".FirstAidEntryActivity"));
+                data.add(new Item("Certificate Submission", R.drawable.admission,".CertificateSubmissionActivity"));
+                data.add(new Item("Scholarship", R.drawable.admission,".ScholarshipActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".OffAdmissionReportActivity"));
+
+                break;
+
+            case "Office Fees":
+                data.add(new Item("Fees Payment", R.drawable.admission,".FeesPaymentActivity"));
+                data.add(new Item("Exam Fees", R.drawable.admission,".ExamFeesActivity"));
+                data.add(new Item("Follow up", R.drawable.admission,".FollowupFeesActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".ReportFeeCounterActivity"));
+
+                break;
+
+
 
             case "Teaching Staff":
                 data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryActivity"));
