@@ -113,6 +113,39 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
+            case "Office Supdt":
+                data.add(new Item("Staff Personal", R.drawable.admission,".StaffPersonalActivity"));
+                data.add(new Item("Staff Academic", R.drawable.admission,".StaffAcademicActivity"));
+                data.add(new Item("Willing Subjects", R.drawable.admission,".WillingSubjectsActivity"));
+                data.add(new Item("Staff Transport", R.drawable.admission,".StaffTransportActivity"));
+                data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Leave Entry", R.drawable.admission,".StaffLeaveEntryActivity"));
+                data.add(new Item("Nominal Entry", R.drawable.admission,".NominalEntryActivity"));
+                data.add(new Item("Result Entry", R.drawable.admission,".ResultEntryActivity"));
+                data.add(new Item("Ex-2 Entry", R.drawable.admission,".Ex2EntryActivity"));
+                data.add(new Item("E-Gov Spell Entry", R.drawable.admission,".EgovSpellEntryActivity"));
+                data.add(new Item("B-Forms", R.drawable.admission,".BformActivity"));
+                data.add(new Item("B-Forms", R.drawable.admission,".BformActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".OfficeSupdtReportActivity"));
+                break;
+
+            case "Office Steno":
+                data.add(new Item("Fees Events", R.drawable.admission,".FeesEventsActivity"));
+                data.add(new Item("Branch Events", R.drawable.admission,".BranchEventsActivity"));
+                data.add(new Item("Exam Events", R.drawable.admission,".ExamEventsActivity"));
+                data.add(new Item("Placement Events", R.drawable.admission,".PlacementEventsActivity"));
+                data.add(new Item("Sports Events", R.drawable.admission,".SportsEventsActivity"));
+                data.add(new Item("NSS Events", R.drawable.admission,".NSSEventsActivity"));
+                data.add(new Item("Management Events", R.drawable.admission,".ManagementEventsActivity"));
+                data.add(new Item("Fees Circular", R.drawable.admission,".FeesCircularActivity"));
+                data.add(new Item("Branch Circular", R.drawable.admission,".BranchCircularActivity"));
+                data.add(new Item("Exam Circular", R.drawable.admission,".ExamCircularActivity"));
+                data.add(new Item("Placement Circular", R.drawable.admission,".PlacementCircularActivity"));
+                data.add(new Item("Sports Circular", R.drawable.admission,".SportsCircularActivity"));
+                data.add(new Item("Management Circular", R.drawable.admission,".ManagementCircularActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".OfficeStenoReportsActivity"));
+                break;
+
 
 
             case "Teaching Staff":
@@ -126,6 +159,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.admission,".StaffReportsActivity"));
 
                 break;
+
 
             case "HOD":
                 data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryActivity"));
