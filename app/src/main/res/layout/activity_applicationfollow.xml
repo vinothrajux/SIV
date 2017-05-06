@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#f1ffc6"
+    android:background="@color/bodybg"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -11,473 +11,130 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp">
-        <!-- Main Screen LO Start -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <!-- INNER FIRST ROW LO START-->
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="5dp">
-            <!-- This is for Date TV and ET Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                    android:layout_width ="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Date"
-                    android:textSize = "20sp"
-                    android:paddingLeft="5dp"
-                    android:layout_marginRight="5dp"
 
-                    />
-                    <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="7"
-                    android:layout_marginRight="5dp"
-                    />
-                </LinearLayout>  <!-- This is for Date TV and ET End -->
-
-            </LinearLayout>  <!-- INNER FIRST ROW LO END-->
-
-            <!-- INNER Second ROW LO Start-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for Enqno TV and ED Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
-
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Enquiry No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                </LinearLayout> <!-- This is for Enqno TV and ED End -->
-
-                <!-- This is for Applno TV and ED Start -->
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Application No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
-
-                </LinearLayout> <!-- This is for Applno TV and ED End -->
-
-            </LinearLayout> <!-- INNER second ROW LO END-->
-
-            <!-- INNER Third ROW LO Start-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for Name TV and ED Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
-
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Name"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                </LinearLayout> <!-- This is for Name TV and ED End -->
-
-                <!-- This is for Father NAME TV and ED Start -->
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fathers Name"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
-
-                </LinearLayout> <!-- This is for FATHER NAME TV and ED End -->
-
-            </LinearLayout> <!-- INNER Third ROW LO END-->
-
-            <!-- INNER Fourth ROW LO Start-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for Mobno TV and ED Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
-
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mobile No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"/>
-                </LinearLayout> <!-- This is for Mobno TV and ED End -->
-
-                <!-- This is for Alterno TV and ED Start -->
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Alternate No"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
-
-                </LinearLayout> <!-- This is for Alterno TV and ED End -->
-
-            </LinearLayout> <!-- INNER Fourth ROW LO END-->
-
-            <!-- INNER Fifth ROW LO Start-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="5dp">
-                <!-- This is for Comm Det TV Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Communication Details"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-
-                </LinearLayout>  <!-- This is for Comm Det TV End -->
-
-            </LinearLayout>  <!-- Inner Fifth Row End -->
-
-            <!-- INNER Sixth ROW LO Start-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for Willing TV and SPINNER Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
-
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Willingness"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
-                    <Spinner
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="DATE"
+            />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="ddd"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Enquiry NO"
+            />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="XYZ3221"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Application No"
+            />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="XYZ32132"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Name"
+            />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="XYZ"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Father's Name"
+            />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="XYZ"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Mobile No"
+            />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="XYZ2535"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Alternate No"
+                />
+            <TextView
+                style="@style/TextViewContent"
+                android:text="XYZ56465" />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Communication Details"
+                />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Willingness" />
+                <Spinner
                         android:id="@+id/spinner1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
-                </LinearLayout> <!-- This is for Willing TV and SPINNER End -->
 
-                <!-- This is for Follow Date TV and ED Start -->
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Followup Date"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="7"
-                        android:layout_marginRight="5dp"
-                        />
-
-
-                </LinearLayout> <!-- This is for Follow Date TV and ED End -->
-
-            </LinearLayout> <!-- INNER SIXTH ROW LO END-->
-
-            <!-- INNER Seventh ROW LO Start-->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Communication Details"
+            />
+            <EditText
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="5dp">
-                <!-- This is for Remarks Det TV and ET Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <TextView
-                        android:layout_width ="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Remarks"
-                        android:textSize = "20sp"
-                        android:paddingLeft="5dp"
-                        android:layout_marginRight="5dp"
-
-                        />
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="15"
-                        android:layout_marginRight="5dp"
-                        />
-
-                </LinearLayout>  <!-- This is for Remarks Det TV and ET End -->
-
-            </LinearLayout>  <!-- Inner Seventh Row End -->
-
-            <!-- INNER EIGTH ROW LO Start-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
-                <!-- This is for UPDATE BUTTON Start -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp">
-                    <Button
-                        android:id="@+id/loginButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Update"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:background="#919978"
-                        android:textColor="#fff"
-                        android:paddingLeft="50dp"
-                        android:paddingRight="50dp"
-                        android:onClick="dashboard"
-                        />
-
-                </LinearLayout> <!-- This is for UPDATE BUTTON Start -->
-
-                <!-- This is for CLOSE BUTTON Start -->
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    >
-                    <Button
-                        android:id="@+id/loginButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Close"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:background="#919978"
-                        android:textColor="#fff"
-                        android:paddingLeft="50dp"
-                        android:paddingRight="50dp"
-                        android:onClick="dashboard"
-                        />
-
-
-                </LinearLayout> <!-- This is forCLOSE BUTTON End -->
-
-            </LinearLayout> <!-- INNER EIGHTH ROW LO END-->
-
-
-
+                android:ems="7"
+                android:layout_marginRight="5dp"
+            />
+            <TextView
+                style="@style/TextViewLabel"
+                android:text="Remarks" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:layout_marginRight="5dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/loginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#919978"
+                            android:textColor="#fff"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:onClick="dashboard"
+                            />
+                        <Button
+                            android:id="@+id/loginButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Close"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#919978"
+                            android:textColor="#fff"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:onClick="dashboard"
+                            />
+                    </LinearLayout>
         </LinearLayout>  <!-- Main Screen LO END -->
     </ScrollView>
 </RelativeLayout>
