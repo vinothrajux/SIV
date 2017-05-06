@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/bodybg"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!-- LinearLayout Rows-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- LinearLayout Columns-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Staff ID"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Name"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch Code"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Designation"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Qualification"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Year of Passing"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Course"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Board/University"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Percentage"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Experience"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Category"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Organization"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Designation"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="No of Years"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Skill sets"/>
+
+
+
+
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Certificates Submitted"/>
+
+
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Account Details"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Account No"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Bank Name"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="IFSC Code"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Eligible CL/PL"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="No of CL"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="No of PL"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Status"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Remarks"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
