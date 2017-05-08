@@ -59,58 +59,94 @@ public class DashboardGrid extends ArrayAdapter<Item> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // TODO Auto-generated method stub
         int recursivePosition=0;
-        View grid;
-        LayoutInflater inflater = (LayoutInflater) mContext
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View itemView = convertView;
+        ViewHolder holder = null;
 
+        if (itemView == null)
+        {
+            final LayoutInflater layoutInflater =
+                    (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            itemView = layoutInflater.inflate(R.layout.gridview_dashboardtool_single, parent, false);
 
-        /// test
-
-           // Item item = new Item();
-
-
-        ////
-
-        if (convertView == null) {
-
-            grid = new View(mContext);
-
-            grid = inflater.inflate(R.layout.gridview_dashboardtool_single, null);
-            //data.
-            RelativeLayout dashSingleLinear = (RelativeLayout) grid.findViewById(R.id.dash_grid_single);
-            //ImageView dashInnerLinear = (ImageView) grid.findViewById(R.id.dash_grid_inner);
-            TextView textView = (TextView) grid.findViewById(R.id.grid_text);
-            ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image);
-
-            /// test
-
-            Item item = getItem(position);
-            //Item item = new Item();
-            imageView.setImageResource(item.getImage());
-            textView.setText(item.getTitle());
-            //imageView.setImageDrawable(mContext.getResources().getDrawable(item.getImage(), null));
-
-            ////
-
-
-            //textView.setText(dashboardOpt[position]);
-            //imageView.setImageResource(Imageid[position]);
-//            if(position%2==0){
-//                dashInnerLinear.setImageResource(R.drawable.starsleft);
-//            }else{
-//                dashInnerLinear.setImageResource(R.drawable.starsright);
-//            }
-            recursivePosition = position%6;
-            Log.i(TAG,"test:"+recursivePosition);
-            dashSingleLinear.setBackgroundColor(Color.parseColor(dashboardColors[recursivePosition]));
-            //dashSingleLinear.setBackgroundColor(Color.parseColor("#2DA3AD"));
-        } else {
-            grid = (View) convertView;
+            holder = new ViewHolder();
+            holder.imgItem = (ImageView) itemView.findViewById(R.id.grid_image);
+            holder.txtItem = (TextView) itemView.findViewById(R.id.grid_text);
+            holder.dashSingleLinear = (RelativeLayout) itemView.findViewById(R.id.dash_grid_single);
+            itemView.setTag(holder);
+        }
+        else
+        {
+            holder = (ViewHolder) itemView.getTag();
         }
 
-        return grid;
+        Item item = getItem(position);
+        holder.imgItem.setImageResource(item.getImage());
+        holder.txtItem.setText(item.getTitle());
+        recursivePosition = position%6;
+        holder.dashSingleLinear.setBackgroundColor(Color.parseColor(dashboardColors[recursivePosition]));
+        return itemView;
     }
+
+    static class ViewHolder
+    {
+        ImageView imgItem;
+        TextView txtItem;
+        RelativeLayout dashSingleLinear;
+    }
+//        // TODO Auto-generated method stub
+//        int recursivePosition=0;
+////        View grid;
+//        View itemView = convertView;
+//        LayoutInflater inflater = (LayoutInflater) mContext
+//                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//
+//
+//        /// test
+//
+//           // Item item = new Item();
+//
+//
+//        ////
+//        if (convertView == null) {
+//
+////            grid = new View(mContext);
+//
+//            itemView = inflater.inflate(R.layout.gridview_dashboardtool_single, null);
+//            //data.
+//            RelativeLayout dashSingleLinear = (RelativeLayout) itemView.findViewById(R.id.dash_grid_single);
+//            //ImageView dashInnerLinear = (ImageView) grid.findViewById(R.id.dash_grid_inner);
+//            TextView textView = (TextView) itemView.findViewById(R.id.grid_text);
+//            ImageView imageView = (ImageView)itemView.findViewById(R.id.grid_image);
+//
+//            /// test
+//
+//            Item item = getItem(position);
+//
+//            //Item item = new Item();
+//            imageView.setImageResource(item.getImage());
+//            textView.setText(item.getTitle());
+//            //imageView.setImageDrawable(mContext.getResources().getDrawable(item.getImage(), null));
+//
+//            ////
+//
+//
+//            //textView.setText(dashboardOpt[position]);
+//            //imageView.setImageResource(Imageid[position]);
+////            if(position%2==0){
+////                dashInnerLinear.setImageResource(R.drawable.starsleft);
+////            }else{
+////                dashInnerLinear.setImageResource(R.drawable.starsright);
+////            }
+//            recursivePosition = position%6;
+//            Log.i(TAG,"test:"+recursivePosition);
+//            dashSingleLinear.setBackgroundColor(Color.parseColor(dashboardColors[recursivePosition]));
+//            //dashSingleLinear.setBackgroundColor(Color.parseColor("#2DA3AD"));
+//        } else {
+//            itemView = (View) convertView;
+//        }
+//
+//        return itemView;
+//    }
 }
 
