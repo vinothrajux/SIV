@@ -15,4 +15,5 @@ public class CircularsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_circulars);
     }
 
+
 }
