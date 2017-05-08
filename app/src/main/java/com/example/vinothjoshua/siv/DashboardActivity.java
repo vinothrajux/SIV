@@ -86,7 +86,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Exam", R.drawable.admission,".ExamActivity"));
                 data.add(new Item("e-Governance", R.drawable.admission,".EGovernanceActivity"));
                 data.add(new Item("Events", R.drawable.admission,".EventHandlerActivity"));
-                data.add(new Item("Circulars", R.drawable.admission,".CircularsActivity"));
+                data.add(new Item("Circulars", R.drawable.admission,".StenoCircularsActivity"));
 
                 break;
 
@@ -146,11 +146,31 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.admission,".OfficeStenoReportsActivity"));
                 break;
 
+            case "Office Manager":
+                data.add(new Item("Stores Vendor", R.drawable.admission,".VendorDetailsActivity"));
+                data.add(new Item("Stores Purchase", R.drawable.admission,".PurchaseActivity"));
+                data.add(new Item("Stores Sales", R.drawable.admission,".SalesActivity"));
+                data.add(new Item("Transport ID", R.drawable.admission,".TransportIdActivity"));
+                data.add(new Item("Route Change", R.drawable.admission,".RouteChangeActivity"));
+                data.add(new Item("MTC Concession", R.drawable.admission,".MTCConcessionActivity"));
+                data.add(new Item("Train Concession", R.drawable.admission,".TrainConcessionActivity"));
+                data.add(new Item("Route Verification", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".OfficeManagerReportsActivity"));
+                data.add(new Item("Exam Circular", R.drawable.admission,".ExamCircularActivity"));
+                data.add(new Item("Placement Circular", R.drawable.admission,".PlacementCircularActivity"));
+                data.add(new Item("Sports Circular", R.drawable.admission,".SportsCircularActivity"));
+                data.add(new Item("Management Circular", R.drawable.admission,".ManagementCircularActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".OfficeStenoReportsActivity"));
+
+                break;
+
+
 
 
             case "Teaching Staff":
                 data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryActivity"));
                 data.add(new Item("Exam Mark Entry", R.drawable.admission,".ExamMarkEntryActivity"));
+                data.add(new Item("View Internal Mark", R.drawable.admission,".ViewInternalMarkActivity"));
                 data.add(new Item("Time Table", R.drawable.admission,".TimeTableViewerActivity"));
                 data.add(new Item("Home Work Entry", R.drawable.admission,".HomeWOrkEntryActivity"));
                 data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestActivity"));

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by GBCorp on 4/9/2017.
  */
 
-public class CircularsActivity extends AppCompatActivity {
+public class StenoCircularsActivity extends AppCompatActivity {
     @Override
     protected void onCreate (Bundle savedInstanceState)
     {
