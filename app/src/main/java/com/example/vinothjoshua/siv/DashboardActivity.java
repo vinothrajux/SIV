@@ -121,6 +121,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceActivity"));
                 data.add(new Item("Leave Entry", R.drawable.admission,".StaffLeaveEntryActivity"));
                 data.add(new Item("Nominal Entry", R.drawable.admission,".NominalEntryActivity"));
+                data.add(new Item("Nominal Entry", R.drawable.admission,".EquivalenceSubjectEntryActivity"));
                 data.add(new Item("Result Entry", R.drawable.admission,".ResultEntryActivity"));
                 data.add(new Item("Ex-2 Entry", R.drawable.admission,".Ex2EntryActivity"));
                 data.add(new Item("E-Gov Spell Entry", R.drawable.admission,".EgovSpellEntryActivity"));

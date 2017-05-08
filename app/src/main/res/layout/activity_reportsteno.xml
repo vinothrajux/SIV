@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/principalDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fees Event Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/deptStaffDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fees Circular  Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/officeDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch Event Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch Circular Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Event Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Circular Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placement Circular Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sports Event Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sports Circular Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NSS Event Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NSS Circular Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Management Event Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Management circular Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+</LinearLayout>

@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="12dp">
+        android:layout_alignParentStart="true">
         <!-- LinearLayout Rows-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,136 +36,168 @@
                     >
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Application No"
+                        android:text="Reg.No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:text="123"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Date"
+                        android:text="Admission No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Application For"
+                        android:text="123"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:text="ABC"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Gender"
+                        android:text="Semester"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:text="123"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Father Name"
+                        android:text="Branch Code"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Academic Year"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
                         />
 
                     <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
+                        style="@style/TextViewLabel"
+                        android:text="Existing Route"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Preferred Branch"
+                        android:text="Route No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:text="123"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Communication Details"
+                        android:text="Route Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Reference"
+                        android:text="123"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Allotted Course Code"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Allotted Course"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Transport"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Stage"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-
+                        android:text="123"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Hostel"
+                        android:text="Seat No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-
+                        android:text="123"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Food"
+                        android:text="Fees"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:text="123"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Remarks"
+                        android:text="New Route"
                         />
-
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Route No"
+                        />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Route Name"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Stage"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Seat No"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Fees"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#919978"
+                        android:textColor="#fff"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:onClick="dashboard"
+                        />
 
                 </LinearLayout>
-             </LinearLayout>
 
             </LinearLayout>
-        </ScrollView>
-    </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
