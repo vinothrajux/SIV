@@ -23,7 +23,7 @@ import android.widget.Toast;
 
 public class DashboardActivity extends FragmentActivity {
     GridView grid;
-    String userCategory = "principal";
+    String userCategory = "Management";
     String[] dashboardColors = {
             "#2DA3AD",
             "#EC538D",
@@ -40,13 +40,14 @@ public class DashboardActivity extends FragmentActivity {
             case "Management":
                 data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingActivity"));
                 data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionStatusActivity"));
-                data.add(new Item("Fees Setting", R.drawable.accounts1,".FessSetActivity"));
+                data.add(new Item("College Fees Setting", R.drawable.accounts1,".CollegeFeesSetActivity"));
+                data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".TransportFeesSetActivity"));
+                data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".TransportFeesSetActivity"));
                 data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceActivity"));
                 data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttendanceActivity"));
                 data.add(new Item("Staff Performance", R.drawable.admission,".StaffPerformanceActivity"));
                 data.add(new Item("Department Performance", R.drawable.admission,".DeptPerformanceActivity"));
                 data.add(new Item("Salary Calculation", R.drawable.admission,".SalaryCalculationActivity"));
-                data.add(new Item("Staff Workload", R.drawable.admission,".StaffWorkLoadActivity"));
                 data.add(new Item("Staff Requirement", R.drawable.admission,".StaffReqActivity"));
                 data.add(new Item("Locate Staff", R.drawable.admission,".LocateStaffActivity"));
                 data.add(new Item("Admin Removal", R.drawable.admission,".AdminRemovalActivity"));
@@ -63,15 +64,15 @@ public class DashboardActivity extends FragmentActivity {
 
             case "Principal":
                 data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceActivity"));
-                data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttendanceActivity"));
-                data.add(new Item("Staff Performance", R.drawable.admission,".StaffPerformanceActivity"));
-                data.add(new Item("Department Performance", R.drawable.admission,".DeptPerformanceActivity"));
-                data.add(new Item("Staff Workload", R.drawable.admission,".StaffWorkLoadActivity"));
-                data.add(new Item("Staff Requirement", R.drawable.admission,".StaffReqActivity"));
-                data.add(new Item("Locate Staff", R.drawable.admission,".LocateStaffActivity"));
-                data.add(new Item("Hostel", R.drawable.admission,".HostelManagementActivity"));
-                data.add(new Item("Placement Performance", R.drawable.admission,".PlacementPerformActivity"));
-                data.add(new Item("Sports Performance", R.drawable.admission,".SportsPerformActivity"));
+                data.add(new Item("Student Attendance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Staff Performance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Department Performance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Staff Workload", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Staff Requirement", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Locate Staff", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Hostel", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Placement Performance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Sports Performance", R.drawable.admission,".StaffAttendanceActivity"));
 
                 break;
 
@@ -157,11 +158,6 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Train Concession", R.drawable.admission,".TrainConcessionActivity"));
                 data.add(new Item("Route Verification", R.drawable.admission,".RouteVerificationActivity"));
                 data.add(new Item("Reports", R.drawable.admission,".OfficeManagerReportsActivity"));
-                data.add(new Item("Exam Circular", R.drawable.admission,".ExamCircularActivity"));
-                data.add(new Item("Placement Circular", R.drawable.admission,".PlacementCircularActivity"));
-                data.add(new Item("Sports Circular", R.drawable.admission,".SportsCircularActivity"));
-                data.add(new Item("Management Circular", R.drawable.admission,".ManagementCircularActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".OfficeStenoReportsActivity"));
 
                 break;
 
