@@ -178,6 +178,11 @@
                         style="@style/TextViewContent"
                         android:text="123"
                         />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+
                     <Button
                         android:id="@+id/loginButton2"
                         android:layout_width="wrap_content"
