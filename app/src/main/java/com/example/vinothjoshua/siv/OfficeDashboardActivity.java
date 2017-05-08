@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 /**
@@ -87,7 +86,7 @@ public class OfficeDashboardActivity extends AppCompatActivity implements View.O
                 startActivity(eventsIntent);
                 break;
             case R.id.circularBox:
-                Intent circularIntent = new Intent(this, CircularsActivity.class);
+                Intent circularIntent = new Intent(this, StenoCircularsActivity.class);
                 startActivity(circularIntent);
                 break;
             default:

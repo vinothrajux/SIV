@@ -34,7 +34,7 @@
         <activity android:name=".AdmissionActivity"
             android:label="Admission">
         </activity>
-        <activity android:name=".CircularsActivity"
+        <activity android:name=".StenoCircularsActivity"
             android:label="Circulars">
         </activity>
         <activity android:name=".EventHandlerActivity"
