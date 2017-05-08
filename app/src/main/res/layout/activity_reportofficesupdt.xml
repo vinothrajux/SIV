@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/principalDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vendor Details Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/deptStaffDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College Staff List Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/officeDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch Staff List Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Absent Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Transport Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Working Day Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Seat Allocation Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ex2 Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-governance Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>
