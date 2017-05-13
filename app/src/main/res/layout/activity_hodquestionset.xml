@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/bodybg"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!-- LinearLayout Rows-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- LinearLayout Columns-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch Code" />
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch" />
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Batch" />
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Subject Code" />
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Subject Name" />
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Scheme" />
+                    <Spinner
+                        android:id="@+id/spinner6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Exam Title" />
+                    <Spinner
+                        android:id="@+id/spinner7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="From Unit" />
+                    <Spinner
+                        android:id="@+id/spinner8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="To Unit" />
+                    <Spinner
+                        android:id="@+id/spinner9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Maximum Marks" />
+                    <Spinner
+                        android:id="@+id/spinner10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate Questions"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#919978"
+                        android:textColor="#fff"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:onClick="dashboard"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
