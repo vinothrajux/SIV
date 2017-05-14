@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.vinothjoshua.siv.LoginActivity"
-    android:background="#f1ffc6"
+    android:background="#9df026"
     android:padding="20dp"
     >
     <ScrollView
@@ -60,13 +60,18 @@
                 android:id="@+id/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
                 android:text="Login"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                android:background="#919978"
-                android:textColor="#fff"
+
+                android:textColor="#ffff"
                 android:paddingLeft="60dp"
                 android:paddingRight="60dp"
+                android:shadowColor="#9df026"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
                 android:onClick="dashboard"
                 />
             </LinearLayout>
