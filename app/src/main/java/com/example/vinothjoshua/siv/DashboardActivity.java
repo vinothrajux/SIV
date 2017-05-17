@@ -39,11 +39,11 @@ public class DashboardActivity extends FragmentActivity {
         switch(userCategory){
             case "Management":
                 data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingActivity"));
-                data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionStatusActivity"));
-                data.add(new Item("College Fees Setting", R.drawable.accounts1,".CollegeFeesSetActivity"));
-                data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".TransportFeesSetActivity"));
-                data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".TransportFeesSetActivity"));
-                data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionCounsellingActivity"));
+                data.add(new Item("College Fees Setting", R.drawable.accounts1,".AdmissionCounsellingActivity"));
+                data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".AdmissionCounsellingActivity"));
+                data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".AdmissionCounsellingActivity"));
+                data.add(new Item("Staff Attendance", R.drawable.admission,".AdmissionCounsellingActivity"));
                 data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttendanceActivity"));
                 data.add(new Item("Staff Performance", R.drawable.admission,".StaffPerformanceActivity"));
                 data.add(new Item("Department Performance", R.drawable.admission,".DeptPerformanceActivity"));
@@ -323,10 +323,10 @@ public class DashboardActivity extends FragmentActivity {
                 testtext=testitem.getTitle();
                 nextActivityClassName = testitem.getNextActivityClassName();
 
-                Toast.makeText(DashboardActivity.this, "You Clicked at " + testtext, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent();
-                intent.setClassName("com.example.vinothjoshua.siv", "com.example.vinothjoshua.siv"+nextActivityClassName);
-                startActivity(intent);
+                Toast.makeText(DashboardActivity.this, "You Clicked at " + testtext+", position:"+position, Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent();
+//                intent.setClassName("com.example.vinothjoshua.siv", "com.example.vinothjoshua.siv"+nextActivityClassName);
+//                startActivity(intent);
             }
         });
     }
