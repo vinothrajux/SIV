@@ -67,7 +67,6 @@
                 android:textColor="#fff"
                 android:paddingLeft="60dp"
                 android:paddingRight="60dp"
-                android:onClick="dashboard"
                 />
             </LinearLayout>
             <LinearLayout
