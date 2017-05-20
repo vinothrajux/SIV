@@ -34,9 +34,6 @@ public class DashboardDemoActivity extends AppCompatActivity implements View.OnC
         placementBtn.setOnClickListener(this);
         sportsBtn.setOnClickListener(this);
 
-
-
-
     }
     @Override
     public void onClick(View view) {

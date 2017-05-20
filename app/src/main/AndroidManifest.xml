@@ -16,7 +16,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+       </activity>
         <activity android:name=".DashboardActivity"
             android:label="Dashboard">
         </activity>
@@ -74,6 +74,47 @@
         <activity android:name=".ManagementActivity"
             android:label="Management Dashboard">
         </activity>
+        <!--Newly Added -->
+        <activity android:name=".CircularsActivity"
+            android:label="Circulars">
+        </activity>
+        <activity android:name=".EgovSpellEntryActivity"
+            android:label="EGovernance Spell">
+        </activity>
+        <activity android:name=".EquivalenceSubjectEntryActivity"
+            android:label="Equivalence Subject">
+        </activity>
+        <activity android:name=".MtcConcessionActivity"
+            android:label="MTC Concession">
+        </activity>
+        <activity android:name=".NominalEntryActivity"
+            android:label="Nominal Entry">
+        </activity>
+        <activity android:name=".OfficeStenoReportsActivity"
+            android:label="Office Steno Report">
+        </activity>
+        <activity android:name=".StaffAttendanceActivity"
+            android:label="Staff Attendance">
+        </activity>
+        <activity android:name=".StaffLeaveEntryActivity"
+            android:label="Staff Leave Entry">
+        </activity>
+        <activity android:name=".StaffTransportActivity"
+            android:label="Staff Transport">
+        </activity>
+        <activity android:name=".TrainConcessionActivity"
+            android:label="Train Concession">
+        </activity>
+        <activity android:name=".TransportIDCardActivity"
+            android:label="Transport ID">
+        </activity>
+        <activity android:name=".TransportRouteChangeActivity"
+            android:label="Transport Route Change">
+        </activity>
+        <activity android:name=".WillingSubjectsActivity"
+            android:label="Willing Subject">
+        </activity>
+
     </application>
 
 </manifest>

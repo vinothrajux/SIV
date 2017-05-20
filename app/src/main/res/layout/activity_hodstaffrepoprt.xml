@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/principalDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Attendance Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/deptStaffDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Attendance Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/officeDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Workload Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Remark Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consolidated Internal Mark List Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print Parent Communication Letter Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/managementDashboard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Board Exam Result Report"
+        android:background="#00c4ff"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

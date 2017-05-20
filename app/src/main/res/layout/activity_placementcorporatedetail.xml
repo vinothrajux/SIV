@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/bodybg"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!-- LinearLayout Rows-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- LinearLayout Columns-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Corporate ID" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:ems="14" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Corporate Name" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Corporate Type" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text=" HR Name" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="HR Contact No" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="HR Mail Id" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Required Discipline"/>
+                    <Spinner
+                        android:id="@+id/spinner10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Willing to conduct campus"/>
+
+                    <Spinner
+                        android:id="@+id/spinner11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Corporate Address" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="E Mail Id" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Website" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Mobile No" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123" />
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#919978"
+                        android:onClick="dashboard"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:text="Close"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

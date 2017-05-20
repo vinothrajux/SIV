@@ -22,8 +22,9 @@ import android.widget.Toast;
  */
 
 public class DashboardActivity extends FragmentActivity {
-    GridView grid;
-    String userCategory = "Management";
+
+    ArrayList<Item> data = new ArrayList<Item>();GridView grid;
+    String userCategory = "";
     String[] dashboardColors = {
             "#2DA3AD",
             "#EC538D",
@@ -33,7 +34,6 @@ public class DashboardActivity extends FragmentActivity {
             "#E4444B"
     } ;
 
-    ArrayList<Item> data = new ArrayList<Item>();
     private void fillData()
     {
         switch(userCategory){
@@ -148,7 +148,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.admission,".OfficeStenoReportsActivity"));
                 break;
 
-            case "Office Manager":
+            case "Office Stores":
                 data.add(new Item("Stores Vendor", R.drawable.admission,".VendorDetailsActivity"));
                 data.add(new Item("Stores Purchase", R.drawable.admission,".PurchaseActivity"));
                 data.add(new Item("Stores Sales", R.drawable.admission,".SalesActivity"));
@@ -160,7 +160,21 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.admission,".OfficeManagerReportsActivity"));
 
                 break;
+            case "Office Transport" :
+                data.add(new Item("Transport ID", R.drawable.admission,".TransportIdActivity"));
+                data.add(new Item("Route Change", R.drawable.admission,".RouteChangeActivity"));
+                data.add(new Item("MTC Concession", R.drawable.admission,".MTCConcessionActivity"));
+                data.add(new Item("Train Concession", R.drawable.admission,".TrainConcessionActivity"));
+                data.add(new Item("Route Verification", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Fuel Filling", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Transport Insurance", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Transport Insurance", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Transport FC", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Driver Data", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Requirement Request", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Reports", R.drawable.admission,".RouteVerificationActivity"));
 
+                break;
 
 
 
@@ -274,6 +288,7 @@ public class DashboardActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
 //        if (savedInstanceState == null) {
 //            OfficeDashboardFragment fr = new OfficeDashboardFragment();
 ////        if(view == findViewById(R.id.button2)) {
