@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -32,6 +33,9 @@ import cz.msebera.android.httpclient.message.BasicNameValuePair;
 
 public class LoginActivity extends AppCompatActivity{
     String response = null;
+    EditText usernameEditText;
+    String username;
+    String role;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -42,20 +46,44 @@ public class LoginActivity extends AppCompatActivity{
         getSupportActionBar().hide();
 
         Button LoginBtn = (Button) findViewById(R.id.loginButton);
+        usernameEditText = (EditText) findViewById(R.id.username);
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginAccessTask runLoginAccessTask = new LoginAccessTask();
-                runLoginAccessTask.execute();
+//                LoginAccessTask runLoginAccessTask = new LoginAccessTask();
+//                runLoginAccessTask.execute();
+                username=usernameEditText.getText().toString();
+                switch(username){
+                    case "kamal":
+                        role = "Management";
+                        break;
+
+                    case "seetha":
+                        role = "Sports";
+                        break;
+
+                    default:
+                        role = "Invalid";
+                        break;
+                }
+
+                if(role == "Invalid"){
+                    Toast.makeText(getApplicationContext(), "Invalid User" + username, Toast.LENGTH_SHORT).show();
+                }else{
+                    Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+                    intent.putExtra("userRole", role);
+                    startActivity(intent);
+                }
+
             }
         });
 
     }
 
-    public void dashboard(View view){
-        Intent intent = new Intent(LoginActivity.this,DashboardDemoActivity.class);
-        startActivity(intent);
-    }
+//    public void dashboard(View view){
+//        Intent intent = new Intent(LoginActivity.this,DashboardDemoActivity.class);
+//        startActivity(intent);
+//    }
 
 
     private class LoginAccessTask extends AsyncTask<String, Void, String> {

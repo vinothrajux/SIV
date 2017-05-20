@@ -36,7 +36,7 @@ public class DashboardActivity extends FragmentActivity {
 
     private void fillData()
     {
-        switch(userCategory){
+        switch(userRole){
             case "Management":
                 data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingActivity"));
                 data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionCounsellingActivity"));
@@ -284,11 +284,15 @@ public class DashboardActivity extends FragmentActivity {
         }
 
     }
+    String userRole;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
+        Bundle bundle = getIntent().getExtras();
+        if(bundle.getString("userRole")!=null){
+            userRole = bundle.getString("userRole");
+        }
 //        if (savedInstanceState == null) {
 //            OfficeDashboardFragment fr = new OfficeDashboardFragment();
 ////        if(view == findViewById(R.id.button2)) {
