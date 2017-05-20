@@ -22,8 +22,9 @@ import android.widget.Toast;
  */
 
 public class DashboardActivity extends FragmentActivity {
-    GridView grid;
-    String userCategory = "Management";
+
+    ArrayList<Item> data = new ArrayList<Item>();GridView grid;
+    String userCategory = "";
     String[] dashboardColors = {
             "#2DA3AD",
             "#EC538D",
@@ -33,7 +34,6 @@ public class DashboardActivity extends FragmentActivity {
             "#E4444B"
     } ;
 
-    ArrayList<Item> data = new ArrayList<Item>();
     private void fillData()
     {
         switch(userCategory){
@@ -288,6 +288,7 @@ public class DashboardActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
 //        if (savedInstanceState == null) {
 //            OfficeDashboardFragment fr = new OfficeDashboardFragment();
 ////        if(view == findViewById(R.id.button2)) {

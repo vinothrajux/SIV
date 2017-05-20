@@ -20,12 +20,10 @@ public class LoginActivity extends AppCompatActivity {
         //hide Title Bar
         getSupportActionBar().hide();
 
-
-
     }
 
     public void dashboard(View view){
-        Intent intent = new Intent(LoginActivity.this,DashboardDemoActivity.class);
+        Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
         startActivity(intent);
     }
 }
