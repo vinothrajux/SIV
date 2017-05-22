@@ -63,8 +63,5 @@
             android:layout_height="wrap_content"
             android:text="232"/>
     </LinearLayout>
-
-
     </LinearLayout>
-
 </LinearLayout>

@@ -1,17 +1,9 @@
 package com.example.vinothjoshua.siv;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -44,33 +36,33 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".AdmissionCounsellingActivity"));
                 data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".AdmissionCounsellingActivity"));
                 data.add(new Item("Staff Attendance", R.drawable.admission,".AdmissionCounsellingActivity"));
-                data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttendanceActivity"));
+                data.add(new Item("Student Attendance", R.drawable.attendance,".StudentAttendanceActivity"));
                 data.add(new Item("Staff Performance", R.drawable.admission,".StaffPerformanceActivity"));
                 data.add(new Item("Department Performance", R.drawable.admission,".DeptPerformanceActivity"));
                 data.add(new Item("Salary Calculation", R.drawable.admission,".SalaryCalculationActivity"));
                 data.add(new Item("Staff Requirement", R.drawable.admission,".StaffReqActivity"));
-                data.add(new Item("Locate Staff", R.drawable.admission,".LocateStaffActivity"));
-                data.add(new Item("Admin Removal", R.drawable.admission,".AdminRemovalActivity"));
+                data.add(new Item("Locate Staff", R.drawable.locatestaff,"LocateStaffActivity"));
+                data.add(new Item("Admin Removal", R.drawable.adminremoval,".AdminRemovalActivity"));
                 data.add(new Item("Placement Performance", R.drawable.admission,".PlacementPerformActivity"));
-                data.add(new Item("Promote Staff", R.drawable.admission,".PromoteStaffActivity"));
-                data.add(new Item("Relieve Staff", R.drawable.admission,".RelieveStaffActivity"));
+                data.add(new Item("Promote Staff", R.drawable.promotestaff,".PromoteStaffActivity"));
+                data.add(new Item("Relieve Staff", R.drawable.relievestaff,".RelieveStaffActivity"));
                 data.add(new Item("Approvals", R.drawable.admission,".ApprovalsActivity"));
-                data.add(new Item("Events", R.drawable.admission,".EventsActivity"));
-                data.add(new Item("Transport Maintenance", R.drawable.admission,".TransportMaintenanceActivity"));
-                data.add(new Item("Hostel", R.drawable.admission,".HostelManagementActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".ReportsActivity"));
-                data.add(new Item("Sports Performance", R.drawable.admission,".SportsPerformActivity"));
+                data.add(new Item("Events", R.drawable.events,".EventsActivity"));
+                data.add(new Item("Transport Maintenance", R.drawable.transport,".TransportMaintenanceActivity"));
+                data.add(new Item("Hostel", R.drawable.hostel,".HostelManagementActivity"));
+                data.add(new Item("Reports", R.drawable.reports,".ReportsActivity"));
+                data.add(new Item("Sports Performance", R.drawable.sports,".SportsPerformActivity"));
                 break;
 
             case "Principal":
                 data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceActivity"));
-                data.add(new Item("Student Attendance", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Student Attendance", R.drawable.attendance,".StaffAttendanceActivity"));
                 data.add(new Item("Staff Performance", R.drawable.admission,".StaffAttendanceActivity"));
                 data.add(new Item("Department Performance", R.drawable.admission,".StaffAttendanceActivity"));
                 data.add(new Item("Staff Workload", R.drawable.admission,".StaffAttendanceActivity"));
                 data.add(new Item("Staff Requirement", R.drawable.admission,".StaffAttendanceActivity"));
-                data.add(new Item("Locate Staff", R.drawable.admission,".StaffAttendanceActivity"));
-                data.add(new Item("Hostel", R.drawable.admission,".StaffAttendanceActivity"));
+                data.add(new Item("Locate Staff", R.drawable.locatestaff,".StaffAttendanceActivity"));
+                data.add(new Item("Hostel", R.drawable.hostel,".StaffAttendanceActivity"));
                 data.add(new Item("Placement Performance", R.drawable.admission,".StaffAttendanceActivity"));
                 data.add(new Item("Sports Performance", R.drawable.admission,".StaffAttendanceActivity"));
 
@@ -78,23 +70,23 @@ public class DashboardActivity extends FragmentActivity {
 
             case "Office Admin":
                 data.add(new Item("Admission", R.drawable.admission,".AdmissionActivity"));
-                data.add(new Item("Student Data", R.drawable.admission,".OfficeStudentInfoUpdActivity"));
-                data.add(new Item("Staff Data", R.drawable.admission,".OfficeStaffInfoActivity"));
+                data.add(new Item("Student Data", R.drawable.student,".OfficeStudentInfoUpdActivity"));
+                data.add(new Item("Staff Data", R.drawable.staff,".OfficeStaffInfoActivity"));
                 data.add(new Item("Fees Counter", R.drawable.admission,".FeeCounterActivity"));
-                data.add(new Item("Stores", R.drawable.admission,".StoresActivity"));
-                data.add(new Item("Transport", R.drawable.admission,".TransportActivity"));
-                data.add(new Item("Hostel", R.drawable.admission,".HostelActivity"));
-                data.add(new Item("Exam", R.drawable.admission,".ExamActivity"));
+                data.add(new Item("Stores", R.drawable.stores,".StoresActivity"));
+                data.add(new Item("Transport", R.drawable.transport,".TransportActivity"));
+                data.add(new Item("Hostel", R.drawable.hostel,".HostelActivity"));
+                data.add(new Item("Exam", R.drawable.exam,".ExamActivity"));
                 data.add(new Item("e-Governance", R.drawable.admission,".EGovernanceActivity"));
-                data.add(new Item("Events", R.drawable.admission,".EventHandlerActivity"));
-                data.add(new Item("Circulars", R.drawable.admission,".StenoCircularsActivity"));
+                data.add(new Item("Events", R.drawable.events,".EventHandlerActivity"));
+                data.add(new Item("Circulars", R.drawable.circulars,".StenoCircularsActivity"));
 
                 break;
 
             case "Office Admission":
-                data.add(new Item("Application Sale", R.drawable.admission,".ApplicationSaleActivity"));
-                data.add(new Item("Admission Entry", R.drawable.admission,".AdmissionEntryActivity"));
-                data.add(new Item("Follow up", R.drawable.admission,".ApplicationFollowActivity"));
+                data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleActivity"));
+                data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryActivity"));
+                data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowActivity"));
                 data.add(new Item("College ID", R.drawable.admission,".CollegeIdCardActivity"));
                 data.add(new Item("Bonafide", R.drawable.admission,".BonafideActivity"));
                 data.add(new Item("TC", R.drawable.admission,".TcGenerateActivity"));
@@ -102,7 +94,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("First Aid", R.drawable.admission,".FirstAidEntryActivity"));
                 data.add(new Item("Certificate Submission", R.drawable.admission,".CertificateSubmissionActivity"));
                 data.add(new Item("Scholarship", R.drawable.admission,".ScholarshipActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".OffAdmissionReportActivity"));
+                data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportActivity"));
 
                 break;
 

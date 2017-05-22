@@ -5,15 +5,18 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal" android:layout_marginBottom="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="STUDENT ATTENDANCE"/>
+            android:layout_marginLeft="30dp"
+            android:text="STUDENT ATTENDANCE"
+            android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="80%"/>
+            android:text="80%"
+            android:textColor="#184925"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,11 +29,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Overall"/>
+                android:text="Overall"
+                android:layout_marginLeft="30dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="232"/>
+                android:text="232"
+                android:layout_marginLeft="40dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,8 +62,5 @@
             android:layout_height="wrap_content"
             android:text="232"/>
     </LinearLayout>
-
-
     </LinearLayout>
-
 </LinearLayout>
