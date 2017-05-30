@@ -13,7 +13,7 @@ public class TrainConcessionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_trainconcession);
+        setContentView(R.layout.trainconcession);
 
         //hide Title Bar
         // getSupportActionBar().hide();

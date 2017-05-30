@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 
 public class Item {
     String title;
-    String nextActivityClassName;
+    String FragmentName;
     int drawableId;
 
     // Empty Constructor
@@ -18,12 +18,12 @@ public class Item {
     }
 
     // Constructor
-    public Item(String title, int drawableId, String nextActivityClassName)
+    public Item(String title, int drawableId, String FragmentName)
     {
         super();
         this.title = title;
         this.drawableId = drawableId;
-        this.nextActivityClassName = nextActivityClassName;
+        this.FragmentName = FragmentName;
     }
 
     // Getter and Setter Method
@@ -47,13 +47,13 @@ public class Item {
         this.drawableId = drawableId;
     }
 
-    public String getNextActivityClassName()
+    public String getFragmentName()
     {
-        return nextActivityClassName;
+        return FragmentName;
     }
 
-    public void setNextActivityClassName(String nextActivityClassName)
+    public void setFragmentName(String FragmentName)
     {
-        this.nextActivityClassName = nextActivityClassName;
+        this.FragmentName = FragmentName;
     }
 }

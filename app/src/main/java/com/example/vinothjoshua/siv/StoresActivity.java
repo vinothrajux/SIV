@@ -13,7 +13,7 @@ public class StoresActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stores);
+        setContentView(R.layout.stores);
 
         //hide Title Bar
         getSupportActionBar().hide();

@@ -11,7 +11,7 @@ public class OfficeStudentInfoUpdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_officestudentinfoupd);
+        setContentView(R.layout.officestudentinfoupd);
     }
 
 }

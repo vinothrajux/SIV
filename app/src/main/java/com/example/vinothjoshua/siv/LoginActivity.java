@@ -55,11 +55,11 @@ public class LoginActivity extends AppCompatActivity{
                 username=usernameEditText.getText().toString();
                 switch(username){
                     case "kamal":
-                        role = "Management";
+                        role = "Office Admin";
                         break;
 
                     case "seetha":
-                        role = "Sports";
+                        role = "Principal";
                         break;
 
                     default:
