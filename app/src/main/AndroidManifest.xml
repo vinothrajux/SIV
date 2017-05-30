@@ -111,8 +111,8 @@
         <activity android:name=".TransportRouteChangeActivity"
             android:label="Transport Route Change">
         </activity>
-        <activity android:name=".WillingSubjectsActivity"
-            android:label="Willing Subject">
+        <activity android:name=".DetailsActivity"
+            android:label="Details Activity">
         </activity>
 
     </application>

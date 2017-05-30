@@ -159,7 +159,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Fuel Filling", R.drawable.admission,".FuelFillingFragment"));
                 data.add(new Item("Transport Insurance", R.drawable.admission,".TransportInsuranceFragment"));
                 data.add(new Item("Transport Insurance", R.drawable.admission,".RouteVerificationActivity"));
-                data.add(new Item("Transport FC", R.drawable.admission,".RouteVerificationActivity"));
+                data.add(new Item("Transport FC", R.drawable.admission,".TransportFCFragment"));
                 data.add(new Item("Driver Data", R.drawable.admission,".RouteVerificationActivity"));
                 data.add(new Item("Requirement Request", R.drawable.admission,".RouteVerificationActivity"));
                 data.add(new Item("Reports", R.drawable.admission,".RouteVerificationActivity"));
