@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toast;
 
 /**
  * Created by Vinoth Joshua on 03-Apr-17.
@@ -29,25 +28,26 @@ public class DashboardActivity extends FragmentActivity {
 
     private void fillData()
     {
-        switch(userRole){
+         switch(userRole){
             case "Management":
                 data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingFragment"));
                 data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionStatusFragment"));
                 data.add(new Item("College Fees Setting", R.drawable.accounts1,".CollegeFeesSettingFragment"));
                 data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".TransportFeesSettingFragment"));
                 data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".HostelFeesSettingFragment"));
-                data.add(new Item("Staff Attendance", R.drawable.admission,".StaffAttendanceFragment"));
+                data.add(new Item("Food Fees Setting", R.drawable.accounts1,".HostelFeesSettingFragment"));
+                data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".StaffAttendanceFragment"));
                 data.add(new Item("Student Attendance", R.drawable.attendance,".StudentAttendanceFragment"));
-                data.add(new Item("Staff Performance", R.drawable.admission,".StaffPerformanceFragment"));
-                data.add(new Item("Department Performance", R.drawable.admission,".DepartmentPerformanceFragment"));
-                data.add(new Item("Salary Calculation", R.drawable.admission,".SalaryCalculationFragment"));
+                data.add(new Item("Staff Performance", R.drawable.performance,".StaffPerformanceFragment"));
+                data.add(new Item("Department Performance", R.drawable.performance,".DepartmentPerformanceFragment"));
+                data.add(new Item("Salary Calculation", R.drawable.salary,".SalaryCalculationFragment"));
                 data.add(new Item("Staff Requirement", R.drawable.admission,".StaffReqFragment"));
                 data.add(new Item("Locate Staff", R.drawable.locatestaff,"LocateStaffFragment"));
                 data.add(new Item("Admin Removal", R.drawable.adminremoval,".AdminRemovalFragment"));
-                data.add(new Item("Placement Performance", R.drawable.admission,".PlacementPerformFragment"));
+                data.add(new Item("Placement Performance", R.drawable.performance,".PlacementPerformFragment"));
                 data.add(new Item("Promote Staff", R.drawable.promotestaff,".PromoteStaffFragment"));
                 data.add(new Item("Relieve Staff", R.drawable.relievestaff,".RelieveStaffFragment"));
-                data.add(new Item("Approvals", R.drawable.admission,".ApprovalsFragment"));
+                data.add(new Item("Approvals", R.drawable.approval,".ApprovalsFragment"));
                 data.add(new Item("Events", R.drawable.events,".EventsFragment"));
                 data.add(new Item("Transport Maintenance", R.drawable.transport,".TransportMaintenanceFragment"));
                 data.add(new Item("Hostel", R.drawable.hostel,".HostelManagementFragment"));
@@ -56,23 +56,23 @@ public class DashboardActivity extends FragmentActivity {
                 break;
 
             case "Principal":
-                data.add(new Item("Staff Attendance", R.drawable.admission,".PrincStaffAttendFragment"));
+                data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".PrincStaffAttendFragment"));
                 data.add(new Item("Student Attendance", R.drawable.attendance,".PrincStudentAttendFragment"));
-                data.add(new Item("Staff Performance", R.drawable.admission,".PrincStaffPerfFragment"));
-                data.add(new Item("Department Performance", R.drawable.admission,".PrincDeptPerfFragment"));
-                data.add(new Item("Staff Workload", R.drawable.admission,".PrincStaffWorkloadFragment"));
+                data.add(new Item("Staff Performance", R.drawable.performance,".PrincStaffPerfFragment"));
+                data.add(new Item("Department Performance", R.drawable.performance,".PrincDeptPerfFragment"));
+                data.add(new Item("Staff Workload", R.drawable.workload,".PrincStaffWorkloadFragment"));
                 data.add(new Item("Staff Requirement", R.drawable.admission,".PrincStaffReqFragment"));
                 data.add(new Item("Locate Staff", R.drawable.locatestaff,".PrincLocateStaffFragment"));
                 data.add(new Item("Hostel", R.drawable.hostel,".PrincHostelFragment"));
-                data.add(new Item("Placement Performance", R.drawable.admission,".PrincPlacementPerfFragment"));
-                data.add(new Item("Sports Performance", R.drawable.admission,".PrincSportPerfFragment"));
+                data.add(new Item("Placement Performance", R.drawable.performance,".PrincPlacementPerfFragment"));
+                data.add(new Item("Sports Performance", R.drawable.performance,".PrincSportPerfFragment"));
                 break;
 
             case "Office Admin":
                 data.add(new Item("Admission", R.drawable.admission,".OffAdmissionFragment"));
                 data.add(new Item("Student Data", R.drawable.student,".OfficeStudentInfoUpdFragment"));
                 data.add(new Item("Staff Data", R.drawable.staff,".OfficeStaffInfoFragment"));
-                data.add(new Item("Fees Counter", R.drawable.admission,".OffFeeCounterFragment"));
+                data.add(new Item("Fees Counter", R.drawable.feespayment,".OffFeeCounterFragment"));
                 data.add(new Item("Stores", R.drawable.stores,".OfficeStoresFragment"));
                 data.add(new Item("Transport", R.drawable.transport,".OffTransportFragment"));
                 data.add(new Item("Hostel", R.drawable.hostel,".OfficeHostelFragment"));
@@ -87,29 +87,29 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleFragment"));
                 data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
                 data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
-                data.add(new Item("College ID", R.drawable.admission,".CollegeIdCardFragment"));
+                data.add(new Item("College ID", R.drawable.idcard,".CollegeIdCardFragment"));
                 data.add(new Item("Bonafide", R.drawable.admission,".BonafideFragment"));
                 data.add(new Item("TC", R.drawable.admission,".TcGenerateFragment"));
                 data.add(new Item("Name List", R.drawable.admission,".NameListFragment"));
-                data.add(new Item("First Aid", R.drawable.admission,".FirstAidEntryFragment"));
-                data.add(new Item("Certificate Submission", R.drawable.admission,".CertificateSubmissionFragment"));
-                data.add(new Item("Scholarship", R.drawable.admission,".ScholarshipFragment"));
+                data.add(new Item("First Aid", R.drawable.firstaid,".FirstAidEntryFragment"));
+                data.add(new Item("Certificate Submission", R.drawable.certificate,".CertificateSubmissionFragment"));
+                data.add(new Item("Scholarship", R.drawable.scholarship,".ScholarshipFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
                 break;
 
             case "Office Fees":
-                data.add(new Item("Fees Payment",R.drawable.admission,".FeesPaymentFragment"));
-                data.add(new Item("Exam Fees", R.drawable.admission,".ExamFeesFragment"));
-                data.add(new Item("Follow up", R.drawable.admission,".FollowupFeesFragment"));
-                data.add(new Item("Reports", R.drawable.admission,".ReportFeeCounterFragment"));
+                data.add(new Item("Fees Payment",R.drawable.feespayment,".FeesPaymentFragment"));
+                data.add(new Item("Exam Fees", R.drawable.examfees,".ExamFeesFragment"));
+                data.add(new Item("Follow up", R.drawable.follow,".FollowupFeesFragment"));
+                data.add(new Item("Reports", R.drawable.reports,".ReportFeeCounterFragment"));
                 break;
 
             case "Office Supdt":
-                data.add(new Item("Staff Personal", R.drawable.admission,".StaffPersonalFragment"));
-                data.add(new Item("Staff Academic", R.drawable.admission,".StaffAcademicFragment"));
-                data.add(new Item("Willing Subjects", R.drawable.admission,".WillingSubjectsFragment"));
-                data.add(new Item("Staff Transport", R.drawable.admission,".StaffTransportFragment"));
-                data.add(new Item("Staff Attendance", R.drawable.admission,".OffSupdtStaffAttendanceFragment"));
+                data.add(new Item("Staff Personal", R.drawable.personalinf,".StaffPersonalFragment"));
+                data.add(new Item("Staff Academic", R.drawable.academic,".StaffAcademicFragment"));
+                data.add(new Item("Willing Subjects", R.drawable.subject,".WillingSubjectsFragment"));
+                data.add(new Item("Staff Transport", R.drawable.transport,".StaffTransportFragment"));
+                data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".OffSupdtStaffAttendanceFragment"));
                 data.add(new Item("Leave Entry", R.drawable.admission,".StaffLeaveEntryFragment"));
                 data.add(new Item("Nominal Entry", R.drawable.admission,".NominalEntryFragment"));
                 data.add(new Item("Nominal Entry", R.drawable.admission,".EquivalenceSubjectEntryFragment"));
@@ -118,11 +118,11 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("E-Gov Spell Entry", R.drawable.admission,".EgovSpellEntryFragment"));
                 data.add(new Item("B-Forms", R.drawable.admission,".BformFragment"));
                 data.add(new Item("B-Forms", R.drawable.admission,".BformActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".OfficeSupdtReportFragment"));
+                data.add(new Item("Reports", R.drawable.reports,".OfficeSupdtReportFragment"));
                 break;
 
             case "Office Steno":
-                data.add(new Item("Fees Events", R.drawable.admission,".FeesEventsActivity"));
+                data.add(new Item("Fees Events", R.drawable.events,".FeesEventsActivity"));
                 data.add(new Item("Branch Events", R.drawable.admission,".BranchEventsActivity"));
                 data.add(new Item("Exam Events", R.drawable.admission,".ExamEventsActivity"));
                 data.add(new Item("Placement Events", R.drawable.admission,".PlacementEventsActivity"));
@@ -139,128 +139,128 @@ public class DashboardActivity extends FragmentActivity {
                 break;
 
             case "Office Stores":
-                data.add(new Item("Stores Vendor", R.drawable.admission,".VendorDetailsFragment"));
-                data.add(new Item("Stores Purchase", R.drawable.admission,".PurchaseFragment"));
-                data.add(new Item("Stores Sales", R.drawable.admission,".SalesFragment "));
-                data.add(new Item("Reports", R.drawable.admission,".OfficeManagerReportsActivity"));
+                data.add(new Item("Stores Vendor", R.drawable.vendor,".VendorDetailsFragment"));
+                data.add(new Item("Stores Purchase", R.drawable.stores,".PurchaseFragment"));
+                data.add(new Item("Stores Sales", R.drawable.sale,".SalesFragment "));
+                data.add(new Item("Reports", R.drawable.reports,".OfficeManagerReportsActivity"));
 
                 break;
             case "Office Transport" :
-                data.add(new Item("Transport ID", R.drawable.admission,".TransportIdFragment"));
+                data.add(new Item("Transport ID", R.drawable.idcard,".TransportIdFragment"));
                 data.add(new Item("Route Change", R.drawable.admission,".RouteChangeFragment"));
                 data.add(new Item("MTC Concession", R.drawable.admission,".MTCConcessionFragment"));
                 data.add(new Item("Train Concession", R.drawable.admission,".TrainConcessionFragment"));
                 data.add(new Item("Route Verification", R.drawable.admission,".RouteVerificationFragment"));
-                data.add(new Item("Fuel Filling", R.drawable.admission,".FuelFillingFragment"));
+                data.add(new Item("Fuel Filling", R.drawable.fuel,".FuelFillingFragment"));
                 data.add(new Item("Transport Insurance", R.drawable.admission,".TransportInsuranceFragment"));
                 data.add(new Item("Transport FC", R.drawable.admission,".TransportFCFragment"));
-                data.add(new Item("Driver Data", R.drawable.admission,".DriverDataFragment"));
-                data.add(new Item("Requirement Request", R.drawable.admission,".TransRequirementReqFragment"));
-                data.add(new Item("Reports", R.drawable.admission,".TransReportFragment"));
+                data.add(new Item("Driver Data", R.drawable.driver,".DriverDataFragment"));
+                data.add(new Item("Requirement Request", R.drawable.requiredkit,".TransRequirementReqFragment"));
+                data.add(new Item("Reports", R.drawable.reports,".TransReportFragment"));
                 break;
 
 
 
             case "Teaching Staff":
-                data.add(new Item("Student Attendance", R.drawable.admission,".TeachstaffStudAttEntryFragment"));
+                data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
                 data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
                 data.add(new Item("View Internal Mark", R.drawable.admission,".TSViewInternalFragment"));
                 data.add(new Item("Time Table", R.drawable.admission,".TSTimeTableViewerFragment"));
-                data.add(new Item("Home Work Entry", R.drawable.admission,".HomeWOrkEntryFragment"));
+                data.add(new Item("Home Work Entry", R.drawable.homework,".HomeWOrkEntryFragment"));
                 data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestFragment"));
-                data.add(new Item("Leave Request", R.drawable.admission,".StaffLeaveRequestFragment"));
-                data.add(new Item("Events", R.drawable.admission,".StaffEventsFragment"));
-                data.add(new Item("Reports", R.drawable.admission,".StaffReportsFragment"));
+                data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestFragment"));
+                data.add(new Item("Events", R.drawable.events,".StaffEventsFragment"));
+                data.add(new Item("Reports", R.drawable.reports,".StaffReportsFragment"));
 
                 break;
 
 
             case "HOD":
-                data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryActivity"));
-                data.add(new Item("Subject Entry", R.drawable.admission,".SubjectEntryActivity"));
-                data.add(new Item("Subject Allocation", R.drawable.admission,".SubjectAllocationActivity"));
+                data.add(new Item("Student Attendance", R.drawable.attendance,".StudentAttEntryActivity"));
+                data.add(new Item("Subject Entry", R.drawable.subject,".SubjectEntryActivity"));
+                data.add(new Item("Subject Allocation", R.drawable.subject,".SubjectAllocationActivity"));
                 data.add(new Item("Time Table", R.drawable.admission,".TimeTableViewerActivity"));
-                data.add(new Item("Exam Time Table", R.drawable.admission,".ExamTimeTableActivity"));
-                data.add(new Item("Exam Mark Entry", R.drawable.admission,".ExamMarkEntryActivity"));
-                data.add(new Item("Question Set", R.drawable.admission,".QuestionSetActivity"));
-                data.add(new Item("Attendance Entry Monitor", R.drawable.admission,".AttEntryMonitorActivity"));
+                data.add(new Item("Exam Time Table", R.drawable.exam,".ExamTimeTableActivity"));
+                data.add(new Item("Exam Mark Entry", R.drawable.exam,".ExamMarkEntryActivity"));
+                data.add(new Item("Question Set", R.drawable.question,".QuestionSetActivity"));
+                data.add(new Item("Attendance Entry Monitor", R.drawable.attendance,".AttEntryMonitorActivity"));
                 data.add(new Item("Student Remarks", R.drawable.admission,".StudentsRemarksActivity"));
-                data.add(new Item("Staff Leave Apporval", R.drawable.admission,".StaffLeaveApprovalActivity"));
-                data.add(new Item("Home Work Entry", R.drawable.admission,".HomeWOrkEntryActivity"));
+                data.add(new Item("Staff Leave Apporval", R.drawable.approval,".StaffLeaveApprovalActivity"));
+                data.add(new Item("Home Work Entry", R.drawable.homework,".HomeWOrkEntryActivity"));
                 data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestActivity"));
-                data.add(new Item("Leave Request", R.drawable.admission,".StaffLeaveRequestActivity"));
-                data.add(new Item("Events", R.drawable.admission,".StaffEventsActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".StaffReportsActivity"));
+                data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestActivity"));
+                data.add(new Item("Events", R.drawable.events,".StaffEventsActivity"));
+                data.add(new Item("Reports", R.drawable.reports,".StaffReportsActivity"));
                 break;
 
             case "Placement officer":
-                data.add(new Item("Corporates Detail", R.drawable.admission,".CorporateDetActivity"));
-                data.add(new Item("Campus Request", R.drawable.admission,".CampusReqActivity"));
+                data.add(new Item("Corporates Detail", R.drawable.corporates,".CorporateDetActivity"));
+                data.add(new Item("Campus Request", R.drawable.campusreq,".CampusReqActivity"));
                 data.add(new Item("Schedules", R.drawable.admission,".SchedulesActivity"));
-                data.add(new Item("Followup", R.drawable.admission,".FollowupActivity"));
-                data.add(new Item("Seminars", R.drawable.admission,".SeminarsActivity"));
-                data.add(new Item("Inplant Training", R.drawable.admission,".InplantActivity"));
-                data.add(new Item("Job Links", R.drawable.admission,".JobLinksActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".PlacementReportsActivity"));
+                data.add(new Item("Followup", R.drawable.follow,".FollowupActivity"));
+                data.add(new Item("Seminars", R.drawable.seminars,".SeminarsActivity"));
+                data.add(new Item("Inplant Training", R.drawable.inplant,".InplantActivity"));
+                data.add(new Item("Job Links", R.drawable.joblink,".JobLinksActivity"));
+                data.add(new Item("Reports", R.drawable.reports,".PlacementReportsActivity"));
 
                 break;
 
             case "Sports":
                 data.add(new Item("Athelete Data", R.drawable.admission,".AtheleteDataActivity"));
-                data.add(new Item("Tournament Data", R.drawable.admission,".TournamentDataActivity"));
-                data.add(new Item("Kits Stock", R.drawable.admission,".KitsStockActivity"));
-                data.add(new Item("Kits Requirement", R.drawable.admission,".KitsReqActivity"));
-                data.add(new Item("O.D.Form", R.drawable.admission,".ODFormActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".SportsReportsActivity"));
+                data.add(new Item("Tournament Data", R.drawable.tournament,".TournamentDataActivity"));
+                data.add(new Item("Kits Stock", R.drawable.stockkit,".KitsStockActivity"));
+                data.add(new Item("Kits Requirement", R.drawable.requiredkit,".KitsReqActivity"));
+                data.add(new Item("O.D.Form", R.drawable.leaveletter,".ODFormActivity"));
+                data.add(new Item("Reports", R.drawable.reports,".SportsReportsActivity"));
 
                 break;
 
             case "Library":
-                data.add(new Item("Member Data", R.drawable.admission,".LibMemberDataFragment"));
-                data.add(new Item("Books Data", R.drawable.admission,".LibBooksDataFragment"));
-                data.add(new Item("CD Data", R.drawable.admission,".LibCDDataFragment"));
-                data.add(new Item("Magazines Data", R.drawable.admission,".MagazinesDataFragment"));
-                data.add(new Item("Books Purchase", R.drawable.admission,".BooksPurchaseFragment"));
+                data.add(new Item("Member Data", R.drawable.profile,".LibMemberDataFragment"));
+                data.add(new Item("Books Data", R.drawable.book,".LibBooksDataFragment"));
+                data.add(new Item("CD Data", R.drawable.cd,".LibCDDataFragment"));
+                data.add(new Item("Magazines Data", R.drawable.magazine,".MagazinesDataFragment"));
+                data.add(new Item("Books Purchase", R.drawable.purchase,".BooksPurchaseFragment"));
                 data.add(new Item("Books Availability", R.drawable.admission,".BooksAvailFragment"));
                 data.add(new Item("Issuing Books", R.drawable.admission,".IssuingBooksFragment"));
-                data.add(new Item("Returning Books", R.drawable.admission,".ReturningBooksFragment"));
+                data.add(new Item("Returning Books",R.drawable.return,".ReturningBooksFragment"));
                 data.add(new Item("Library Usage", R.drawable.admission,".LibraryUsageFragment"));
-                data.add(new Item("Reports", R.drawable.admission,".LibraryReportsfragment"));
+                data.add(new Item("Reports", R.drawable.reports,".LibraryReportsfragment"));
 
                 break;
 
             case "Hostel":
-                data.add(new Item("Student Data", R.drawable.admission,".HostelStudDataFragment"));
-                data.add(new Item("Facilities Data", R.drawable.admission,".HostelFacilitiesDataFragment"));
-                data.add(new Item("Payment Data", R.drawable.admission,".HostelPayDataFragment"));
-                data.add(new Item("Leave Data", R.drawable.admission,".HostelStudLeaveDataFragment"));
-                data.add(new Item("Visitor Data", R.drawable.admission,".HostelVisitorDataFragment"));
-                data.add(new Item("Food Data", R.drawable.admission,".HostelFoodDataFragment"));
-                data.add(new Item("Medical Data", R.drawable.admission,".HostelMedicalDataFragment"));
+                data.add(new Item("Student Data", R.drawable.student,".HostelStudDataFragment"));
+                data.add(new Item("Facilities Data", R.drawable.facility,".HostelFacilitiesDataFragment"));
+                data.add(new Item("Payment Data", R.drawable.feespayment,".HostelPayDataFragment"));
+                data.add(new Item("Leave Data", R.drawable.leaveletter,".HostelStudLeaveDataFragment"));
+                data.add(new Item("Visitor Data", R.drawable.visitor,".HostelVisitorDataFragment"));
+                data.add(new Item("Food Data", R.drawable.food,".HostelFoodDataFragment"));
+                data.add(new Item("Medical Data", R.drawable.medical,".HostelMedicalDataFragment"));
                 data.add(new Item("Remarks", R.drawable.admission,".HostelStudRemFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".HostelReportsFragment"));
 
                 break;
 
             case "Parent":
-                data.add(new Item("Profile", R.drawable.admission,".ParentProfileFragment"));
-                data.add(new Item("Daily Attendance", R.drawable.admission,".ParentDailyAttfragment"));
-                data.add(new Item("Test Performance", R.drawable.admission,".ParentTestPerFragment"));
-                data.add(new Item("Exam Performance", R.drawable.admission,".ParentExamPerFragment"));
-                data.add(new Item("Fees Payment", R.drawable.admission,".ParentFeesPaymentFragment"));
-                data.add(new Item("Home Work", R.drawable.admission,".ParentHomeWorkFragment"));
-                data.add(new Item("Leave Request", R.drawable.admission,".ParentLeaveReqFragment"));
+                data.add(new Item("Profile", R.drawable.profile,".ParentProfileFragment"));
+                data.add(new Item("Daily Attendance", R.drawable.attendance,".ParentDailyAttfragment"));
+                data.add(new Item("Test Performance", R.drawable.performance,".ParentTestPerFragment"));
+                data.add(new Item("Exam Performance", R.drawable.performance,".ParentExamPerFragment"));
+                data.add(new Item("Fees Payment", R.drawable.feespayment,".ParentFeesPaymentFragment"));
+                data.add(new Item("Home Work", R.drawable.homework,".ParentHomeWorkFragment"));
+                data.add(new Item("Leave Request", R.drawable.leaveletter,".ParentLeaveReqFragment"));
                 data.add(new Item("Events", R.drawable.events,".ParentEventFragment"));
-                data.add(new Item("Feed Back", R.drawable.admission,".ParentFeedBackFragment"));
+                data.add(new Item("Feed Back", R.drawable.feedback,".ParentFeedBackFragment"));
                 data.add(new Item("Remarks", R.drawable.admission,".ParentRemarksFragment"));
 
                 break;
 
             case "System Admin":
-                data.add(new Item("Add User", R.drawable.admission,".AddUserFragment"));
-                data.add(new Item("Modify User",R.drawable.admission,".ModifyUserFragment"));
-                data.add(new Item("Remove User", R.drawable.admission,".RemoveUserFragment"));
-                data.add(new Item("Reports", R.drawable.admission,".SysAdminReportsFragment"));
+                data.add(new Item("Add User", R.drawable.adduser,".AddUserFragment"));
+                data.add(new Item("Modify User",R.drawable.edituser,".ModifyUserFragment"));
+                data.add(new Item("Remove User", R.drawable.relievestaff,".RemoveUserFragment"));
+                data.add(new Item("Reports", R.drawable.reports,".SysAdminReportsFragment"));
 
                 break;
         }
