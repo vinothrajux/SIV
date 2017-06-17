@@ -112,7 +112,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Staff Attendance", R.drawable.admission,".OffSupdtStaffAttendanceFragment"));
                 data.add(new Item("Leave Entry", R.drawable.admission,".StaffLeaveEntryFragment"));
                 data.add(new Item("Nominal Entry", R.drawable.admission,".NominalEntryFragment"));
-                data.add(new Item("Nominal Entry", R.drawable.admission,".EquivalenceSubjectEntryFragment"));
+                data.add(new Item("Equivalence Subject Entry", R.drawable.admission,".EquivalenceSubjectEntryFragment"));
                 data.add(new Item("Result Entry", R.drawable.admission,".ResultEntryFragment"));
                 data.add(new Item("Ex-2 Entry", R.drawable.admission,".Ex2EntryFragment"));
                 data.add(new Item("E-Gov Spell Entry", R.drawable.admission,".EgovSpellEntryFragment"));
@@ -142,11 +142,6 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Stores Vendor", R.drawable.admission,".VendorDetailsFragment"));
                 data.add(new Item("Stores Purchase", R.drawable.admission,".PurchaseFragment"));
                 data.add(new Item("Stores Sales", R.drawable.admission,".SalesFragment "));
-                data.add(new Item("Transport ID", R.drawable.admission,".TransportIdActivity"));
-                data.add(new Item("Route Change", R.drawable.admission,".RouteChangeActivity"));
-                data.add(new Item("MTC Concession", R.drawable.admission,".MTCConcessionActivity"));
-                data.add(new Item("Train Concession", R.drawable.admission,".TrainConcessionActivity"));
-                data.add(new Item("Route Verification", R.drawable.admission,".RouteVerificationActivity"));
                 data.add(new Item("Reports", R.drawable.admission,".OfficeManagerReportsActivity"));
 
                 break;
@@ -158,7 +153,6 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Route Verification", R.drawable.admission,".RouteVerificationFragment"));
                 data.add(new Item("Fuel Filling", R.drawable.admission,".FuelFillingFragment"));
                 data.add(new Item("Transport Insurance", R.drawable.admission,".TransportInsuranceFragment"));
-                data.add(new Item("Transport Insurance", R.drawable.admission,".RouteVerificationActivity"));
                 data.add(new Item("Transport FC", R.drawable.admission,".TransportFCFragment"));
                 data.add(new Item("Driver Data", R.drawable.admission,".RouteVerificationActivity"));
                 data.add(new Item("Requirement Request", R.drawable.admission,".RouteVerificationActivity"));
@@ -182,42 +176,42 @@ public class DashboardActivity extends FragmentActivity {
 
 
             case "HOD":
-                data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryActivity"));
-                data.add(new Item("Subject Entry", R.drawable.admission,".SubjectEntryActivity"));
-                data.add(new Item("Subject Allocation", R.drawable.admission,".SubjectAllocationActivity"));
-                data.add(new Item("Time Table", R.drawable.admission,".TimeTableViewerActivity"));
-                data.add(new Item("Exam Time Table", R.drawable.admission,".ExamTimeTableActivity"));
-                data.add(new Item("Exam Mark Entry", R.drawable.admission,".ExamMarkEntryActivity"));
-                data.add(new Item("Question Set", R.drawable.admission,".QuestionSetActivity"));
-                data.add(new Item("Attendance Entry Monitor", R.drawable.admission,".AttEntryMonitorActivity"));
-                data.add(new Item("Student Remarks", R.drawable.admission,".StudentsRemarksActivity"));
-                data.add(new Item("Staff Leave Apporval", R.drawable.admission,".StaffLeaveApprovalActivity"));
-                data.add(new Item("Home Work Entry", R.drawable.admission,".HomeWOrkEntryActivity"));
-                data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestActivity"));
-                data.add(new Item("Leave Request", R.drawable.admission,".StaffLeaveRequestActivity"));
-                data.add(new Item("Events", R.drawable.admission,".StaffEventsActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".StaffReportsActivity"));
+                data.add(new Item("Student Attendance", R.drawable.admission,".StudentAttEntryFragment"));
+                data.add(new Item("Subject Entry", R.drawable.admission,".SubjectEntryFragment"));
+                data.add(new Item("Subject Allocation", R.drawable.admission,".SubjectAllocationFragment"));
+                data.add(new Item("Time Table", R.drawable.admission,".HODTimeTableViewerFragment"));
+                data.add(new Item("Exam Time Table", R.drawable.admission,".ExamTimeTableFragment"));
+                data.add(new Item("Exam Mark Entry", R.drawable.admission,".ExamMarkEntryFragment"));
+                data.add(new Item("Question Set", R.drawable.admission,".QuestionSetFragment"));
+                data.add(new Item("Attendance Entry Monitor", R.drawable.admission,".AttEntryMonitorFragment"));
+                data.add(new Item("Student Remarks", R.drawable.admission,".HODStudentsRemarksFragment"));
+                data.add(new Item("Staff Leave Apporval", R.drawable.admission,".HODStaffLeaveApprovalFragment"));
+                data.add(new Item("Home Work Entry", R.drawable.admission,".HODHomeWorkEntryFragment"));
+                data.add(new Item("Requirements Request", R.drawable.admission,".HODMaterialRequirementReqFragment"));
+                data.add(new Item("Leave Request", R.drawable.admission,".HODStaffLeaveRequestFragment"));
+                data.add(new Item("Events", R.drawable.admission,".StaffEventsFragment"));
+                data.add(new Item("Reports", R.drawable.admission,".HODReportsFragment"));
                 break;
 
             case "Placement officer":
-                data.add(new Item("Corporates Detail", R.drawable.admission,".CorporateDetActivity"));
-                data.add(new Item("Campus Request", R.drawable.admission,".CampusReqActivity"));
-                data.add(new Item("Schedules", R.drawable.admission,".SchedulesActivity"));
-                data.add(new Item("Followup", R.drawable.admission,".FollowupActivity"));
-                data.add(new Item("Seminars", R.drawable.admission,".SeminarsActivity"));
-                data.add(new Item("Inplant Training", R.drawable.admission,".InplantActivity"));
-                data.add(new Item("Job Links", R.drawable.admission,".JobLinksActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".PlacementReportsActivity"));
+                data.add(new Item("Corporates Detail", R.drawable.admission,".CorporateDetFragment"));
+                data.add(new Item("Campus Request", R.drawable.admission,".CampusReqFragment"));
+                data.add(new Item("Schedules", R.drawable.admission,".SchedulesFragment"));
+                data.add(new Item("Followup", R.drawable.admission,".PlacementFollowupFragment"));
+               // data.add(new Item("Seminars", R.drawable.admission,".SeminarsActivity"));
+               // data.add(new Item("Inplant Training", R.drawable.admission,".InplantActivity"));
+                data.add(new Item("Job Links", R.drawable.admission,".JobLinksFragment"));
+                data.add(new Item("Reports", R.drawable.admission,".PlacementReportsFragment"));
 
                 break;
 
             case "Sports":
-                data.add(new Item("Athelete Data", R.drawable.admission,".AtheleteDataActivity"));
-                data.add(new Item("Tournament Data", R.drawable.admission,".TournamentDataActivity"));
-                data.add(new Item("Kits Stock", R.drawable.admission,".KitsStockActivity"));
-                data.add(new Item("Kits Requirement", R.drawable.admission,".KitsReqActivity"));
-                data.add(new Item("O.D.Form", R.drawable.admission,".ODFormActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".SportsReportsActivity"));
+                data.add(new Item("Athelete Data", R.drawable.admission,".AtheleteDataFragment"));
+                data.add(new Item("Tournament Data", R.drawable.admission,".TournamentDataFragment"));
+                data.add(new Item("Kits Stock", R.drawable.admission,".KitsStockFragment"));
+                data.add(new Item("Kits Requirement", R.drawable.admission,".KitsReqFragment"));
+                data.add(new Item("O.D.Form", R.drawable.admission,".ODFormFragment"));
+                data.add(new Item("Reports", R.drawable.admission,".SportsReportsFragment"));
 
                 break;
 
