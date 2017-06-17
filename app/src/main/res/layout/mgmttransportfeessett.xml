@@ -36,6 +36,19 @@
                     >
                     <TextView
                         style="@style/TextViewLabel"
+                        android:text="Date"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Academic Year"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"/>
+
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Select Route"/>
                     <Spinner
                         android:id="@+id/spinner1"
@@ -44,6 +57,17 @@
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown"
                         android:layout_marginTop="15dp" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Stage"/>
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="15dp" />
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Fees"/>

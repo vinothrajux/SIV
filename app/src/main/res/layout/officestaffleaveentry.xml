@@ -62,14 +62,17 @@
                         style="@style/TextViewLabel"
                         android:text="Branch"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="123"
-                        />
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Designation"
                         />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/TextViewContent"
+                        android:text="123" />
+
                     <TextView
                         style="@style/TextViewContent"
                         android:text="123"
@@ -101,6 +104,14 @@
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="To Date"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Reason"
                         />
                     <TextView
                         style="@style/TextViewContent"
