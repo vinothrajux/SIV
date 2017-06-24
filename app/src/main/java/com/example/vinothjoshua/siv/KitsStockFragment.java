@@ -10,11 +10,12 @@ import android.view.ViewGroup;
  * Created by GBCorp on 30/05/2017.
  */
 
-public class StaffEventsFragment extends Fragment {
+public class KitsStockFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.admissioncounselling, container, false);
+        return inflater.inflate(R.layout.sportskitspurchase, container, false);
     }
+
 }
