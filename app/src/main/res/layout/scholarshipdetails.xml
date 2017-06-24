@@ -84,7 +84,49 @@
                         android:text="ABC123"/>
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Stayus"/>
+                        android:text="Status"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Scholarship Type"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Sanctioned Date"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Bank Account No"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Account Name"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="IFSC Code"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Branch"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="User"/>
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC123"/>

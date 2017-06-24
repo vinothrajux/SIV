@@ -52,6 +52,14 @@
                         />
                     <TextView
                         style="@style/TextViewLabel"
+                        android:text="Academic Year"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView

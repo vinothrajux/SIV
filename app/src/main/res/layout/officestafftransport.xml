@@ -106,6 +106,30 @@
                         style="@style/TextViewContent"
                         android:text="123"
                         />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Transport Facility(Free/Paid)"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Amount"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="User"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
                     <Button
                         android:id="@+id/loginButton"
                         android:layout_width="wrap_content"

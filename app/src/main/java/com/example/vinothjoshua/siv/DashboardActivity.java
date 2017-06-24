@@ -112,7 +112,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".OffSupdtStaffAttendanceFragment"));
                 data.add(new Item("Leave Entry", R.drawable.admission,".StaffLeaveEntryFragment"));
                 data.add(new Item("Nominal Entry", R.drawable.admission,".NominalEntryFragment"));
-                data.add(new Item("Nominal Entry", R.drawable.admission,".EquivalenceSubjectEntryFragment"));
+                data.add(new Item("Equivalence Subject Entry", R.drawable.admission,".EquivalenceSubjectEntryFragment"));
                 data.add(new Item("Result Entry", R.drawable.admission,".ResultEntryFragment"));
                 data.add(new Item("Ex-2 Entry", R.drawable.admission,".Ex2EntryFragment"));
                 data.add(new Item("E-Gov Spell Entry", R.drawable.admission,".EgovSpellEntryFragment"));
@@ -122,20 +122,20 @@ public class DashboardActivity extends FragmentActivity {
                 break;
 
             case "Office Steno":
-                data.add(new Item("Fees Events", R.drawable.events,".FeesEventsActivity"));
-                data.add(new Item("Branch Events", R.drawable.admission,".BranchEventsActivity"));
-                data.add(new Item("Exam Events", R.drawable.admission,".ExamEventsActivity"));
-                data.add(new Item("Placement Events", R.drawable.admission,".PlacementEventsActivity"));
-                data.add(new Item("Sports Events", R.drawable.admission,".SportsEventsActivity"));
-                data.add(new Item("NSS Events", R.drawable.admission,".NSSEventsActivity"));
-                data.add(new Item("Management Events", R.drawable.admission,".ManagementEventsActivity"));
-                data.add(new Item("Fees Circular", R.drawable.admission,".FeesCircularActivity"));
-                data.add(new Item("Branch Circular", R.drawable.admission,".BranchCircularActivity"));
-                data.add(new Item("Exam Circular", R.drawable.admission,".ExamCircularActivity"));
-                data.add(new Item("Placement Circular", R.drawable.admission,".PlacementCircularActivity"));
-                data.add(new Item("Sports Circular", R.drawable.admission,".SportsCircularActivity"));
-                data.add(new Item("Management Circular", R.drawable.admission,".ManagementCircularActivity"));
-                data.add(new Item("Reports", R.drawable.admission,".OfficeStenoReportsActivity"));
+                data.add(new Item("Fees Events", R.drawable.fees,".FeesEventsActivity"));
+                data.add(new Item("Branch Events", R.drawable.branches,".BranchEventsActivity"));
+                data.add(new Item("Exam Events", R.drawable.exam,".ExamEventsActivity"));
+                data.add(new Item("Placement Events", R.drawable.placement,".PlacementEventsActivity"));
+                data.add(new Item("Sports Events", R.drawable.sports,".SportsEventsActivity"));
+                data.add(new Item("NSS Events", R.drawable.nss,".NSSEventsActivity"));
+                data.add(new Item("Management Events", R.drawable.events,".ManagementEventsActivity"));
+                data.add(new Item("Fees Circular", R.drawable.circulars,".FeesCircularActivity"));
+                data.add(new Item("Branch Circular", R.drawable.circulars,".BranchCircularActivity"));
+                data.add(new Item("Exam Circular", R.drawable.circulars,".ExamCircularActivity"));
+                data.add(new Item("Placement Circular", R.drawable.circulars,".PlacementCircularActivity"));
+                data.add(new Item("Sports Circular", R.drawable.circulars,".SportsCircularActivity"));
+                data.add(new Item("Management Circular", R.drawable.circulars,".ManagementCircularActivity"));
+                data.add(new Item("Reports", R.drawable.reports,".OfficeStenoReportsActivity"));
                 break;
 
             case "Office Stores":
@@ -164,8 +164,8 @@ public class DashboardActivity extends FragmentActivity {
             case "Teaching Staff":
                 data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
                 data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
-                data.add(new Item("View Internal Mark", R.drawable.admission,".TSViewInternalFragment"));
-                data.add(new Item("Time Table", R.drawable.admission,".TSTimeTableViewerFragment"));
+                data.add(new Item("View Internal Mark", R.drawable.internal,".TSViewInternalFragment"));
+                data.add(new Item("Time Table", R.drawable.timetable,".TSTimeTableViewerFragment"));
                 data.add(new Item("Home Work Entry", R.drawable.homework,".HomeWOrkEntryFragment"));
                 data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestFragment"));
                 data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestFragment"));
@@ -179,13 +179,13 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Student Attendance", R.drawable.attendance,".StudentAttEntryActivity"));
                 data.add(new Item("Subject Entry", R.drawable.subject,".SubjectEntryActivity"));
                 data.add(new Item("Subject Allocation", R.drawable.subject,".SubjectAllocationActivity"));
-                data.add(new Item("Time Table", R.drawable.admission,".TimeTableViewerActivity"));
+                data.add(new Item("Time Table", R.drawable.timetable,".TimeTableViewerActivity"));
                 data.add(new Item("Exam Time Table", R.drawable.exam,".ExamTimeTableActivity"));
                 data.add(new Item("Exam Mark Entry", R.drawable.exam,".ExamMarkEntryActivity"));
                 data.add(new Item("Question Set", R.drawable.question,".QuestionSetActivity"));
-                data.add(new Item("Attendance Entry Monitor", R.drawable.attendance,".AttEntryMonitorActivity"));
+                data.add(new Item("Attendance Entry Monitor", R.drawable.monitor,".AttEntryMonitorActivity"));
                 data.add(new Item("Student Remarks", R.drawable.admission,".StudentsRemarksActivity"));
-                data.add(new Item("Staff Leave Apporval", R.drawable.approval,".StaffLeaveApprovalActivity"));
+                data.add(new Item("Staff Leave Approval", R.drawable.approval,".StaffLeaveApprovalActivity"));
                 data.add(new Item("Home Work Entry", R.drawable.homework,".HomeWOrkEntryActivity"));
                 data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestActivity"));
                 data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestActivity"));
@@ -196,7 +196,7 @@ public class DashboardActivity extends FragmentActivity {
             case "Placement officer":
                 data.add(new Item("Corporates Detail", R.drawable.corporates,".CorporateDetActivity"));
                 data.add(new Item("Campus Request", R.drawable.campusreq,".CampusReqActivity"));
-                data.add(new Item("Schedules", R.drawable.admission,".SchedulesActivity"));
+                data.add(new Item("Schedules", R.drawable.schedule,".SchedulesActivity"));
                 data.add(new Item("Followup", R.drawable.follow,".FollowupActivity"));
                 data.add(new Item("Seminars", R.drawable.seminars,".SeminarsActivity"));
                 data.add(new Item("Inplant Training", R.drawable.inplant,".InplantActivity"));
@@ -206,7 +206,7 @@ public class DashboardActivity extends FragmentActivity {
                 break;
 
             case "Sports":
-                data.add(new Item("Athelete Data", R.drawable.admission,".AtheleteDataActivity"));
+                data.add(new Item("Athelete Data", R.drawable.athlete,".AtheleteDataActivity"));
                 data.add(new Item("Tournament Data", R.drawable.tournament,".TournamentDataActivity"));
                 data.add(new Item("Kits Stock", R.drawable.stockkit,".KitsStockActivity"));
                 data.add(new Item("Kits Requirement", R.drawable.requiredkit,".KitsReqActivity"));
@@ -223,7 +223,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Books Purchase", R.drawable.purchase,".BooksPurchaseFragment"));
                 data.add(new Item("Books Availability", R.drawable.admission,".BooksAvailFragment"));
                 data.add(new Item("Issuing Books", R.drawable.admission,".IssuingBooksFragment"));
-                data.add(new Item("Returning Books",R.drawable.return,".ReturningBooksFragment"));
+                data.add(new Item("Returning Books", R.drawable.returnbook,".ReturningBooksFragment"));
                 data.add(new Item("Library Usage", R.drawable.admission,".LibraryUsageFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".LibraryReportsfragment"));
 

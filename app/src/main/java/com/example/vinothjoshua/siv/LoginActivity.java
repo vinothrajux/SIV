@@ -58,16 +58,24 @@ public class LoginActivity extends AppCompatActivity{
                         role = "Management";
                         break;
 
-                    case "Rani":
+                    case "rani":
                         role = "Principal";
                         break;
 
-                    case "Harshitha":
+                    case "harshitha":
                         role = "HOD";
                         break;
 
-                    case "Seetha":
+                    case "seetha":
                         role = "Teaching Staff";
+                        break;
+
+                    case "manikandan":
+                        role = "Office Stores";
+                        break;
+
+                    case "vishal":
+                        role = "System Admin";
                         break;
 
                     default:

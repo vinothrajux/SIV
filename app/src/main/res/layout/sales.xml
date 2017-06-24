@@ -34,6 +34,7 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Date"
@@ -125,6 +126,14 @@
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="User"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
                         />
                     <Button
                         android:id="@+id/loginButton1"

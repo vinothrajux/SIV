@@ -94,6 +94,13 @@
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC123" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Academic Year" />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC123" />
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -731,7 +738,14 @@
                         android:text="ABC123"/>
 
                 </LinearLayout>
-
+                <TextView
+                    style="@style/TextViewLabel"
+                    android:text="User"
+                    />
+                <TextView
+                    style="@style/TextViewContent"
+                    android:text="ABC 123"
+                    />
             </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

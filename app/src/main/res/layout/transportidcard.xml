@@ -164,6 +164,22 @@
                         style="@style/TextViewContent"
                         android:text="123"
                         />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Transport Mode"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Transport Facility"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
 
                     <Button
                         android:id="@+id/loginButton"

@@ -56,6 +56,15 @@
                         />
                     <TextView
                         style="@style/TextViewLabel"
+                        android:text="Academic Year"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
+
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Semester"
                         />
                     <TextView
@@ -116,6 +125,14 @@
                         />
                     <TextView
                         style="@style/TextViewLabel"
+                        android:text="Academic Year"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Column No"
                         />
                     <TextView
@@ -142,7 +159,14 @@
                         style="@style/TextViewLabel"
                         android:text="Scheme"
                         />
-
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="User"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
                     <Button
                         android:id="@+id/loginButton"
                         android:layout_width="wrap_content"

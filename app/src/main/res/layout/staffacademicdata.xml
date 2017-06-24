@@ -124,22 +124,12 @@
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC123"/>
-
-
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Skill sets"/>
-
-
-
-
-
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Certificates Submitted"/>
-
-
-
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Account Details"/>
@@ -168,9 +158,6 @@
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC123"/>
-
-
-
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Eligible CL/PL"/>
@@ -202,7 +189,14 @@
                         style="@style/TextViewContent"
                         android:text="ABC123"/>
 
-
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="User"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC 123"
+                        />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

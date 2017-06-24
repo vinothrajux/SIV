@@ -114,6 +114,14 @@
                         style="@style/TextViewContent"
                         android:text="ABC123"
                         />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="User"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="123"
+                        />
                 </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

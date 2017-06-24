@@ -95,6 +95,10 @@
                         android:text="Academic Year" />
 
                     <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC" />
+
+                    <TextView
                         style="@style/TextViewLabel"
                         android:text="Date" />
                     <TextView

@@ -62,6 +62,10 @@
                         style="@style/TextViewLabel"
                         android:text="Branch"
                         />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:text="ABC"
+                        />
 
                     <TextView
                         style="@style/TextViewLabel"
