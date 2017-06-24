@@ -29,7 +29,7 @@ public class DashboardActivity extends FragmentActivity {
     private void fillData()
     {
          switch(userRole){
-            case "Management":
+            case "MGMT":
                 data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingFragment"));
                 data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionStatusFragment"));
                 data.add(new Item("College Fees Setting", R.drawable.accounts1,".CollegeFeesSettingFragment"));
@@ -55,7 +55,7 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Sports Performance", R.drawable.sports,".SportsPerformFragment"));
                 break;
 
-            case "Principal":
+            case "PRPL":
                 data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".PrincStaffAttendFragment"));
                 data.add(new Item("Student Attendance", R.drawable.attendance,".PrincStudentAttendFragment"));
                 data.add(new Item("Staff Performance", R.drawable.performance,".PrincStaffPerfFragment"));
@@ -68,7 +68,8 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Sports Performance", R.drawable.performance,".PrincSportPerfFragment"));
                 break;
 
-            case "Office Admin":
+            //case "Office Admin":
+            case "OADM":
                 data.add(new Item("Admission", R.drawable.admission,".OffAdmissionFragment"));
                 data.add(new Item("Student Data", R.drawable.student,".OfficeStudentInfoUpdFragment"));
                 data.add(new Item("Staff Data", R.drawable.staff,".OfficeStaffInfoFragment"));
@@ -83,7 +84,8 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Office Admission":
+            //case "Office Admission":
+            case "OADMSN":
                 data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleFragment"));
                 data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
                 data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
@@ -97,14 +99,16 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
                 break;
 
-            case "Office Fees":
+            //case "Office Fees":
+            case "FEES":
                 data.add(new Item("Fees Payment",R.drawable.feespayment,".FeesPaymentFragment"));
                 data.add(new Item("Exam Fees", R.drawable.examfees,".ExamFeesFragment"));
                 data.add(new Item("Follow up", R.drawable.follow,".FollowupFeesFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".ReportFeeCounterFragment"));
                 break;
 
-            case "Office Supdt":
+            //case "Office Supdt":
+            case "OSUPDT":
                 data.add(new Item("Staff Personal", R.drawable.personalinf,".StaffPersonalFragment"));
                 data.add(new Item("Staff Academic", R.drawable.academic,".StaffAcademicFragment"));
                 data.add(new Item("Willing Subjects", R.drawable.subject,".WillingSubjectsFragment"));
@@ -121,7 +125,8 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.reports,".OfficeSupdtReportFragment"));
                 break;
 
-            case "Office Steno":
+            //case "Office Steno":
+            case "OSTN":
                 data.add(new Item("Fees Events", R.drawable.fees,".FeesEventsActivity"));
                 data.add(new Item("Branch Events", R.drawable.branches,".BranchEventsActivity"));
                 data.add(new Item("Exam Events", R.drawable.exam,".ExamEventsActivity"));
@@ -138,14 +143,16 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.reports,".OfficeStenoReportsActivity"));
                 break;
 
-            case "Office Stores":
+            //case "Office Stores":
+            case "OSTO":
                 data.add(new Item("Stores Vendor", R.drawable.vendor,".VendorDetailsFragment"));
                 data.add(new Item("Stores Purchase", R.drawable.stores,".PurchaseFragment"));
                 data.add(new Item("Stores Sales", R.drawable.sale,".SalesFragment "));
                 data.add(new Item("Reports", R.drawable.reports,".OfficeManagerReportsActivity"));
 
                 break;
-            case "Office Transport" :
+            //case "Office Transport" :
+            case "OTRAN" :
                 data.add(new Item("Transport ID", R.drawable.idcard,".TransportIdFragment"));
                 data.add(new Item("Route Change", R.drawable.admission,".RouteChangeFragment"));
                 data.add(new Item("MTC Concession", R.drawable.admission,".MTCConcessionFragment"));
@@ -161,7 +168,8 @@ public class DashboardActivity extends FragmentActivity {
 
 
 
-            case "Teaching Staff":
+            //case "Teaching Staff":
+            case "TSTAFF":
                 data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
                 data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
                 data.add(new Item("View Internal Mark", R.drawable.internal,".TSViewInternalFragment"));
@@ -193,7 +201,8 @@ public class DashboardActivity extends FragmentActivity {
                 data.add(new Item("Reports", R.drawable.reports,".StaffReportsActivity"));
                 break;
 
-            case "Placement officer":
+            //case "Placement officer":
+            case "PLO":
                 data.add(new Item("Corporates Detail", R.drawable.corporates,".CorporateDetActivity"));
                 data.add(new Item("Campus Request", R.drawable.campusreq,".CampusReqActivity"));
                 data.add(new Item("Schedules", R.drawable.schedule,".SchedulesActivity"));
@@ -205,7 +214,8 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Sports":
+            //case "Sports":
+            case "SPRT":
                 data.add(new Item("Athelete Data", R.drawable.athlete,".AtheleteDataActivity"));
                 data.add(new Item("Tournament Data", R.drawable.tournament,".TournamentDataActivity"));
                 data.add(new Item("Kits Stock", R.drawable.stockkit,".KitsStockActivity"));
@@ -215,7 +225,8 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Library":
+            //case "Library":
+            case "LIB":
                 data.add(new Item("Member Data", R.drawable.profile,".LibMemberDataFragment"));
                 data.add(new Item("Books Data", R.drawable.book,".LibBooksDataFragment"));
                 data.add(new Item("CD Data", R.drawable.cd,".LibCDDataFragment"));
@@ -229,7 +240,8 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Hostel":
+            //case "Hostel":
+            case "HOS":
                 data.add(new Item("Student Data", R.drawable.student,".HostelStudDataFragment"));
                 data.add(new Item("Facilities Data", R.drawable.facility,".HostelFacilitiesDataFragment"));
                 data.add(new Item("Payment Data", R.drawable.feespayment,".HostelPayDataFragment"));
@@ -242,7 +254,8 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "Parent":
+            //case "Parent":
+            case "STUD":
                 data.add(new Item("Profile", R.drawable.profile,".ParentProfileFragment"));
                 data.add(new Item("Daily Attendance", R.drawable.attendance,".ParentDailyAttfragment"));
                 data.add(new Item("Test Performance", R.drawable.performance,".ParentTestPerFragment"));
@@ -256,7 +269,8 @@ public class DashboardActivity extends FragmentActivity {
 
                 break;
 
-            case "System Admin":
+            //case "System Admin":
+            case "SYSADM":
                 data.add(new Item("Add User", R.drawable.adduser,".AddUserFragment"));
                 data.add(new Item("Modify User",R.drawable.edituser,".ModifyUserFragment"));
                 data.add(new Item("Remove User", R.drawable.relievestaff,".RemoveUserFragment"));

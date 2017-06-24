@@ -14,13 +14,25 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import cz.msebera.android.httpclient.HttpResponse;
 import cz.msebera.android.httpclient.NameValuePair;
@@ -34,7 +46,9 @@ import cz.msebera.android.httpclient.message.BasicNameValuePair;
 public class LoginActivity extends AppCompatActivity{
     String response = null;
     EditText usernameEditText;
+    EditText passwordEditTExt;
     String username;
+    String password;
     String role;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,49 +61,43 @@ public class LoginActivity extends AppCompatActivity{
 
         Button LoginBtn = (Button) findViewById(R.id.loginButton);
         usernameEditText = (EditText) findViewById(R.id.username);
+        passwordEditTExt = (EditText) findViewById(R.id.password);
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                LoginAccessTask runLoginAccessTask = new LoginAccessTask();
-//                runLoginAccessTask.execute();
+                LoginAccessTask runLoginAccessTask = new LoginAccessTask();
+                runLoginAccessTask.execute();
                 username=usernameEditText.getText().toString();
-                switch(username){
-                    case "kamal":
-                        role = "Management";
-                        break;
-
-                    case "rani":
-                        role = "Principal";
-                        break;
-
-                    case "harshitha":
-                        role = "HOD";
-                        break;
-
-                    case "seetha":
-                        role = "Teaching Staff";
-                        break;
-
-                    case "manikandan":
-                        role = "Office Stores";
-                        break;
-
-                    case "vishal":
-                        role = "System Admin";
-                        break;
-
-                    default:
-                        role = "Invalid";
-                        break;
-                }
-
-                if(role == "Invalid"){
-                    Toast.makeText(getApplicationContext(), "Invalid User" + username, Toast.LENGTH_SHORT).show();
-                }else{
-                    Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
-                    intent.putExtra("userRole", role);
-                    startActivity(intent);
-                }
+                password=passwordEditTExt.getText().toString();
+//                switch(username){
+//                    case "kamal":
+//                        role = "Management";
+//                        break;
+//
+//                    case "Rani":
+//                        role = "Principal";
+//                        break;
+//
+//                    case "Harshitha":
+//                        role = "HOD";
+//                        break;
+//
+//                    case "Seetha":
+//                        role = "Teaching Staff";
+//                        break;
+//
+//                    default:
+//                        role = "Invalid";
+//                        break;
+//                }
+//
+//                if(role == "Invalid"){
+//                    Toast.makeText(getApplicationContext(), "Invalid User" + username, Toast.LENGTH_SHORT).show();
+//                }else{
+//                    Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+//                    intent.putExtra("userRole", role);
+//                    startActivity(intent);
+//                }
 
             }
         });
@@ -106,92 +114,70 @@ public class LoginActivity extends AppCompatActivity{
         @Override
         protected String doInBackground(String... params) {
             // TODO Auto-generated method stub
-//            ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
-//            postParameters.add(new BasicNameValuePair("username", params[0] ));
-//            postParameters.add(new BasicNameValuePair("password", params[1] ));
-            Log.i("Testing","Testing1");
             String res = null;
 
 
             try {
-                URL url = new URL("http://192.168.43.177:8080/test");
-                Log.i("Testing","Testing2");
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                Log.i("Testing","Testing3");
-                conn.setRequestMethod("POST");
-                conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-                byte[] postParamsByte = "postdata".getBytes("UTF-8");
-                Log.i("Testing","Testing5");
-                conn.setRequestProperty("Content-Length", String.valueOf(postParamsByte.length));
-                conn.setDoOutput(true);
-                Log.i("Testing","Testing6");
-                conn.getOutputStream().write(postParamsByte);
-                Log.i("Testing","Testing7");
-                InputStream responseInputStream = conn.getInputStream();
+                URL url = new URL("http://192.168.43.38:8080/api/v1/user");
 
-                StringBuffer responseStringBuffer = new StringBuffer();
-                byte[] byteContainer = new byte[1024];
-                for (int i; (i = responseInputStream.read(byteContainer)) != -1; ) {
-                    responseStringBuffer.append(new String(byteContainer, 0, i));
+
+                JSONObject postDataParams = new JSONObject();
+                postDataParams.put("username", username);
+                postDataParams.put("password", password);
+                Log.e("params",postDataParams.toString());
+
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+//                conn.setReadTimeout(15000 /* milliseconds */);
+//                conn.setConnectTimeout(15000 /* milliseconds */);
+                conn.setRequestMethod("POST");
+                conn.setDoInput(true);
+                conn.setDoOutput(true);
+
+                OutputStream os = conn.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(
+                        new OutputStreamWriter(os, "UTF-8"));
+                //&username=+username+
+                writer.write(getPostDataString(postDataParams));
+
+                writer.flush();
+                writer.close();
+                os.close();
+
+                int responseCode=conn.getResponseCode();
+
+                if (responseCode == HttpsURLConnection.HTTP_OK) {
+
+                    BufferedReader in=new BufferedReader(new
+                            InputStreamReader(
+                            conn.getInputStream()));
+
+                    StringBuffer sb = new StringBuffer("");
+                    String line="";
+
+                    while((line = in.readLine()) != null) {
+
+                        sb.append(line);
+                        break;
+                    }
+
+                    in.close();
+                    return sb.toString();
+
                 }
-                Log.i("Testing","Testing4");
-                res = responseStringBuffer.toString();
+                else {
+                    return new String("false : "+responseCode);
+                }
             }
             catch (IOException e) {
-                Log.i("Testing","Testing8");
                 // writing exception to log
                 e.printStackTrace();
 
             }
+            catch (Exception e){
+
+            }
             //JSONObject response = new JSONObject(responseStringBuffer.toString());
 
-
-
-
-
-
-
-
-
-//            HttpClient httpClient = new DefaultHttpClient();
-//            HttpPost httpPost = new HttpPost("http://192.168.43.177:8080/test");
-//            // Building post parameters, key and value pair
-//            Log.i("Testing","Testing2");
-//            List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>(2);
-//            nameValuePair.add(new BasicNameValuePair("email", "user@gmail.com"));
-//            nameValuePair.add(new BasicNameValuePair("password", "encrypted_password"));
-//            // Url Encoding the POST parameters
-//            Log.i("Testing","Testing3");
-//            try {
-//                httpPost.setEntity(new UrlEncodedFormEntity(nameValuePair));
-//                Log.i("Testing","Testing4");
-//            }
-//            catch (UnsupportedEncodingException e) {
-//                // writing error to Log
-//                e.printStackTrace();
-//                Log.i("Testing","Testing5");
-//            }
-//
-//
-//            // Making HTTP Request
-//            try {
-//                Log.i("Testing","Testing6");
-//                HttpResponse response = httpClient.execute(httpPost);
-//
-//                // writing response to log
-//                Log.i("Testing","Testing7");
-//                Log.d("Http Response:", response.toString());
-//
-//                Log.i("Testing",response.toString());
-//                res =response.toString();
-//            } catch (ClientProtocolException e) {
-//                // writing exception to log
-//                e.printStackTrace();
-//            } catch (IOException e) {
-//                // writing exception to log
-//                e.printStackTrace();
-//
-//            }
             return res;
         }//close doInBackground
 
@@ -201,7 +187,46 @@ public class LoginActivity extends AppCompatActivity{
 
         protected void onPostExecute(String result) {
             Toast.makeText(getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+            try {
+                //JSONArray jsonArr = new JSONArray(result);
+                JSONObject jsonObj = new JSONObject(result);
+                role = jsonObj.getString("userRole");
+//                for (int i = 0; i < jsonArr.length(); i++) {
+//                    JSONObject jsonObj = jsonArr.getJSONObject(i);
+//                    role = jsonObj.getString("userRole");
+//                    System.out.println(jsonObj);
+//                }
+                Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                intent.putExtra("userRole", role);
+                startActivity(intent);
+            }
+            catch (Exception e){
+
+            }
         }
     }
+    public String getPostDataString(JSONObject params) throws Exception {
 
+        StringBuilder result = new StringBuilder();
+        boolean first = true;
+
+        Iterator<String> itr = params.keys();
+
+        while(itr.hasNext()){
+
+            String key= itr.next();
+            Object value = params.get(key);
+
+            if (first)
+                first = false;
+            else
+                result.append("&");
+
+            result.append(URLEncoder.encode(key, "UTF-8"));
+            result.append("=");
+            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
+
+        }
+        return result.toString();
+    }
 }
