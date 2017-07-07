@@ -37,6 +37,19 @@
                     >
                     <TextView
                         style="@style/TextViewLabel"
+                        android:text="Enter Application Number"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/applicationno"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/searchApplicationBtn"
+                        android:text="Search"/>
+                    <TextView
+                        style="@style/TextViewLabel"
                         android:text="Application No"
                         />
                     <TextView
@@ -55,14 +68,15 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/AppFor"
+                        />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/CandidateName" />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Gender"

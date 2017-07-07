@@ -69,35 +69,6 @@ public class LoginActivity extends AppCompatActivity{
                 runLoginAccessTask.execute();
                 username=usernameEditText.getText().toString();
                 password=passwordEditTExt.getText().toString();
-//                switch(username){
-//                    case "kamal":
-//                        role = "Management";
-//                        break;
-//
-//                    case "Rani":
-//                        role = "Principal";
-//                        break;
-//
-//                    case "Harshitha":
-//                        role = "HOD";
-//                        break;
-//
-//                    case "Seetha":
-//                        role = "Teaching Staff";
-//                        break;
-//
-//                    default:
-//                        role = "Invalid";
-//                        break;
-//                }
-//
-//                if(role == "Invalid"){
-//                    Toast.makeText(getApplicationContext(), "Invalid User" + username, Toast.LENGTH_SHORT).show();
-//                }else{
-//                    Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
-//                    intent.putExtra("userRole", role);
-//                    startActivity(intent);
-//                }
 
             }
         });
@@ -118,7 +89,7 @@ public class LoginActivity extends AppCompatActivity{
 
 
             try {
-                URL url = new URL("http://192.168.43.38:8080/api/v1/user");
+                URL url = new URL("http://192.168.43.177:8080/api/v1/user");
 
 
                 JSONObject postDataParams = new JSONObject();
