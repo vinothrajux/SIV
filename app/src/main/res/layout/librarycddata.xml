@@ -68,7 +68,7 @@
                         />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Book Status"
+                        android:text="CD Status"
                         />
                     <TextView
                         style="@style/TextViewContent"
@@ -84,7 +84,7 @@
                         />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="No.Of Books"
+                        android:text="No.Of CD"
                         />
                     <TextView
                         style="@style/TextViewContent"
