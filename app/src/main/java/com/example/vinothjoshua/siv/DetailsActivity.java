@@ -23,7 +23,8 @@ public class DetailsActivity extends FragmentActivity {
         setContentView(R.layout.activity_details);
 
         //hide Title Bar
-        // getSupportActionBar().hide();
+//        getActionBar().setTitle("Test");
+//        getActionBar().show();
 
         Bundle bundle = getIntent().getExtras();
         if(bundle.getString("selectedFragmentName")!=null){

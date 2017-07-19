@@ -60,7 +60,8 @@ public class AdmissionCounsellingFragment extends Fragment {
 
             }
         });
-
+//        getActivity().getActionBar().setTitle("Yest");
+//        getActivity().getActionBar().show();
 
         return view;
         //usernameEditText = (EditText) findViewById(R.id.username);
