@@ -3,8 +3,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:typeface">monospace</item>
     </style>
@@ -40,13 +44,21 @@
     </style>
     <style name="link">
         <item name="android:textColor">#59C6EB</item>
-
-
     </style>
     <style name="copytext">
         <item name="android:textColor">#666666</item>
-
-
+    </style>
+    <style name="gridimage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="gridboxtext">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
     </style>
     <style name="TextViewContent">
         <item name="android:textColor">#000000</item>

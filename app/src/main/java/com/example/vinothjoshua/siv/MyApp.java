@@ -14,5 +14,11 @@ public final  class MyApp extends Application {
         FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/Roboto-Light.ttf");
         FontsOverride.setDefaultFont(this, "SERIF", "fonts/Roboto-Light.ttf");
         FontsOverride.setDefaultFont(this, "SANS_SERIF", "fonts/Roboto-Light.ttf");
+        FontsOverride.setDefaultFont(this, "ROBOTO_BLACK", "fonts/Roboto-Black.ttf");
+        FontsOverride.setDefaultFont(this, "ROBOTO_BOLD", "fonts/Roboto-Bold.ttf");
+        FontsOverride.setDefaultFont(this, "ROBOTO_ITALIC", "fonts/Roboto-Italic.ttf");
+        FontsOverride.setDefaultFont(this, "ROBOTO_MEDIUM", "fonts/Roboto-Medium.ttf");
+        FontsOverride.setDefaultFont(this, "ROBOTO_THIN", "fonts/Roboto-Thin.ttf");
+        FontsOverride.setDefaultFont(this, "ROBOTO_LIGHT", "fonts/Roboto-Light.ttf");
     }
 }
