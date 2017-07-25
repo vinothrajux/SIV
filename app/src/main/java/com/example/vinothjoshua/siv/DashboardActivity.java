@@ -2,13 +2,21 @@ package com.example.vinothjoshua.siv;
 
 import java.util.ArrayList;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.ListView;
+
+import com.github.mikephil.charting.charts.PieChart;
 
 /**
  * Created by Vinoth Joshua on 03-Apr-17.
@@ -282,34 +290,55 @@ public class DashboardActivity extends AppCompatActivity {
 
     }
     String userRole;
+    String[] menu;
+    DrawerLayout dLayout;
+    ListView dList;
+    ArrayAdapter<String> adapter;
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mDrawerToggle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+        initViews();
         Bundle bundle = getIntent().getExtras();
+
+
+
+
+        menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
+        dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        dList = (ListView) findViewById(R.id.left_drawer);
+
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,menu);
+
+        dList.setAdapter(adapter);
+        dList.setSelector(android.R.color.holo_blue_dark);
+
+        dList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
+
+                dLayout.closeDrawers();
+//                Bundle args = new Bundle();
+//                args.putString("Menu", menu[position]);
+//                Fragment detail = new DetailFragment();
+//                detail.setArguments(args);
+//                FragmentManager fragmentManager = getFragmentManager();
+//                fragmentManager.beginTransaction().replace(R.id.content_frame, detail).commit();
+
+            }
+
+        });
+
+
+
+
         if(bundle.getString("userRole")!=null){
             userRole = bundle.getString("userRole");
         }
-//        if (savedInstanceState == null) {
-//            OfficeDashboardFragment fr = new OfficeDashboardFragment();
-////        if(view == findViewById(R.id.button2)) {
-////
-////            fr = new FragmentTwo();
-////
-////        }else {
-////
-////            fr = new FragmentOne();
-////
-////        }
-//
-//            FragmentManager fm = getFragmentManager();
-//
-//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//
-//            fragmentTransaction.add(R.id.dashBoardFragemntContaier, fr);
-//
-//            fragmentTransaction.commit();
-//        }
+
         fillData();
         DashboardGrid adapter = new DashboardGrid(DashboardActivity.this,R.layout.gridview_dashboardtool_single ,data , dashboardColors);
         grid=(GridView)findViewById(R.id.dashboardTools);
@@ -322,18 +351,57 @@ public class DashboardActivity extends AppCompatActivity {
                                     int position, long id) {
                 Item selectedDashboardTool= new Item();
                 selectedDashboardTool=data.get(position);
-                //testtext=testitem.getTitle();
                 selectedFragmentName = selectedDashboardTool.getFragmentName();
-
-//                Toast.makeText(DashboardActivity.this, "You Clicked at " + selectedFragmentName+", position:", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent();
-//                intent.setClassName("com.example.vinothjoshua.siv", "com.example.vinothjoshua.siv"+nextActivityClassName);
-//                startActivity(intent);
                 Intent intent = new Intent(DashboardActivity.this,DetailsActivity.class);
                 intent.putExtra("selectedFragmentName", selectedFragmentName);
                 startActivity(intent);
             }
         });
+
+
+        PieChart chart = (PieChart) findViewById(R.id.chart);
+    }
+    private void initViews(){
+
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+
+//        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+//        setSupportActionBar(toolbar);
+
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout ,  R.string.drawer_open, R.string.drawer_close) {
+
+            /** Called when a drawer has settled in a completely closed state. */
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                //getActionBar().setTitle(mTitle);
+                //invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+            }
+
+            /** Called when a drawer has settled in a completely open state. */
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                //getActionBar().setTitle(mDrawerTitle);
+                //invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+            }
+        };
+
+
+        // Set the drawer toggle as the DrawerListener
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }
