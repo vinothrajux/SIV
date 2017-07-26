@@ -359,7 +359,7 @@ public class DashboardActivity extends AppCompatActivity {
         });
 
 
-        PieChart chart = (PieChart) findViewById(R.id.chart);
+        //PieChart chart = (PieChart) findViewById(R.id.chart);
     }
     private void initViews(){
 
