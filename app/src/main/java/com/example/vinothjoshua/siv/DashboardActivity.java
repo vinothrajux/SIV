@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
@@ -16,7 +17,11 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ListView;
 
-import com.github.mikephil.charting.charts.PieChart;
+
+import org.eazegraph.lib.charts.PieChart;
+import org.eazegraph.lib.communication.IOnItemFocusChangedListener;
+import org.eazegraph.lib.models.PieModel;
+//import org.eazegraph.lib.R;
 
 /**
  * Created by Vinoth Joshua on 03-Apr-17.
@@ -296,6 +301,9 @@ public class DashboardActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
+    public DashboardActivity() {
+        // Required empty public constructor
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -360,6 +368,9 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         //PieChart chart = (PieChart) findViewById(R.id.chart);
+
+        mPieChart = (PieChart) findViewById(R.id.piechart);
+        loadData();
     }
     private void initViews(){
 
@@ -403,5 +414,37 @@ public class DashboardActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mPieChart.startAnimation();
+    }
+
+//    @Override
+//    public void restartAnimation() {
+//        mPieChart.startAnimation();
+//    }
+//
+//    @Override
+//    public void onReset() {
+//
+//    }
+
+    private void loadData() {
+        mPieChart.addPieSlice(new PieModel("Freetime", 15, Color.parseColor("#FE6DA8")));
+        mPieChart.addPieSlice(new PieModel("Sleep", 25, Color.parseColor("#56B7F1")));
+        mPieChart.addPieSlice(new PieModel("Work", 35, Color.parseColor("#CDA67F")));
+        mPieChart.addPieSlice(new PieModel("Eating", 9, Color.parseColor("#FED70E")));
+
+        mPieChart.setOnItemFocusChangedListener(new IOnItemFocusChangedListener() {
+            @Override
+            public void onItemFocusChanged(int _Position) {
+//                Log.d("PieChart", "Position: " + _Position);
+            }
+        });
+    }
+
+    private PieChart mPieChart;
 
 }
