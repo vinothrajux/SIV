@@ -354,14 +354,17 @@ public class DashboardActivity extends AppCompatActivity {
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             String selectedDetail="";
             String selectedFragmentName;
+            String selectedFragmentTitle;
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Item selectedDashboardTool= new Item();
                 selectedDashboardTool=data.get(position);
                 selectedFragmentName = selectedDashboardTool.getFragmentName();
+                selectedFragmentTitle = selectedDashboardTool.getTitle();
                 Intent intent = new Intent(DashboardActivity.this,DetailsActivity.class);
                 intent.putExtra("selectedFragmentName", selectedFragmentName);
+                intent.putExtra("selectedFragmentTitle", selectedFragmentTitle);
                 startActivity(intent);
             }
         });
@@ -432,17 +435,17 @@ public class DashboardActivity extends AppCompatActivity {
 //    }
 
     private void loadData() {
-        mPieChart.addPieSlice(new PieModel("Freetime", 15, Color.parseColor("#FE6DA8")));
-        mPieChart.addPieSlice(new PieModel("Sleep", 25, Color.parseColor("#56B7F1")));
-        mPieChart.addPieSlice(new PieModel("Work", 35, Color.parseColor("#CDA67F")));
-        mPieChart.addPieSlice(new PieModel("Eating", 9, Color.parseColor("#FED70E")));
+        mPieChart.addPieSlice(new PieModel("Absent", 15, Color.parseColor("#FE6DA8")));
+        mPieChart.addPieSlice(new PieModel("Present", 85, Color.parseColor("#56B7F1")));
+//        mPieChart.addPieSlice(new PieModel("Work", 35, Color.parseColor("#CDA67F")));
+//        mPieChart.addPieSlice(new PieModel("Eating", 9, Color.parseColor("#FED70E")));
 
-        mPieChart.setOnItemFocusChangedListener(new IOnItemFocusChangedListener() {
-            @Override
-            public void onItemFocusChanged(int _Position) {
-//                Log.d("PieChart", "Position: " + _Position);
-            }
-        });
+//        mPieChart.setOnItemFocusChangedListener(new IOnItemFocusChangedListener() {
+//            @Override
+//            public void onItemFocusChanged(int _Position) {
+////                Log.d("PieChart", "Position: " + _Position);
+//            }
+//        });
     }
 
     private PieChart mPieChart;
