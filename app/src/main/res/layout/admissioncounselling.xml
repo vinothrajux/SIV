@@ -48,20 +48,37 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/searchApplicationBtn"
                         android:text="Search"/>
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Application No"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Date"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Application No"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:text="ABC" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Date"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:text="ABC" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Application For"
@@ -70,6 +87,7 @@
                         style="@style/TextViewContent"
                         android:id="@+id/AppFor"
                         />
+                    </LinearLayout>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
