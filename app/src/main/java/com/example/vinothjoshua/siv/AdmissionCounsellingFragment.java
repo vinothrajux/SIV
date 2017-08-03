@@ -66,7 +66,7 @@ public class AdmissionCounsellingFragment extends Fragment {
         return view;
         //usernameEditText = (EditText) findViewById(R.id.username);
     }
-
+    //API starts copy from here
     private class GetApplicationDetailTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
@@ -187,4 +187,5 @@ public class AdmissionCounsellingFragment extends Fragment {
         }
         return result.toString();
     }
+    //API starts copy from here
 }
