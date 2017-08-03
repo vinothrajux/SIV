@@ -35,7 +35,7 @@ import javax.net.ssl.HttpsURLConnection;
 public class AdmissionCounsellingFragment extends Fragment {
     String applicationNumber;
     EditText appNoText;
-    TextView AppForText, CandidateNameText;
+    TextView AppForText, CandidateNameText,GenderText,FatherNameText;
     Button searchBtn;
 
 
@@ -49,7 +49,8 @@ public class AdmissionCounsellingFragment extends Fragment {
 
         AppForText = (TextView) view.findViewById(R.id.AppFor);
         CandidateNameText = (TextView) view.findViewById(R.id.CandidateName);
-
+        GenderText =(TextView) view.findViewById(R.id.Gender);
+        FatherNameText=(TextView) view.findViewById(R.id.FatherName);
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,17 +147,19 @@ public class AdmissionCounsellingFragment extends Fragment {
             try {
                 //JSONArray jsonArr = new JSONArray(result);
                 JSONObject jsonObj = new JSONObject(result);
-                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName;
+                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender;
                 AppFor = jsonObj.getString("appfor");
                 CandidateFirstName = jsonObj.getString("candfirstname");
                 CandidateMiddleName = jsonObj.getString("candmiddlename");
                 CandidateLastName = jsonObj.getString("candlastname");
                 CandidateFatherName = jsonObj.getString("candfathername");
                 CandidateMotherName = jsonObj.getString("candmothername");
+                Gender = jsonObj.getString("gender");
 
                 CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
                 AppForText.setText(AppFor);
                 CandidateNameText.setText(CandidateName);
+                GenderText.setText(Gender);
             }
             catch (Exception e){
 

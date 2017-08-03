@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity{
 
 
             try {
-                URL url = new URL("http://192.168.43.177:8080/api/v1/user");
+                URL url = new URL("http://192.168.43.38:8080/api/v1/user");
 
 
                 JSONObject postDataParams = new JSONObject();
