@@ -50,6 +50,9 @@ public class LoginActivity extends AppCompatActivity{
     String username;
     String password;
     String role;
+
+    Utils utils = new Utils();
+    String apiUrl= utils.getApiHost();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -89,7 +92,7 @@ public class LoginActivity extends AppCompatActivity{
 
 
             try {
-                URL url = new URL("http://192.168.43.38:8080/api/v1/user");
+                URL url = new URL("http://"+apiUrl+"/api/v1/user");
 
 
                 JSONObject postDataParams = new JSONObject();
@@ -108,7 +111,7 @@ public class LoginActivity extends AppCompatActivity{
                 BufferedWriter writer = new BufferedWriter(
                         new OutputStreamWriter(os, "UTF-8"));
                 //&username=+username+
-                writer.write(getPostDataString(postDataParams));
+                writer.write(utils.getPostDataString(postDataParams));
 
                 writer.flush();
                 writer.close();
@@ -176,28 +179,5 @@ public class LoginActivity extends AppCompatActivity{
             }
         }
     }
-    public String getPostDataString(JSONObject params) throws Exception {
 
-        StringBuilder result = new StringBuilder();
-        boolean first = true;
-
-        Iterator<String> itr = params.keys();
-
-        while(itr.hasNext()){
-
-            String key= itr.next();
-            Object value = params.get(key);
-
-            if (first)
-                first = false;
-            else
-                result.append("&");
-
-            result.append(URLEncoder.encode(key, "UTF-8"));
-            result.append("=");
-            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
-
-        }
-        return result.toString();
-    }
 }

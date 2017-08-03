@@ -37,7 +37,8 @@ public class AdmissionCounsellingFragment extends Fragment {
     EditText appNoText;
     TextView AppForText, CandidateNameText,GenderText,FatherNameText;
     Button searchBtn;
-
+    Utils utils = new Utils();
+    String apiUrl= utils.getApiHost();
 
 @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -76,7 +77,7 @@ public class AdmissionCounsellingFragment extends Fragment {
 
 
             try {
-                URL url = new URL("http://192.168.43.177:8080/api/v1/admissioncounselling/getApplcationDetail");
+                URL url = new URL("http://"+apiUrl+"/api/v1/admissioncounselling/getApplcationDetail");
 
 
                 JSONObject postDataParams = new JSONObject();
@@ -94,7 +95,7 @@ public class AdmissionCounsellingFragment extends Fragment {
                 BufferedWriter writer = new BufferedWriter(
                         new OutputStreamWriter(os, "UTF-8"));
                 //&username=+username+
-                writer.write(getPostDataString(postDataParams));
+                writer.write(utils.getPostDataString(postDataParams));
 
                 writer.flush();
                 writer.close();
@@ -143,12 +144,15 @@ public class AdmissionCounsellingFragment extends Fragment {
         }
 
         protected void onPostExecute(String result) {
+
             Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
                 //JSONArray jsonArr = new JSONArray(result);
+
                 JSONObject jsonObj = new JSONObject(result);
                 String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender;
                 AppFor = jsonObj.getString("appfor");
+                Log.d("appfor:",AppFor);
                 CandidateFirstName = jsonObj.getString("candfirstname");
                 CandidateMiddleName = jsonObj.getString("candmiddlename");
                 CandidateLastName = jsonObj.getString("candlastname");
@@ -157,6 +161,7 @@ public class AdmissionCounsellingFragment extends Fragment {
                 Gender = jsonObj.getString("gender");
 
                 CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
+
                 AppForText.setText(AppFor);
                 CandidateNameText.setText(CandidateName);
                 GenderText.setText(Gender);
@@ -166,29 +171,6 @@ public class AdmissionCounsellingFragment extends Fragment {
             }
         }
     }
-    public String getPostDataString(JSONObject params) throws Exception {
 
-        StringBuilder result = new StringBuilder();
-        boolean first = true;
-
-        Iterator<String> itr = params.keys();
-
-        while(itr.hasNext()){
-
-            String key= itr.next();
-            Object value = params.get(key);
-
-            if (first)
-                first = false;
-            else
-                result.append("&");
-
-            result.append(URLEncoder.encode(key, "UTF-8"));
-            result.append("=");
-            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
-
-        }
-        return result.toString();
-    }
     //API starts copy from here
 }
