@@ -33,9 +33,9 @@
 
     </style>
     <style name="datapanel">
-        <item name="android:background">#cccccc</item>
+        <item name="android:background">@drawable/panelshadow</item>
         <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
         <item name="android:padding">10dp</item>
 
 
