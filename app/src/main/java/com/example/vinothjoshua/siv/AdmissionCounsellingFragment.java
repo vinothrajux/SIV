@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +37,8 @@ public class AdmissionCounsellingFragment extends Fragment {
     String applicationNumber;
     EditText appNoText;
     TextView AppForText, CandidateNameText,GenderText,FatherNameText;
-    Button searchBtn;
+    //Button searchBtn;
+    SearchView searchView;
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
 
@@ -45,22 +47,49 @@ public class AdmissionCounsellingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.admissioncounselling, container, false);
-        searchBtn = (Button) view.findViewById(R.id.searchApplicationBtn);
-        appNoText = (EditText) view.findViewById(R.id.applicationno);
+        //searchBtn = (Button) view.findViewById(R.id.searchApplicationBtn);
+        //appNoText = (EditText) view.findViewById(R.id.applicationno);
 
-        AppForText = (TextView) view.findViewById(R.id.AppFor);
+        searchView = (SearchView) view.findViewById(R.id.applicationno);
+//        searchView = (SearchView) searchItem.getActionView();
+       // searchView.setQueryHint("Enter Application Number");
+    searchView.setSubmitButtonEnabled(true);
+    AppForText = (TextView) view.findViewById(R.id.AppFor);
         CandidateNameText = (TextView) view.findViewById(R.id.CandidateName);
         GenderText =(TextView) view.findViewById(R.id.Gender);
         FatherNameText=(TextView) view.findViewById(R.id.FatherName);
-        searchBtn.setOnClickListener(new View.OnClickListener() {
+//        searchBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                applicationNumber=appNoText.getText().toString();
+//                GetApplicationDetailTask getApplicationDetail = new GetApplicationDetailTask();
+//                getApplicationDetail.execute();
+//
+//
+//            }
+//        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void onClick(View v) {
-                applicationNumber=appNoText.getText().toString();
+            public boolean onQueryTextSubmit(String query) {
+                //callSearch(query);
+                applicationNumber=query;
                 GetApplicationDetailTask getApplicationDetail = new GetApplicationDetailTask();
                 getApplicationDetail.execute();
-
-
+                return true;
             }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+    //              if (searchView.isExpanded() && TextUtils.isEmpty(newText)) {
+                callSearch(newText);
+    //              }
+                return true;
+            }
+
+            public void callSearch(String query) {
+                //Do searching
+            }
+
         });
 //        getActivity().getActionBar().setTitle("Yest");
 //        getActivity().getActionBar().show();

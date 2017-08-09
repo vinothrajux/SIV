@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,7 +30,8 @@ import org.eazegraph.lib.models.PieModel;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    ArrayList<Item> data = new ArrayList<Item>();GridView grid;
+    ArrayList<Item> data = new ArrayList<Item>();
+    GridView grid;
     String userCategory = "";
     String[] dashboardColors = {
             "#2DA3AD",
@@ -310,15 +312,24 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         initViews();
         Bundle bundle = getIntent().getExtras();
+        if(bundle.getString("userRole")!=null){
+            userRole = bundle.getString("userRole");
+        }
+        fillData();
 
 
+        //menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
+        Item generateMenuList= new Item();
 
-
-        menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
+        ArrayList<String> menulist = new ArrayList<String>();
+        for (int i = 0; i < data.size(); i++) {
+            generateMenuList=data.get(i);
+            menulist.add(generateMenuList.getTitle());
+        }
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         dList = (ListView) findViewById(R.id.left_drawer);
 
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,menu);
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,menulist);
 
         dList.setAdapter(adapter);
         dList.setSelector(android.R.color.holo_blue_dark);
@@ -335,6 +346,14 @@ public class DashboardActivity extends AppCompatActivity {
 //                detail.setArguments(args);
 //                FragmentManager fragmentManager = getFragmentManager();
 //                fragmentManager.beginTransaction().replace(R.id.content_frame, detail).commit();
+                Item generateMenuListMenu= new Item();
+                generateMenuListMenu=data.get(position);
+                String selectedFragmentName = generateMenuListMenu.getFragmentName();
+                String selectedFragmentTitle = generateMenuListMenu.getTitle();
+                Intent intent = new Intent(DashboardActivity.this,DetailsActivity.class);
+                intent.putExtra("selectedFragmentName", selectedFragmentName);
+                intent.putExtra("selectedFragmentTitle", selectedFragmentTitle);
+                startActivity(intent);
 
             }
 
@@ -343,11 +362,9 @@ public class DashboardActivity extends AppCompatActivity {
 
 
 
-        if(bundle.getString("userRole")!=null){
-            userRole = bundle.getString("userRole");
-        }
 
-        fillData();
+
+
         DashboardGrid adapter = new DashboardGrid(DashboardActivity.this,R.layout.gridview_dashboardtool_single ,data , dashboardColors);
         grid=(GridView)findViewById(R.id.dashboardTools);
         grid.setAdapter(adapter);
