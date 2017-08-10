@@ -35,7 +35,12 @@ import javax.net.ssl.HttpsURLConnection;
 public class AdmissionCounsellingFragment extends Fragment {
     String applicationNumber;
     EditText appNoText;
-    TextView AppForText, CandidateNameText,GenderText,FatherNameText;
+    TextView AppForText, CandidateNameText,GenderText,FatherNameText,CandidateMotherNameText,PresentAddress1Text;
+    TextView PresentAddress2Text,PresentAreaText,PresentPincodeText,PresentStateText,PresentMobilenoText,PresentAltmobnoText;
+    TextView PresentEmailText,PresentAltEmailText,PermanentAddress1Text,PermanentAddress2Text,PermanentAreaText,PermanentPincode;
+    TextView PermanentstateText,PermanentMobilenoText,PermanentAltMobnoText,PermanentEmailText,PermanentAltEmailText;
+    TextView QualifiedText,PrefferedCour1Text,PrefferedCour2Text,PrefferedCour3Text,WillingToJoinText,FollowUpDateText;
+    TextView ApplicationPriceText,ApplicationPaidModeText,RemarksText,ReferenceText;
     Button searchBtn;
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
@@ -52,6 +57,16 @@ public class AdmissionCounsellingFragment extends Fragment {
         CandidateNameText = (TextView) view.findViewById(R.id.CandidateName);
         GenderText =(TextView) view.findViewById(R.id.Gender);
         FatherNameText=(TextView) view.findViewById(R.id.FatherName);
+        CandidateMotherNameText =(TextView) view.findViewById(R.id.MotherName);
+        PresentAddress1Text=(TextView) view.findViewById(R.id.PresentAddress1);
+        PresentAddress2Text=(TextView) view.findViewById(R.id.PresentAddress2);
+        QualifiedText=(TextView) view.findViewById(R.id.Qualified);
+        PrefferedCour1Text=(TextView)view.findViewById(R.id.PrefferedCourse1);
+        PrefferedCour2Text=(TextView) view.findViewById(R.id.PrefferedCourse2);
+        PrefferedCour3Text=(TextView) view.findViewById(R.id.PrefferedCourse3);
+        ReferenceText=(TextView) view.findViewById(R.id.Reference);
+
+
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,7 +165,8 @@ public class AdmissionCounsellingFragment extends Fragment {
                 //JSONArray jsonArr = new JSONArray(result);
 
                 JSONObject jsonObj = new JSONObject(result);
-                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender;
+                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender,FatherName,MotherName;
+                String PresentAdd1,PresentAdd2,PresentArea,PresentPin,PresentState,PresentMob,PresentEmail,Qualified,PrefferedCourse1,PrefferedCourse2,PrefferedCourse3,Reference,PresentAddressLine1,PresentAddressLine2;
                 AppFor = jsonObj.getString("appfor");
                 Log.d("appfor:",AppFor);
                 CandidateFirstName = jsonObj.getString("candfirstname");
@@ -159,12 +175,39 @@ public class AdmissionCounsellingFragment extends Fragment {
                 CandidateFatherName = jsonObj.getString("candfathername");
                 CandidateMotherName = jsonObj.getString("candmothername");
                 Gender = jsonObj.getString("gender");
+                PresentAdd1 = jsonObj.getString("presentaddress1");
+                PresentAdd2 = jsonObj.getString("presentaddress2");
+                PresentArea = jsonObj.getString("presentarea");
+                PresentPin =jsonObj.getString("presentpincode");
+                PresentState=jsonObj.getString("presentstate");
+                PresentMob=jsonObj.getString("presentmobileno");
+                PresentEmail=jsonObj.getString("presentemail");
+                Qualified=jsonObj.getString("qualified");
+                PrefferedCourse1=jsonObj.getString("prefferedcour1");
+                PrefferedCourse2=jsonObj.getString("prefferedcour2");
+                PrefferedCourse3=jsonObj.getString("prefferedcour3");
+                Reference=jsonObj.getString("reference");
 
                 CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
+                PresentAddressLine1 = PresentAdd1 + ' ' + PresentAdd2 + ' ' + PresentArea + '-' + PresentPin + ' ' + PresentState;
+                PresentAddressLine2 = PresentMob + ' ' + PresentEmail;
 
                 AppForText.setText(AppFor);
                 CandidateNameText.setText(CandidateName);
                 GenderText.setText(Gender);
+                FatherNameText.setText(CandidateFatherName);
+                CandidateMotherNameText.setText(CandidateMotherName);
+                PresentAddress1Text.setText(PresentAddressLine1);
+                PresentAddress2Text.setText(PresentAddressLine2);
+                QualifiedText.setText(Qualified);
+                PrefferedCour1Text.setText(PrefferedCourse1);
+                PrefferedCour2Text.setText(PrefferedCourse2);
+                PrefferedCour3Text.setText(PrefferedCourse3) ;
+                ReferenceText.setText(Reference);
+
+
+
+
             }
             catch (Exception e){
 
