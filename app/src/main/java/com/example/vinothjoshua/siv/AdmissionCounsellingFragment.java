@@ -37,6 +37,14 @@ public class AdmissionCounsellingFragment extends Fragment {
     String applicationNumber;
     EditText appNoText;
     TextView AppForText, CandidateNameText,GenderText,FatherNameText;
+    TextView MotherNameText,PresentAddress1Text,PresentAddress2Text,PresentAreaText;
+    TextView PresentPinCodeText,PresentStateText,PresentMobileNoText,PresentAltMobileNoText;
+    TextView PresentEmailText,PresentAltEmailText,PermanentAddress1Text,PermanentAddress2Text;
+    TextView PermanentAreaText,PermanentPinCodeText,PermanentStateText,PermanentMobileNoText;
+    TextView PermanentAltMobNoText,PermanentEmailText,PermanentAltEmailText,QualifiedText;
+    TextView PrefferedCour1Text,PrefferedCour2Text,PrefferedCour3Text,ReferenceText,WillingtojoinText;
+    TextView FollowupDateText,ApplicationPriceText,ApplicationPaidModeText,RemarksText,PresentAddLine1,PresentAddLine2;
+
     //Button searchBtn;
     SearchView searchView;
     Utils utils = new Utils();
@@ -53,11 +61,20 @@ public class AdmissionCounsellingFragment extends Fragment {
         searchView = (SearchView) view.findViewById(R.id.applicationno);
 //        searchView = (SearchView) searchItem.getActionView();
        // searchView.setQueryHint("Enter Application Number");
-    searchView.setSubmitButtonEnabled(true);
-    AppForText = (TextView) view.findViewById(R.id.AppFor);
+        searchView.setSubmitButtonEnabled(true);
+        AppForText = (TextView) view.findViewById(R.id.AppFor);
         CandidateNameText = (TextView) view.findViewById(R.id.CandidateName);
         GenderText =(TextView) view.findViewById(R.id.Gender);
         FatherNameText=(TextView) view.findViewById(R.id.FatherName);
+        MotherNameText=(TextView) view.findViewById(R.id.MotherName);
+        PresentAddLine1=(TextView) view.findViewById(R.id.PresentAddress1);
+        PresentAddLine2=(TextView) view.findViewById(R.id.PresentAddress2);
+        QualifiedText=(TextView) view.findViewById(R.id.Qualified);
+        PrefferedCour1Text=(TextView) view.findViewById(R.id.PrefferedCourse1);
+        PrefferedCour2Text=(TextView) view.findViewById(R.id.PrefferedCourse2);
+        PrefferedCour3Text=(TextView) view.findViewById(R.id.PrefferedCourse3);
+        ReferenceText=(TextView) view.findViewById(R.id.Reference);
+
 //        searchBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -180,6 +197,7 @@ public class AdmissionCounsellingFragment extends Fragment {
 
                 JSONObject jsonObj = new JSONObject(result);
                 String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender;
+                String AddressL1,AddressL2,PreA1,PreA2,PreArea,PrePin,PreMob,PreState,PreEmail,Qualified,PrefferedCourse1,PrefferedCourse2,PrefferedCourse3,Reference;
                 AppFor = jsonObj.getString("appfor");
                 Log.d("appfor:",AppFor);
                 CandidateFirstName = jsonObj.getString("candfirstname");
@@ -187,13 +205,39 @@ public class AdmissionCounsellingFragment extends Fragment {
                 CandidateLastName = jsonObj.getString("candlastname");
                 CandidateFatherName = jsonObj.getString("candfathername");
                 CandidateMotherName = jsonObj.getString("candmothername");
+                PreA1=jsonObj.getString("presentaddress1");
+                PreA2=jsonObj.getString("presentaddress2");
+                PreArea=jsonObj.getString("presentarea");
+                PrePin=jsonObj.getString("presentpincode");
+                PreMob=jsonObj.getString("presentmobileno");
+                PreState=jsonObj.getString("presentstate");
+                PreEmail=jsonObj.getString("presentemail");
                 Gender = jsonObj.getString("gender");
+                Qualified=jsonObj.getString("qualified");
+                PrefferedCourse1=jsonObj.getString("prefferedcour1");
+                PrefferedCourse2=jsonObj.getString("prefferedcour2");
+                PrefferedCourse3=jsonObj.getString("prefferedcour3");
+                Reference=jsonObj.getString("reference");
 
                 CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
+                AddressL1= PreA1 + ',' + PreA2 + ',' + PreArea + '-' + PrePin + '.'+ PreState;
+                AddressL2 = "Mob:" + PreMob + ' ' + PreEmail;
+
 
                 AppForText.setText(AppFor);
                 CandidateNameText.setText(CandidateName);
                 GenderText.setText(Gender);
+                MotherNameText.setText(CandidateMotherName);
+                PresentAddress1Text.setText(AddressL1);
+                PresentAddress2Text.setText(AddressL2);
+                QualifiedText.setText(Qualified);
+                PrefferedCour1Text.setText(PrefferedCourse1);
+                PrefferedCour2Text.setText(PrefferedCourse2);
+                PrefferedCour3Text.setText(PrefferedCourse3);
+                ReferenceText.setText(Reference);
+
+
+
             }
             catch (Exception e){
 
