@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import static android.R.attr.fragment;
 
@@ -56,11 +57,17 @@ public class DetailsActivity extends AppCompatActivity {
         initViews();
 
 
-        menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
+        //menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
+        ArrayList<String> menulist = new ArrayList<String>();
+        menulist.add("test1");
+        menulist.add("test2");
+        menulist.add("test3");
+        menulist.add("test4");
+        menulist.add("test5");
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         dList = (ListView) findViewById(R.id.left_drawer);
 
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,menu);
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,menulist);
 
         dList.setAdapter(adapter);
         dList.setSelector(android.R.color.holo_blue_dark);

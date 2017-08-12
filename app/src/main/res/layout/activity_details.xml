@@ -12,7 +12,8 @@
     <FrameLayout
         android:id="@+id/details_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>
     <ListView android:id="@+id/left_drawer"

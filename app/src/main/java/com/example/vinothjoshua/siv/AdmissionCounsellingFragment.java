@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,30 +36,77 @@ import javax.net.ssl.HttpsURLConnection;
 public class AdmissionCounsellingFragment extends Fragment {
     String applicationNumber;
     EditText appNoText;
-    TextView AppForText, CandidateNameText;
-    Button searchBtn;
+    TextView AppForText, CandidateNameText,GenderText,FatherNameText;
+    TextView MotherNameText,PresentAddress1Text,PresentAddress2Text,PresentAreaText;
+    TextView PresentPinCodeText,PresentStateText,PresentMobileNoText,PresentAltMobileNoText;
+    TextView PresentEmailText,PresentAltEmailText,PermanentAddress1Text,PermanentAddress2Text;
+    TextView PermanentAreaText,PermanentPinCodeText,PermanentStateText,PermanentMobileNoText;
+    TextView PermanentAltMobNoText,PermanentEmailText,PermanentAltEmailText,QualifiedText;
+    TextView PrefferedCour1Text,PrefferedCour2Text,PrefferedCour3Text,ReferenceText,WillingtojoinText;
+    TextView FollowupDateText,ApplicationPriceText,ApplicationPaidModeText,RemarksText,PresentAddLine1,PresentAddLine2;
 
+    //Button searchBtn;
+    SearchView searchView;
+    Utils utils = new Utils();
+    String apiUrl= utils.getApiHost();
 
 @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.admissioncounselling, container, false);
-        searchBtn = (Button) view.findViewById(R.id.searchApplicationBtn);
-        appNoText = (EditText) view.findViewById(R.id.applicationno);
+        //searchBtn = (Button) view.findViewById(R.id.searchApplicationBtn);
+        //appNoText = (EditText) view.findViewById(R.id.applicationno);
 
+        searchView = (SearchView) view.findViewById(R.id.applicationno);
+//        searchView = (SearchView) searchItem.getActionView();
+       // searchView.setQueryHint("Enter Application Number");
+        searchView.setSubmitButtonEnabled(true);
         AppForText = (TextView) view.findViewById(R.id.AppFor);
         CandidateNameText = (TextView) view.findViewById(R.id.CandidateName);
+        GenderText =(TextView) view.findViewById(R.id.Gender);
+        FatherNameText=(TextView) view.findViewById(R.id.FatherName);
+        MotherNameText=(TextView) view.findViewById(R.id.MotherName);
+        PresentAddLine1=(TextView) view.findViewById(R.id.PresentAddress1);
+        PresentAddLine2=(TextView) view.findViewById(R.id.PresentAddress2);
+        QualifiedText=(TextView) view.findViewById(R.id.Qualified);
+        PrefferedCour1Text=(TextView) view.findViewById(R.id.PrefferedCourse1);
+        PrefferedCour2Text=(TextView) view.findViewById(R.id.PrefferedCourse2);
+        PrefferedCour3Text=(TextView) view.findViewById(R.id.PrefferedCourse3);
+        ReferenceText=(TextView) view.findViewById(R.id.Reference);
 
-        searchBtn.setOnClickListener(new View.OnClickListener() {
+//        searchBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                applicationNumber=appNoText.getText().toString();
+//                GetApplicationDetailTask getApplicationDetail = new GetApplicationDetailTask();
+//                getApplicationDetail.execute();
+//
+//
+//            }
+//        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void onClick(View v) {
-                applicationNumber=appNoText.getText().toString();
+            public boolean onQueryTextSubmit(String query) {
+                //callSearch(query);
+                applicationNumber=query;
                 GetApplicationDetailTask getApplicationDetail = new GetApplicationDetailTask();
                 getApplicationDetail.execute();
-
-
+                return true;
             }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+    //              if (searchView.isExpanded() && TextUtils.isEmpty(newText)) {
+                callSearch(newText);
+    //              }
+                return true;
+            }
+
+            public void callSearch(String query) {
+                //Do searching
+            }
+
         });
 //        getActivity().getActionBar().setTitle("Yest");
 //        getActivity().getActionBar().show();
@@ -75,7 +123,7 @@ public class AdmissionCounsellingFragment extends Fragment {
 
 
             try {
-                URL url = new URL("http://192.168.43.177:8080/api/v1/admissioncounselling/getApplcationDetail");
+                URL url = new URL("http://"+apiUrl+"/api/v1/admissioncounselling/getApplcationDetail");
 
 
                 JSONObject postDataParams = new JSONObject();
@@ -93,7 +141,7 @@ public class AdmissionCounsellingFragment extends Fragment {
                 BufferedWriter writer = new BufferedWriter(
                         new OutputStreamWriter(os, "UTF-8"));
                 //&username=+username+
-                writer.write(getPostDataString(postDataParams));
+                writer.write(utils.getPostDataString(postDataParams));
 
                 writer.flush();
                 writer.close();
@@ -142,50 +190,60 @@ public class AdmissionCounsellingFragment extends Fragment {
         }
 
         protected void onPostExecute(String result) {
+
             Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
                 //JSONArray jsonArr = new JSONArray(result);
+
                 JSONObject jsonObj = new JSONObject(result);
-                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName;
+                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender;
+                String AddressL1,AddressL2,PreA1,PreA2,PreArea,PrePin,PreMob,PreState,PreEmail,Qualified,PrefferedCourse1,PrefferedCourse2,PrefferedCourse3,Reference;
                 AppFor = jsonObj.getString("appfor");
+                Log.d("appfor:",AppFor);
                 CandidateFirstName = jsonObj.getString("candfirstname");
                 CandidateMiddleName = jsonObj.getString("candmiddlename");
                 CandidateLastName = jsonObj.getString("candlastname");
                 CandidateFatherName = jsonObj.getString("candfathername");
                 CandidateMotherName = jsonObj.getString("candmothername");
+                PreA1=jsonObj.getString("presentaddress1");
+                PreA2=jsonObj.getString("presentaddress2");
+                PreArea=jsonObj.getString("presentarea");
+                PrePin=jsonObj.getString("presentpincode");
+                PreMob=jsonObj.getString("presentmobileno");
+                PreState=jsonObj.getString("presentstate");
+                PreEmail=jsonObj.getString("presentemail");
+                Gender = jsonObj.getString("gender");
+                Qualified=jsonObj.getString("qualified");
+                PrefferedCourse1=jsonObj.getString("prefferedcour1");
+                PrefferedCourse2=jsonObj.getString("prefferedcour2");
+                PrefferedCourse3=jsonObj.getString("prefferedcour3");
+                Reference=jsonObj.getString("reference");
 
                 CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
+                AddressL1= PreA1 + ',' + PreA2 + ',' + PreArea + '-' + PrePin + '.'+ PreState;
+                AddressL2 = "Mob:" + PreMob + ' ' + PreEmail;
+
+
                 AppForText.setText(AppFor);
                 CandidateNameText.setText(CandidateName);
+                GenderText.setText(Gender);
+                MotherNameText.setText(CandidateMotherName);
+                PresentAddress1Text.setText(AddressL1);
+                PresentAddress2Text.setText(AddressL2);
+                QualifiedText.setText(Qualified);
+                PrefferedCour1Text.setText(PrefferedCourse1);
+                PrefferedCour2Text.setText(PrefferedCourse2);
+                PrefferedCour3Text.setText(PrefferedCourse3);
+                ReferenceText.setText(Reference);
+
+
+
             }
             catch (Exception e){
 
             }
         }
     }
-    public String getPostDataString(JSONObject params) throws Exception {
 
-        StringBuilder result = new StringBuilder();
-        boolean first = true;
-
-        Iterator<String> itr = params.keys();
-
-        while(itr.hasNext()){
-
-            String key= itr.next();
-            Object value = params.get(key);
-
-            if (first)
-                first = false;
-            else
-                result.append("&");
-
-            result.append(URLEncoder.encode(key, "UTF-8"));
-            result.append("=");
-            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
-
-        }
-        return result.toString();
-    }
     //API starts copy from here
 }

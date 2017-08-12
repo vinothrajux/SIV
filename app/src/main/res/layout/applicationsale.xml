@@ -129,6 +129,16 @@
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC123"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Enter Application Number"
+                        />
+                    <SearchView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/applicationno"
+                        style="@style/SearchBox"
+                        ></SearchView>
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -141,38 +151,45 @@
                         android:text="First Name"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/FirstName"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Middle Name"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/MiddleName"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Last Name"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/LastName"/>
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Fathers Name"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/FatherName"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Mothers Name"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/MotherName"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Gender"
                         />
 
                     <RadioGroup
-                        android:id="@+id/radioGroup2"
+                        android:id="@+id/GenderRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp">
 
                         <RadioButton
-                            android:id="@+id/radio3"
+                            android:id="@+id/MaleRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
@@ -180,7 +197,7 @@
                             android:text="MALE" />
 
                         <RadioButton
-                            android:id="@+id/radio4"
+                            android:id="@+id/FemaleRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingRight="5dp"
@@ -192,43 +209,54 @@
                         android:text="Present Address"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentAddress1"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentAddress2"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="City"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentArea"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Pin"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentPin"/>
+                    <Spinner
+                        android:id="@+id/PresentState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"/>
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Mob.No"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentMobNo"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Alternate Mob.No"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentAltMobNo">
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Email ID"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PresentEmailId"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Alternate Email ID"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/PresentAltEmailId"/>
+
                     <CheckBox
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
@@ -242,66 +270,76 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123"
+                        android:id="@+id/PermanentAddress1"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC 123"
+                        android:id="@+id/PermanentAddress2"
                         />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="City"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PermanentArea"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Pin"/>
+                    <Spinner
+                        android:id="@+id/PermanentState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"/>
+
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PermanentPin"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Mob.No"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PermanentMobNo"/>
 
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Alternate Mob.No"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PermanentAltMobNo"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Email ID"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/PermanentEmailId"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Alternate Email ID"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/PermanentAltEmailId"/>
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Preferred Course"
                         />
                     <Spinner
-                        android:id="@+id/spinner2"
+                        android:id="@+id/PrefferedCourse1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown"/>
 
                     <Spinner
-                        android:id="@+id/spinner3"
+                        android:id="@+id/PrefferedCourse2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
                     <Spinner
-                        android:id="@+id/spinner4"
+                        android:id="@+id/PrefferedCourse3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
@@ -310,7 +348,7 @@
                         style="@style/TextViewLabel"
                         android:text="Willing To Join"/>
                     <Spinner
-                        android:id="@+id/spinner5"
+                        android:id="@+id/Willing"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
@@ -320,13 +358,31 @@
                         android:text="Reference"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/Reference"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Followup Date"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/Followupdate"/>
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Application Price"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/ApplicationPrice"/>
+                    <Spinner
+                        android:id="@+id/ApplicationPaidMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Remarks"/>
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/Remarks"/>
 
 
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
