@@ -46,6 +46,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:ems="14" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Enter Register Number"
+                        />
+                    <SearchView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/regno"
+                        style="@style/SearchBox"
+                        ></SearchView>
 
                     <TextView
                         style="@style/TextViewLabel"
