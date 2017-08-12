@@ -243,7 +243,7 @@
                         android:text="Alternate Mob.No"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:id="@+id/PresentAltMobNo">
+                        android:id="@+id/PresentAltMobNo"/>
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Email ID"/>
