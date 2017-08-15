@@ -34,38 +34,96 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter MagazineId"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/applicationno"
+                            style="@style/SearchBox"
+                            >
+
+                        </SearchView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Magazine ID"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/MagazineId"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Magazine Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/MagazineName"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Author Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/AuthorName"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Publisher Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/PublisherName"
                         />
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -73,8 +131,15 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/NoOfMagazines"
                         />
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -82,8 +147,15 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/Price"
                         />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <Button
                         android:id="@+id/loginButton"
                         android:layout_width="wrap_content"
@@ -97,6 +169,7 @@
                         android:paddingRight="50dp"
                         android:onClick="dashboard"
                         />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
