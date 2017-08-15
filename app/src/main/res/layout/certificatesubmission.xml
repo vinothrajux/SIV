@@ -35,41 +35,103 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter Reg No"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/applicationno"
+                            style="@style/SearchBox"
+                            >
+
+                        </SearchView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Reg NO"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/RegNo" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Admission No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/AdmissionNo" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/Name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/BranchCode" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/Branch" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Semester"
@@ -77,28 +139,52 @@
                     <TextView
                         style="@style/TextViewContent"
                         android:text="ABC" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Academic Year"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/AcademicYear" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Student Type"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/StudentType" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Polio No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-
+                        android:id="@+id/PolioNo" />
+                    </LinearLayout>
 
                 </LinearLayout>  <!-- This is for Date TV and ET End -->
 
@@ -129,7 +215,7 @@
                         />
 
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkBox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"
@@ -363,7 +449,7 @@
                         android:text="TC Xerox"
                         />
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkBo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"
@@ -422,7 +508,7 @@
                         android:text="Community Xerox"
                         />
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkB"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"
@@ -480,7 +566,7 @@
                         android:text="Migration Certification"
                         />
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/check1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"
@@ -596,7 +682,7 @@
                         android:text="Stamp Size Photo"
                         />
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkBox7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"
@@ -656,7 +742,7 @@
                         android:text="Passport Size Photo"
                         />
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkBox6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"
@@ -714,7 +800,7 @@
                         android:text="Affidavity Form"
                         />
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkBox5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submitted"

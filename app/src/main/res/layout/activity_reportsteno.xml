@@ -3,8 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/principalDashboard"
+        android:id="@+id/FeesEventReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fees Event Report"
@@ -12,9 +18,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
 
     <Button
-        android:id="@+id/deptStaffDashboard"
+        android:id="@+id/FeesCircularReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fees Circular  Report"
@@ -22,8 +34,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/officeDashboard"
+        android:id="@+id/BranchEventReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Branch Event Report"
@@ -31,8 +50,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard"
+        android:id="@+id/BranchCircularReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Branch Circular Report"
@@ -40,8 +66,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard1"
+        android:id="@+id/ExamEventReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exam Event Report"
@@ -49,8 +82,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard2"
+        android:id="@+id/ExamCircularReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exam Circular Report"
@@ -58,8 +98,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard4"
+        android:id="@+id/PlacementCircular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Placement Circular Report"
@@ -67,8 +114,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard5"
+        android:id="@+id/SportEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sports Event Report"
@@ -76,8 +130,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard6"
+        android:id="@+id/SportsCircular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sports Circular Report"
@@ -85,8 +146,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard7"
+        android:id="@+id/NSSEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NSS Event Report"
@@ -94,8 +162,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard8"
+        android:id="@+id/NSSCircular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NSS Circular Report"
@@ -103,8 +178,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard9"
+        android:id="@+id/ManagementEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Management Event Report"
@@ -112,8 +194,15 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/datapanel">
+
     <Button
-        android:id="@+id/managementDashboard10"
+        android:id="@+id/ManagementCircular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Management circular Report"
@@ -121,4 +210,5 @@
         android:textColor="#000000"
         android:layout_marginBottom="20dp"
         />
+    </LinearLayout>
 </LinearLayout>

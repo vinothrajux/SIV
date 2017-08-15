@@ -17,86 +17,180 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
+                    style="@style/TextViewLabel"
+                    android:text="Enter Application No"
+                    />
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/regno"
+                    style="@style/SearchBox">
+
+                </SearchView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="DATE"
-            />
-            <TextView
+                 />
+                 <TextView
                 style="@style/TextViewContent"
-                android:text="ddd"
-            />
-            <TextView
+                android:id="@+id/Date"
+                 />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Enquiry NO"
-            />
-            <TextView
+                />
+                <TextView
                 style="@style/TextViewContent"
-                android:text="XYZ3221"
-            />
-            <TextView
+                android:id="@+id/EnquiryNo"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Application No"
-            />
-            <TextView
+                />
+                <TextView
                 style="@style/TextViewContent"
-                android:text="XYZ32132"
-            />
-            <TextView
+                android:id="@+id/ApplicationNo"
+                />
+             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Name"
-            />
-            <TextView
+                />
+                <TextView
                 style="@style/TextViewContent"
-                android:text="XYZ"
-            />
-            <TextView
+                android:id="@+id/Name"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Father's Name"
-            />
-            <TextView
+                />
+                <TextView
                 style="@style/TextViewContent"
-                android:text="XYZ"
-            />
-            <TextView
+                android:id="@+id/FathersName"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Mobile No"
-            />
-            <TextView
+                 />
+                <TextView
                 style="@style/TextViewContent"
                 android:text="XYZ2535"
-            />
-            <TextView
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Alternate No"
                 />
-            <TextView
+                <TextView
                 style="@style/TextViewContent"
-                android:text="XYZ56465" />
-            <TextView
+                android:id="@+id/AlterneteNo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Communication Details"
                 />
-            <TextView
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Willingness" />
+
                 <Spinner
-                        android:id="@+id/spinner1"
+                        android:id="@+id/Willingness"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
-
-            <TextView
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Communication Details"
-            />
-            <EditText
+                />
+                <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="7"
                 android:layout_marginRight="5dp"
-            />
-            <TextView
+                />
+             </LinearLayout>
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 style="@style/datapanel">
+
+                <TextView
                 style="@style/TextViewLabel"
                 android:text="Remarks" />
                 <EditText
@@ -104,10 +198,12 @@
                     android:layout_height="wrap_content"
                     android:ems="15"
                     android:layout_marginRight="5dp" />
+            </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <Button
                             android:id="@+id/loginButton"
                             android:layout_width="wrap_content"
