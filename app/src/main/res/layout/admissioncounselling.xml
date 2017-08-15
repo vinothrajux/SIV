@@ -8,9 +8,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="12dp">
+        android:layout_marginBottom="300dp">
         <!-- LinearLayout Rows-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,15 +39,13 @@
                         style="@style/TextViewLabel"
                         android:text="Enter Application Number"
                         />
-                    <EditText
+                    <SearchView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/applicationno"/>
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/searchApplicationBtn"
-                        android:text="Search"/>
+                        android:id="@+id/applicationno"
+                        style="@style/SearchBox"
+                        ></SearchView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -101,7 +99,7 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/Gender"  />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Father Name"
@@ -109,30 +107,48 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/FatherName" />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Preferred Branch"
+                        android:text="Mother Name"
                         />
+
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/MotherName" />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Communication Details"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/PresentAddress1"  />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/PresentAddress2" />
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Qualified"
+                        />
+
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/Qualified" />
+
+
+                    <TextView
+                        style="@style/TextViewLabel"
+                        android:text="Preferred Branch"
+                        />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/PrefferedCourse1" />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/PrefferedCourse2" />
+                    <TextView
+                        style="@style/TextViewContent"
+                        android:id="@+id/PrefferedCourse3" />
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -140,7 +156,7 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC" />
+                        android:id="@+id/Reference" />
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Allotted Course Code"

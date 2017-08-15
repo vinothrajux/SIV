@@ -67,8 +67,8 @@ public class AdmissionCounsellingFragment extends Fragment {
         GenderText =(TextView) view.findViewById(R.id.Gender);
         FatherNameText=(TextView) view.findViewById(R.id.FatherName);
         MotherNameText=(TextView) view.findViewById(R.id.MotherName);
-        PresentAddLine1=(TextView) view.findViewById(R.id.PresentAddress1);
-        PresentAddLine2=(TextView) view.findViewById(R.id.PresentAddress2);
+    PresentAddress1Text=(TextView) view.findViewById(R.id.PresentAddress1);
+    PresentAddress2Text=(TextView) view.findViewById(R.id.PresentAddress2);
         QualifiedText=(TextView) view.findViewById(R.id.Qualified);
         PrefferedCour1Text=(TextView) view.findViewById(R.id.PrefferedCourse1);
         PrefferedCour2Text=(TextView) view.findViewById(R.id.PrefferedCourse2);
