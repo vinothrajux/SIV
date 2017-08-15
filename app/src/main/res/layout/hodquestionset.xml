@@ -34,96 +34,212 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter BranchCode"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/applicationno"
+                            style="@style/SearchBox"
+                            >
+
+                        </SearchView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch Code" />
                     <Spinner
-                        android:id="@+id/spinner1"
+                        android:id="@+id/BranchCode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch" />
                     <Spinner
-                        android:id="@+id/spinner2"
+                        android:id="@+id/Branch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Batch" />
                     <Spinner
-                        android:id="@+id/spinner3"
+                        android:id="@+id/Batch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject Code" />
                     <Spinner
-                        android:id="@+id/spinner4"
+                        android:id="@+id/SubjectCode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject Name" />
                     <Spinner
-                        android:id="@+id/spinner5"
+                        android:id="@+id/SubjectName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Scheme" />
                     <Spinner
-                        android:id="@+id/spinner6"
+                        android:id="@+id/Scheme"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Exam Title" />
                     <Spinner
-                        android:id="@+id/spinner7"
+                        android:id="@+id/ExamTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+                     </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="From Unit" />
                     <Spinner
-                        android:id="@+id/spinner8"
+                        android:id="@+id/FromUnit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="To Unit" />
                     <Spinner
-                        android:id="@+id/spinner9"
+                        android:id="@+id/ToUnit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Maximum Marks" />
                     <Spinner
-                        android:id="@+id/spinner10"
+                        android:id="@+id/MaxMarks"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
 
                     <Button
                         android:id="@+id/loginButton"
@@ -138,6 +254,8 @@
                         android:paddingRight="50dp"
                         android:onClick="dashboard"
                         />
+
+                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 

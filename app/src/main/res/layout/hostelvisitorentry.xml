@@ -34,54 +34,130 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter RegNo"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/applicationno"
+                            style="@style/SearchBox"
+                            >
+
+                        </SearchView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Reg.No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/RegNo"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Admission No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/AdmissionNo"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/Name"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Semester"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Semester"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/BranchCode"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Branch"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Academic Year"
@@ -90,79 +166,157 @@
                         style="@style/TextViewContent"
                         android:text="123"
                         />
+                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Date"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Date"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Visitor Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/VisitorName"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Gender"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Gender"
                         />
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Contact No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/ContactNo"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="No.Of.Visitor"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/NoOfVisitor"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Relationship"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Relationship"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Intime"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/InTime"
                         />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Out time"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/OutTime"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Remarks"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Remarks"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
 
                     <Button
                         android:id="@+id/loginButton"
@@ -177,7 +331,7 @@
                         android:paddingRight="50dp"
                         android:onClick="dashboard"
                         />
-
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>

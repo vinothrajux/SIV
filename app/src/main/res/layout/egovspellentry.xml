@@ -34,30 +34,64 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Spell No"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/SpellNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="From Date"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/FromDate"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="To Date"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/ToDate"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="No Of Hours"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC123"/>
+                        android:id="@+id/NoOfHours"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <Button
                         android:id="@+id/loginButton2"
                         android:layout_width="wrap_content"
@@ -71,6 +105,7 @@
                         android:paddingRight="35dp"
                         android:onClick="dashboard"
                         />
+                    </LinearLayout>
 
                 </LinearLayout>
             </LinearLayout>
