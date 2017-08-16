@@ -100,7 +100,7 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:id="@id+/Name"
+                        android:id="@+id/Name1"
                         />
 
                     </LinearLayout>
