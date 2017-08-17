@@ -34,154 +34,330 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter StaffId"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/applicationno"
+                            style="@style/SearchBox"
+                            >
+
+                        </SearchView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Staff ID"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/StaffId"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Name"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                          android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/BranchCode"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Branch"
                         />
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Branch"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="123"
-                        />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Designation"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Designation"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Total No Of Experience in Teaching"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Experience"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Theory Subject List"
                         />
-                    <TextView
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject1 Code"
                         />
+
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/subject1"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject2 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Subject2"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject3 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Subject3"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject4 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Subject4"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject5 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Subject5"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Practical Subject List"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject1 Code"
                         />
+
+
+
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/PracSubject1"
                         />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject2 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/PractSubject2"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject3 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/PractSubject3"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject4 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/PractSubject4"
                         />
-                    <TextView
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Subject5 Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/PractSubject5"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="123"
-                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
 
                     <Button
                         android:id="@+id/loginButton2"
@@ -196,7 +372,7 @@
                         android:paddingRight="35dp"
                         android:onClick="dashboard"
                         />
-
+                     </LinearLayout>
                 </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
