@@ -35,7 +35,7 @@ public class ApplicationSaleFragment extends Fragment {
 
     String applicationNumber;
     EditText appNoText;
-    TextView AppForText, CandidateNameText,GenderText,FatherNameText;
+    TextView AppForText, CandidateFirstNameText,CandidateMiddleNameText,CandidateLastNameText,GenderText,FatherNameText;
     TextView MotherNameText,PresentAddress1Text,PresentAddress2Text,PresentAreaText;
     TextView PresentPinCodeText,PresentMobileNoText,PresentAltMobileNoText;
     TextView PresentEmailText,PresentAltEmailText,PermanentAddress1Text,PermanentAddress2Text;
@@ -60,7 +60,9 @@ public class ApplicationSaleFragment extends Fragment {
 
         searchView.setSubmitButtonEnabled(true);
         AppForText = (TextView) view.findViewById(R.id.AppFor);
-        CandidateNameText = (TextView) view.findViewById(R.id.CandidateName);
+        CandidateFirstNameText = (TextView) view.findViewById(R.id.FirstName);
+        CandidateMiddleNameText = (TextView) view.findViewById(R.id.MiddleName);
+        CandidateLastNameText = (TextView) view.findViewById(R.id.LastName);
         GenderText =(TextView) view.findViewById(R.id.Gender);
         FatherNameText=(TextView) view.findViewById(R.id.FatherName);
         MotherNameText=(TextView) view.findViewById(R.id.MotherName);
@@ -208,8 +210,8 @@ public class ApplicationSaleFragment extends Fragment {
                 String AddressL1,AddressL2,PreA1,PreA2,PreArea,PrePin,PreMob,PreAltMob,PreState,PreEmail,PreAltEmail,Qualified,PrefferedCourse1,PrefferedCourse2,PrefferedCourse3,Reference;
                 String PerA1,PerA2,PerArea,PerPin,PerMob,PerAltMob,PerState,PerEmail,PerAltEmail;
                 String Willingtojoin;
-                Date FollowupDate,ApplicationPaidMode,Remarks;
-                Integer ApplicationPrice;
+                String FollowupDate,ApplicationPaidMode,Remarks;
+                String ApplicationPrice;
 
                 AppFor = jsonObj.getString("appfor");
                 Log.d("appfor:",AppFor);
@@ -218,19 +220,38 @@ public class ApplicationSaleFragment extends Fragment {
                 CandidateLastName = jsonObj.getString("candlastname");
                 CandidateFatherName = jsonObj.getString("candfathername");
                 CandidateMotherName = jsonObj.getString("candmothername");
+                Gender = jsonObj.getString("gender");
                 PreA1=jsonObj.getString("presentaddress1");
                 PreA2=jsonObj.getString("presentaddress2");
                 PreArea=jsonObj.getString("presentarea");
                 PrePin=jsonObj.getString("presentpincode");
-                PreMob=jsonObj.getString("presentmobileno");
                 PreState=jsonObj.getString("presentstate");
+                PreMob=jsonObj.getString("presentmobileno");
+                PreAltMob=jsonObj.getString("presentaltmobno");
                 PreEmail=jsonObj.getString("presentemail");
-                Gender = jsonObj.getString("gender");
+                PreAltEmail=jsonObj.getString("presentaltemail");
+
+                PerA1=jsonObj.getString("permanentaddress1");
+                PerA2=jsonObj.getString("permanentaddress2");
+                PerArea=jsonObj.getString("permanentarea");
+                PerPin=jsonObj.getString("permanentpincode");
+                PerState=jsonObj.getString("permanentstate");
+                PerMob=jsonObj.getString("permanentmobileno");
+                PerAltMob=jsonObj.getString("permanentaltmobno");
+                PerEmail=jsonObj.getString("permanentemail");
+                PerAltEmail=jsonObj.getString("permanentaltemail");
+
                 Qualified=jsonObj.getString("qualified");
                 PrefferedCourse1=jsonObj.getString("prefferedcour1");
                 PrefferedCourse2=jsonObj.getString("prefferedcour2");
                 PrefferedCourse3=jsonObj.getString("prefferedcour3");
                 Reference=jsonObj.getString("reference");
+                Willingtojoin=jsonObj.getString("willingtojoin");
+                FollowupDate=jsonObj.getString("followupdate");
+                ApplicationPrice=jsonObj.getString("applicationprice");
+                ApplicationPaidMode=jsonObj.getString("applicationpaidmode");
+                Remarks=jsonObj.getString("remarks");
+
 
                 CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
                 AddressL1= PreA1 + ',' + PreA2 + ',' + PreArea + '-' + PrePin + '.'+ PreState;
@@ -238,16 +259,42 @@ public class ApplicationSaleFragment extends Fragment {
 
 
                 AppForText.setText(AppFor);
-                CandidateNameText.setText(CandidateName);
-                GenderText.setText(Gender);
+                CandidateFirstNameText.setText(CandidateFirstName);
+                CandidateMiddleNameText.setText(CandidateMiddleName);
+                CandidateLastNameText.setText(CandidateLastName);
+                FatherNameText.setText(CandidateFatherName);
                 MotherNameText.setText(CandidateMotherName);
-                PresentAddress1Text.setText(AddressL1);
-                PresentAddress2Text.setText(AddressL2);
+                GenderText.setText(Gender);
+                PresentAddress1Text.setText(PreA1);
+                PresentAddress2Text.setText(PreA2);
+                PresentAreaText.setText(PreArea);
+                PresentPinCodeText.setText(PrePin);
+                //PresentStateText.setText(PreState);
+                PresentMobileNoText.setText(PreMob);
+                PresentAltMobileNoText.setText(PreAltMob);
+                PresentEmailText.setText(PreEmail);
+                PresentAltEmailText.setText(PreAltEmail);
+                PermanentAddress1Text.setText(PerA1);
+                PermanentAddress2Text.setText(PerA2);
+                PermanentAreaText.setText(PerArea);
+                PermanentPinCodeText.setText(PerPin);
+                //PermanentStateText.setText(PerState);
+                PermanentMobileNoText.setText(PerMob);
+                PermanentAltMobNoText.setText(PerAltMob);
+                PermanentEmailText.setText(PerEmail);
+                PermanentAltEmailText.setText(PerAltEmail);
                 QualifiedText.setText(Qualified);
               //  PrefferedCour1Text(PrefferedCourse1);
               //  PrefferedCour2Text.setText(PrefferedCourse2);
               //  PrefferedCour3Text.setText(PrefferedCourse3);
                 ReferenceText.setText(Reference);
+                //WillingtojoinText.setText(Willingtojoin);
+                FollowupDateText.setText(FollowupDate);
+                ApplicationPriceText.setText(ApplicationPrice);
+                //ApplicationPaidModeText.setText(ApplicationPaidMode);
+                RemarksText.setText(Remarks);
+
+
 
 
 
