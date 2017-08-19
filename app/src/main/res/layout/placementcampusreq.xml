@@ -34,16 +34,33 @@
                     android:paddingRight="5dp"
                     android:paddingTop="5dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Request For"/>
                     <Spinner
-                        android:id="@+id/spinner10"
+                        android:id="@+id/RequestFor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:drawable/btn_dropdown"
                         android:spinnerMode="dropdown" />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -55,13 +72,33 @@
                         android:layout_marginRight="5dp"
                         android:ems="14" />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Corporate Name" />
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/CorporateName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -69,7 +106,17 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/CorporateType" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -77,13 +124,23 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/Address1" />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:text="@+id/Address2" />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:text="@+id/Address3" />
+                     </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -91,7 +148,18 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/EmailId" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -99,7 +167,17 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/Website" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -107,19 +185,51 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/MobileNo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
                         android:text=" Possible Date" />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="From Date" />
 
+
+
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/FromDate" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -127,14 +237,34 @@
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/ToDate" />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Follow up Date" />
 
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC 123" />
+                        android:id="@+id/FollowupDate" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
 
                     <Button
                         android:id="@+id/loginButton"
@@ -148,6 +278,8 @@
                         android:paddingRight="50dp"
                         android:text="Send Mail"
                         android:textColor="#fff" />
+
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
