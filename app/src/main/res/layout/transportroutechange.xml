@@ -34,62 +34,132 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Reg.No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/RegNo"
                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Admission No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/AdmissionNo"
                         />
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="ABC"
+                        android:id="@+id/Name"
                         />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Semester"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:text="@+id/Semester"
                         />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch Code"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/BranchCode"
                         />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Branch"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Branch"
                         />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Academic Year"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/AcademicYear"
                         />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
 
                     <TextView
                         style="@style/TextViewLabel"
@@ -97,97 +167,186 @@
                         />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Route No"
+                        android:id="@+id/ExistingRoute"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="123"
-                        />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Route Name"
                         />
+
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/RouteName"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                     <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Stage"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Stage"
                         />
-                    <TextView
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Seat No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/SeatNo"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Fees"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Fees"
                         />
-                    <TextView
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="New Route"
                         />
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="Route No"
+                        android:id="@+id/NewRoute"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:text="123"
-                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
                     <TextView
                         style="@style/TextViewLabel"
                         android:text="Route Name"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/RouteName1"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Stage"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Stage1"
                         />
-                    <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Seat No"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/SeatNo1"
                         />
-                    <TextView
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="Fees"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/Fees1"
                         />
-                    <TextView
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <TextView
                         style="@style/TextViewLabel"
                         android:text="User"
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:text="123"
+                        android:id="@+id/User"
                         />
-                    <Button
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            style="@style/datapanel">
+
+                        <Button
                         android:id="@+id/loginButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -200,7 +359,7 @@
                         android:paddingRight="50dp"
                         android:onClick="dashboard"
                         />
-
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
