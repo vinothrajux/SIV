@@ -47,233 +47,238 @@
                         <SearchView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/applicationno"
+                            android:id="@+id/regno"
                             style="@style/SearchBox"
                             >
 
                         </SearchView>
                     </LinearLayout>
-
-                    <LinearLayout
+                    <ListView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                        android:id="@+id/firstaidlist">
+                    </ListView>
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Date" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Date" />-->
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="5dp"
-                        android:ems="14" />
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:ems="14" />-->
 
-                    </LinearLayout>
+                    <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Register No" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Register No" />-->
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/RegNo" />
-                     </LinearLayout>
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/RegNo" />-->
+                     <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Admission No" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Admission No" />-->
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/AdmissionNo" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/AdmissionNo" />-->
 
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Name" />
-
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Name" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Semester" />
-
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Semester" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Branch Code" />
-
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/BranchCode" />
-
-                     </LinearLayout>
+                    <!--</LinearLayout>-->
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Branch" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Name" />-->
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Branch" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/Name" />-->
 
-                    </LinearLayout>
+                    <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Semester" />-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Academic Year" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/Semester" />-->
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/AcademicYear" />
+                    <!--</LinearLayout>-->
 
-                     </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Branch Code" />-->
 
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/BranchCode" />-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Reason For First Aid" />
-
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ReasonForFirstAid" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                     <!--</LinearLayout>-->
 
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="First Aid Detail" />
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/FirstAid" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Branch" />-->
 
-                    </LinearLayout>
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/Branch" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Remarks" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Academic Year" />-->
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Remarks" />
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/AcademicYear" />-->
 
-                     </LinearLayout>
+                     <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Hospital Fees" />
 
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/HospitalFees" />
-                    </LinearLayout>
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Reason For First Aid" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/ReasonForFirstAid" />-->
 
-                    <Button
-                        android:id="@+id/loginButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:background="#919978"
-                        android:onClick="dashboard"
-                        android:paddingLeft="50dp"
-                        android:paddingRight="50dp"
-                        android:text="Close"
-                        android:textColor="#fff" />
+                    <!--</LinearLayout>-->
 
-                     </LinearLayout>
-                </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
+
+
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="First Aid Detail" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/FirstAid" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
+
+
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Remarks" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/Remarks" />-->
+
+                     <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/TextViewLabel"-->
+                        <!--android:text="Hospital Fees" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/TextViewContent"-->
+                        <!--android:id="@+id/HospitalFees" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/loginButton"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="#919978"-->
+                        <!--android:onClick="dashboard"-->
+                        <!--android:paddingLeft="50dp"-->
+                        <!--android:paddingRight="50dp"-->
+                        <!--android:text="Close"-->
+                        <!--android:textColor="#fff" />-->
+
+                     <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
             </LinearLayout>
+        </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -257,9 +257,16 @@ public class ApplicationSaleFragment extends Fragment {
                 AddressL1= PreA1 + ',' + PreA2 + ',' + PreArea + '-' + PrePin + '.'+ PreState;
                 AddressL2 = "Mob:" + PreMob + ' ' + PreEmail;
 
-
-                AppForText.setText(AppFor);
+                Log.e("applicationsale:",CandidateFirstName);
+                //AppForText.setText(AppFor);
                 CandidateFirstNameText.setText(CandidateFirstName);
+//                if(CandidateMiddleName == '0'){
+//                    CandidateMiddleNameText.setText(" ");
+//                }else if(CandidateMiddleName == '1'){
+//                    CandidateMiddleNameText.setText(" ");
+//                }else{
+//
+//                }
                 CandidateMiddleNameText.setText(CandidateMiddleName);
                 CandidateLastNameText.setText(CandidateLastName);
                 FatherNameText.setText(CandidateFatherName);

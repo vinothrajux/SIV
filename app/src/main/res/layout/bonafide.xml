@@ -43,17 +43,32 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Enter Reg No"
+                            android:text="Enter Bonafide Id"
                             />
                         <SearchView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/applicationno"
+                            android:id="@+id/bonafideIdSearch"
                             style="@style/SearchBox"
                             >
 
                         </SearchView>
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Bonafide .Id" />
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/BonafideId" />
+                    </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -68,6 +83,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
+                            android:id="@+id/Regno"
                             android:ems="14" />
 
                     </LinearLayout>
@@ -197,7 +213,7 @@
                         android:text="Certificate For" />
                     <TextView
                         style="@style/TextViewContent"
-                        android:id="@+id/CertficateNo" />
+                        android:id="@+id/CertficateFor" />
                     </LinearLayout>
 
                     <LinearLayout
