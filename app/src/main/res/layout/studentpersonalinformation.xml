@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/bodybg"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!-- LinearLayout Rows-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- LinearLayout Columns-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/datapanel">
+
+                <TextView
+                    style="@style/TextViewLabel"
+                    android:text="Enter Register Number"
+                    />
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/applicationno"
+                    style="@style/SearchBox"
+                    ></SearchView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Register Number"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/registerNumber"
+                            />
+                    </LinearLayout>
+                </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
+
+            </LinearLayout>  <!-- This if for End the First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Admission Number"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/admissionNumber"
+                            />
+                    </LinearLayout>
+                </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
+
+            </LinearLayout>  <!-- This if for End the First Row -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <!-- This is for First Icon Start Row 1 Col 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Name"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/name"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Academic Year"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/academicYear"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Date of Birth"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/dateOfBirth"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Gender"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Gender"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Fathers Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/FatherName"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Mothers Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/MotherName"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Present Address"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentAddress1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentAddress2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Present Area"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentArea"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Pin"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentPin"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="State"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentState"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Mob.No"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentMobNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Alternate Mob.No"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentAltMobNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Email ID"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentEmailId"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Alternate Email ID"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentAltEmailId"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Permanaent Address"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentAddress1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentAddress2"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentArea"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Pin"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentPin"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="State"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentState"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Mob.No"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentMobNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Alternate Mob.No"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentAltMobNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Email ID"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentEmailId"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Alternate Email ID"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PermanentAltEmailId"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Reference"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Reference"/>
+
+                    </LinearLayout>
+                </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
+
+            </LinearLayout>  <!-- This if for End the First Row -->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

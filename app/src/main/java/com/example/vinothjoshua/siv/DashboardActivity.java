@@ -102,7 +102,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Office Admission":
             case "OADMSN":
-                data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleFragment"));
+                data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleViewFragment"));
                 data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
                 data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
                 data.add(new Item("College ID", R.drawable.idcard,".CollegeIdCardFragment"));

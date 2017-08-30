@@ -1,15 +1,14 @@
 package com.example.vinothjoshua.siv;
 
+import android.app.Fragment;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.SearchView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,54 +22,52 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Date;
 
 import javax.net.ssl.HttpsURLConnection;
 
 /**
- * Created by Seetha on 27-May-17.
+ * Created by GBCorp on 30/08/2017.
  */
 
-public class ApplicationSaleFragment extends Fragment {
-
-    String applicationNumber;
-    EditText appNoText;
-    TextView AppForText, CandidateFirstNameText,CandidateMiddleNameText,CandidateLastNameText,GenderText,FatherNameText;
-    TextView MotherNameText,PresentAddress1Text,PresentAddress2Text,PresentAreaText;
-    TextView PresentPinCodeText,PresentMobileNoText,PresentAltMobileNoText;
+public class StudentPersonalInformationFragment extends Fragment {
+    String registerNumber;
+    EditText regNumberText;
+    TextView regnoText,admissionnoText,nameText,academicyearText,dateofbirthText,genderText,fathernameText,mothernameText;
+    TextView PresentAddress1Text,PresentAddress2Text,PresentAreaText;
+    TextView PresentPinCodeText,PresentStateText,PresentMobileNoText,PresentAltMobileNoText;
     TextView PresentEmailText,PresentAltEmailText,PermanentAddress1Text,PermanentAddress2Text;
-    TextView PermanentAreaText,PermanentPinCodeText,PermanentMobileNoText;
-    TextView PermanentAltMobNoText,PermanentEmailText,PermanentAltEmailText,QualifiedText;
+    TextView PermanentAreaText,PermanentPinCodeText,PermanentStateText,PermanentMobileNoText;
+    TextView PermanentAltMobNoText,PermanentEmailText,PermanentAltEmailText;
     TextView ReferenceText;
-    TextView FollowupDateText,ApplicationPriceText,RemarksText,PresentAddLine1,PresentAddLine2;
-    Spinner PresentStateText,PermanentStateText,PrefferedCour1Text,PrefferedCour2Text,PrefferedCour3Text,ApplicationPaidModeText,WillingtojoinText;
-    //Button searchBtn;
+
     SearchView searchView;
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.applicationsale, container, false);
 
-        searchView = (SearchView) view.findViewById(R.id.applicationno);
+        View view = inflater.inflate(R.layout.studentpersonalinformation, container, false);
+
+        searchView = (SearchView) view.findViewById(R.id.regno);
 
         searchView.setSubmitButtonEnabled(true);
-        AppForText = (TextView) view.findViewById(R.id.AppFor);
-        CandidateFirstNameText = (TextView) view.findViewById(R.id.FirstName);
-        CandidateMiddleNameText = (TextView) view.findViewById(R.id.MiddleName);
-        CandidateLastNameText = (TextView) view.findViewById(R.id.LastName);
-        GenderText =(TextView) view.findViewById(R.id.Gender);
-        FatherNameText=(TextView) view.findViewById(R.id.FatherName);
-        MotherNameText=(TextView) view.findViewById(R.id.MotherName);
+
+        regnoText=(TextView)view.findViewById(R.id.registerNumber);
+        admissionnoText=(TextView)view.findViewById(R.id.admissionNumber);
+        nameText =(TextView) view.findViewById(R.id.name);
+        academicyearText=(TextView)view.findViewById(R.id.academicYear);
+        dateofbirthText=(TextView) view.findViewById(R.id.dateOfBirth);
+        genderText=(TextView) view.findViewById(R.id.Gender);
+        fathernameText=(TextView) view.findViewById(R.id.FatherName);
+        mothernameText=(TextView) view.findViewById(R.id.MotherName);
         PresentAddress1Text=(TextView) view.findViewById(R.id.PresentAddress1);
         PresentAddress2Text=(TextView) view.findViewById(R.id.PresentAddress2);
         PresentAreaText=(TextView) view.findViewById(R.id.PresentArea);
         PresentPinCodeText=(TextView) view.findViewById(R.id.PresentPin);
-        PresentStateText=(Spinner) view.findViewById(R.id.PresentState);
+        PresentStateText=(TextView) view.findViewById(R.id.PresentState);
         PresentMobileNoText=(TextView) view.findViewById(R.id.PresentMobNo);
         PresentAltMobileNoText=(TextView) view.findViewById(R.id.PresentAltMobNo);
         PresentEmailText=(TextView) view.findViewById(R.id.PresentEmailId);
@@ -80,34 +77,23 @@ public class ApplicationSaleFragment extends Fragment {
         PermanentAddress2Text=(TextView) view.findViewById(R.id.PermanentAddress2);
         PermanentAreaText=(TextView) view.findViewById(R.id.PermanentArea);
         PermanentPinCodeText=(TextView) view.findViewById(R.id.PermanentPin);
-        PermanentStateText=(Spinner) view.findViewById(R.id.PermanentState);
+        PermanentStateText=(TextView) view.findViewById(R.id.PermanentState);
         PermanentMobileNoText=(TextView) view.findViewById(R.id.PermanentMobNo);
         PermanentAltMobNoText=(TextView) view.findViewById(R.id.PermanentAltMobNo);
         PermanentEmailText=(TextView) view.findViewById(R.id.PermanentEmailId);
         PermanentAltEmailText=(TextView) view.findViewById(R.id.PermanentAltEmailId);
-
-        QualifiedText=(TextView) view.findViewById(R.id.Qualified);
-        PrefferedCour1Text=(Spinner) view.findViewById(R.id.PrefferedCourse1);
-        PrefferedCour2Text=(Spinner) view.findViewById(R.id.PrefferedCourse2);
-        PrefferedCour3Text=(Spinner) view.findViewById(R.id.PrefferedCourse3);
         ReferenceText=(TextView) view.findViewById(R.id.Reference);
-        WillingtojoinText=(Spinner) view.findViewById(R.id.Willing);
-        FollowupDateText=(TextView) view.findViewById(R.id.Followupdate);
-        ApplicationPriceText=(TextView) view.findViewById(R.id.ApplicationPrice);
-        ApplicationPaidModeText=(Spinner) view.findViewById(R.id.ApplicationPaidMode);
-        RemarksText=(TextView) view.findViewById(R.id.Remarks);
-
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 //callSearch(query);
-                applicationNumber=query;
-                ApplicationSaleFragment.GetApplicationDetailTask getApplicationDetail = new ApplicationSaleFragment.GetApplicationDetailTask();
-                getApplicationDetail.execute();
+                registerNumber=query;
+                StudentPersonalInformationFragment.GetApplicationDetailTask getStudentPersonalInformationDetail = new StudentPersonalInformationFragment.GetApplicationDetailTask();
+                getStudentPersonalInformationDetail.execute();
                 return true;
-            }
 
+            }
             @Override
             public boolean onQueryTextChange(String newText) {
                 //              if (searchView.isExpanded() && TextUtils.isEmpty(newText)) {
@@ -115,7 +101,6 @@ public class ApplicationSaleFragment extends Fragment {
                 //              }
                 return true;
             }
-
             public void callSearch(String query) {
                 //Do searching
             }
@@ -133,11 +118,11 @@ public class ApplicationSaleFragment extends Fragment {
 
 
             try {
-                URL url = new URL("http://"+apiUrl+"/api/v1/admissioncounselling/getApplcationDetail");
+                URL url = new URL("http://"+apiUrl+"/api/v1/studentpersonalinformation/getStudentPersonalInformationDetail");
 
 
                 JSONObject postDataParams = new JSONObject();
-                postDataParams.put("applno", applicationNumber);
+                postDataParams.put("regno", registerNumber);
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -206,28 +191,27 @@ public class ApplicationSaleFragment extends Fragment {
                 //JSONArray jsonArr = new JSONArray(result);
 
                 JSONObject jsonObj = new JSONObject(result);
-                String AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName, CandidateFatherName, CandidateMotherName, CandidateName,Gender;
-                String AddressL1,AddressL2,PreA1,PreA2,PreArea,PrePin,PreMob,PreAltMob,PreState,PreEmail,PreAltEmail,Qualified,PrefferedCourse1,PrefferedCourse2,PrefferedCourse3,Reference;
+                String Regno,Admissionno,name,AcademicYear, DateOfBirth, GenderStr,CandidateFatherName, CandidateMotherName;
+                String PreA1,PreA2,PreArea,PrePin,PreMob,PreAltMob,PreState,PreEmail,PreAltEmail,Reference;
                 String PerA1,PerA2,PerArea,PerPin,PerMob,PerAltMob,PerState,PerEmail,PerAltEmail;
-                String Willingtojoin;
-                String FollowupDate,ApplicationPaidMode,Remarks;
-                String ApplicationPrice;
 
-                AppFor = jsonObj.getString("appfor");
-                Log.d("appfor:",AppFor);
-                CandidateFirstName = jsonObj.getString("candfirstname");
-                CandidateMiddleName = jsonObj.getString("candmiddlename");
-                CandidateLastName = jsonObj.getString("candlastname");
-                CandidateFatherName = jsonObj.getString("candfathername");
-                CandidateMotherName = jsonObj.getString("candmothername");
-                Gender = jsonObj.getString("gender");
+                Regno=jsonObj.getString("regno");
+                Admissionno=jsonObj.getString("admissionno");
+                name = jsonObj.getString("name");
+                //Log.d("appfor:",AppFor);
+                AcademicYear=jsonObj.getString("academicyear");
+                DateOfBirth = jsonObj.getString("dateofbirth");
+                GenderStr = jsonObj.getString("gender");
+                CandidateFatherName = jsonObj.getString("fathername");
+                CandidateMotherName = jsonObj.getString("mothername");
+
                 PreA1=jsonObj.getString("presentaddress1");
                 PreA2=jsonObj.getString("presentaddress2");
                 PreArea=jsonObj.getString("presentarea");
                 PrePin=jsonObj.getString("presentpincode");
                 PreState=jsonObj.getString("presentstate");
                 PreMob=jsonObj.getString("presentmobileno");
-                PreAltMob=jsonObj.getString("presentaltmobno");
+                PreAltMob=jsonObj.getString("presentaltmobileno");
                 PreEmail=jsonObj.getString("presentemail");
                 PreAltEmail=jsonObj.getString("presentaltemail");
 
@@ -237,46 +221,25 @@ public class ApplicationSaleFragment extends Fragment {
                 PerPin=jsonObj.getString("permanentpincode");
                 PerState=jsonObj.getString("permanentstate");
                 PerMob=jsonObj.getString("permanentmobileno");
-                PerAltMob=jsonObj.getString("permanentaltmobno");
+                PerAltMob=jsonObj.getString("permanentaltmobileno");
                 PerEmail=jsonObj.getString("permanentemail");
                 PerAltEmail=jsonObj.getString("permanentaltemail");
-
-                Qualified=jsonObj.getString("qualified");
-                PrefferedCourse1=jsonObj.getString("prefferedcour1");
-                PrefferedCourse2=jsonObj.getString("prefferedcour2");
-                PrefferedCourse3=jsonObj.getString("prefferedcour3");
                 Reference=jsonObj.getString("reference");
-                Willingtojoin=jsonObj.getString("willingtojoin");
-                FollowupDate=jsonObj.getString("followupdate");
-                ApplicationPrice=jsonObj.getString("applicationprice");
-                ApplicationPaidMode=jsonObj.getString("applicationpaidmode");
-                Remarks=jsonObj.getString("remarks");
 
+                regnoText.setText(Regno);
+                admissionnoText.setText(Admissionno);
+                nameText.setText(name);
+                academicyearText.setText(AcademicYear);
+                dateofbirthText.setText(DateOfBirth);
+                genderText.setText(GenderStr);
+                fathernameText.setText(CandidateFatherName);
+                mothernameText.setText(CandidateMotherName);
 
-                CandidateName = CandidateFirstName + ' ' + CandidateMiddleName + ' ' + CandidateLastName;
-                AddressL1= PreA1 + ',' + PreA2 + ',' + PreArea + '-' + PrePin + '.'+ PreState;
-                AddressL2 = "Mob:" + PreMob + ' ' + PreEmail;
-
-                Log.e("applicationsale:",CandidateFirstName);
-                //AppForText.setText(AppFor);
-                CandidateFirstNameText.setText(CandidateFirstName);
-//                if(CandidateMiddleName == '0'){
-//                    CandidateMiddleNameText.setText(" ");
-//                }else if(CandidateMiddleName == '1'){
-//                    CandidateMiddleNameText.setText(" ");
-//                }else{
-//
-//                }
-                CandidateMiddleNameText.setText(CandidateMiddleName);
-                CandidateLastNameText.setText(CandidateLastName);
-                FatherNameText.setText(CandidateFatherName);
-                MotherNameText.setText(CandidateMotherName);
-                GenderText.setText(Gender);
                 PresentAddress1Text.setText(PreA1);
                 PresentAddress2Text.setText(PreA2);
                 PresentAreaText.setText(PreArea);
                 PresentPinCodeText.setText(PrePin);
-                //PresentStateText.setText(PreState);
+                PresentStateText.setText(PreState);
                 PresentMobileNoText.setText(PreMob);
                 PresentAltMobileNoText.setText(PreAltMob);
                 PresentEmailText.setText(PreEmail);
@@ -285,21 +248,12 @@ public class ApplicationSaleFragment extends Fragment {
                 PermanentAddress2Text.setText(PerA2);
                 PermanentAreaText.setText(PerArea);
                 PermanentPinCodeText.setText(PerPin);
-                //PermanentStateText.setText(PerState);
+                PermanentStateText.setText(PerState);
                 PermanentMobileNoText.setText(PerMob);
                 PermanentAltMobNoText.setText(PerAltMob);
                 PermanentEmailText.setText(PerEmail);
                 PermanentAltEmailText.setText(PerAltEmail);
-                QualifiedText.setText(Qualified);
-              //  PrefferedCour1Text(PrefferedCourse1);
-              //  PrefferedCour2Text.setText(PrefferedCourse2);
-              //  PrefferedCour3Text.setText(PrefferedCourse3);
                 ReferenceText.setText(Reference);
-                //WillingtojoinText.setText(Willingtojoin);
-                FollowupDateText.setText(FollowupDate);
-                ApplicationPriceText.setText(ApplicationPrice);
-                //ApplicationPaidModeText.setText(ApplicationPaidMode);
-                RemarksText.setText(Remarks);
 
 
 
@@ -311,9 +265,12 @@ public class ApplicationSaleFragment extends Fragment {
             }
         }
 
-    // Inflate the layout for this fragment
-     //   return inflater.inflate(R.layout.applicationsale, container, false);
+
+
+
+
+        // Inflate the layout for this fragment
+       // return inflater.inflate(R.layout.studentpersonalinformation, container, false);
     }
 
 }
-
