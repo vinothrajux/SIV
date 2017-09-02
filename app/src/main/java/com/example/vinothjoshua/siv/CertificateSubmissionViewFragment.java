@@ -40,6 +40,7 @@ public class CertificateSubmissionViewFragment extends Fragment {
     TextView migrationcertificatesubmittedText,migrationCertificateSlNoText,conductcertificatesubmittedText;
     TextView conductCertificateSlNoText,stampSizePhotosubmittedText,stampSizePhotoCopiesText,passPortPhotosubmittedText;
     TextView passportSizePhotoCopiesText;
+
     SearchView searchView;
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
@@ -257,7 +258,7 @@ public class CertificateSubmissionViewFragment extends Fragment {
                 xeroxMarksheetCopiesText.setText(XeroxMarksheetCopies);
                 xeroxTransfercertificatesubmittedText.setText(XeroxTransfercertificatesubmitted);
                 xeroxTransferCertificateCopiesText.setText(XeroxTransferCertificateCopies);
-                xeroxCommunitycertificatesubmittedText.setText(XeroxCommunityCertificateCopies);
+                xeroxCommunitycertificatesubmittedText.setText(XeroxCommunitycertificatesubmitted);
                 xeroxCommunityCertificateCopiesText.setText(XeroxCommunityCertificateCopies);
                 migrationcertificatesubmittedText.setText(Migrationcertificatesubmitted);
                 migrationCertificateSlNoText.setText(MigrationCertificateSlNo);
