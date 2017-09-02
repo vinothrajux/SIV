@@ -110,7 +110,7 @@ public class DashboardActivity extends AppCompatActivity {
                 data.add(new Item("TC", R.drawable.admission,".TcGenerateFragment"));
                 data.add(new Item("Name List", R.drawable.admission,".NameListFragment"));
                 data.add(new Item("First Aid", R.drawable.firstaid,".FirstAidEntryFragment"));
-                data.add(new Item("Certificate Submission", R.drawable.certificate,".CertificateSubmissionFragment"));
+                data.add(new Item("Certificate Submission", R.drawable.certificate,".CertificateSubmissionViewFragment"));
                 data.add(new Item("Scholarship", R.drawable.scholarship,".ScholarshipFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
                 break;
@@ -126,6 +126,7 @@ public class DashboardActivity extends AppCompatActivity {
             //case "Office Supdt":
             case "OSUPDT":
                 data.add(new Item("Staff Personal", R.drawable.personalinf,".StaffPersonalFragment"));
+                data.add(new Item("Student Personal", R.drawable.personalinf,".StudentPersonalInformationFragment"));
                 data.add(new Item("Staff Academic", R.drawable.academic,".StaffAcademicFragment"));
                 data.add(new Item("Willing Subjects", R.drawable.subject,".WillingSubjectsFragment"));
                 data.add(new Item("Staff Transport", R.drawable.transport,".StaffTransportFragment"));

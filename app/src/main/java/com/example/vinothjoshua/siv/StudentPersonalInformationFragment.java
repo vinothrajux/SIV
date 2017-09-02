@@ -1,6 +1,6 @@
 package com.example.vinothjoshua.siv;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -51,7 +51,7 @@ public class StudentPersonalInformationFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.studentpersonalinformation, container, false);
 
-        searchView = (SearchView) view.findViewById(R.id.regno);
+        searchView = (SearchView) view.findViewById(R.id.registerno);
 
         searchView.setSubmitButtonEnabled(true);
 

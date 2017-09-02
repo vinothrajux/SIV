@@ -150,8 +150,53 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Academic Year"
+                            android:text="Semester"
                             />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/semester"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Branch"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/branch"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Branch Code"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/branchCode"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Academic Year"/>
                         <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/academicYear"/>
@@ -161,44 +206,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         style="@style/datapanel">
-
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Date of Birth"
-                            />
+                            android:text="Student Type"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/dateOfBirth"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Gender"
-                            />
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Gender"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Fathers Name"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/FatherName"/>
+                            android:id="@+id/studentType"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -208,10 +222,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Mothers Name"/>
+                            android:text="Folio Number"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/MotherName"/>
+                            android:id="@+id/folioNo"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -221,33 +236,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Present Address"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PresentAddress1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                            android:text="Mark Sheet Submitted"/>
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PresentAddress2"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Present Area"/>
-
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PresentArea"/>
+                            android:id="@+id/markSheetSubmitted"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -257,26 +250,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Pin"/>
+                            android:text="Mark Sheet Sl. Number"/>
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PresentPin"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="State"/>
-
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PresentState"/>
-
-
+                            android:id="@+id/markSheetSlNo"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -286,10 +264,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Mob.No"/>
+                            android:text="Transfer Certficate Submitted"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PresentMobNo"/>
+                            android:id="@+id/transferCertificateSubmitted"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -299,10 +278,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Alternate Mob.No"/>
+                            android:text="TC Serial Number"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PresentAltMobNo"/>
+                            android:id="@+id/tcSerialNo"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -312,10 +292,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Email ID"/>
+                            android:text="Community Certificate Submitted"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PresentEmailId"/>
+                            android:id="@+id/communityCertificateSubmitted"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -325,10 +306,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Alternate Email ID"/>
+                            android:text="Community Certificate Sl. Number"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PresentAltEmailId"/>
+                            android:id="@+id/communityCertificateSlNo"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -338,41 +320,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Permanaent Address"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                            android:text="Xerox Mark Sheet Submitted"/>
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PermanentAddress1"
-                            />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PermanentAddress2"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PermanentArea"/>
+                            android:id="@+id/xeroxMarkSheetSubmitted"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -382,27 +334,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Pin"/>
+                            android:text="Xerox Mark Sheet Copies"/>
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PermanentPin"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="State"/>
-
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PermanentState"/>
-
-
+                            android:id="@+id/xeroxMarkSheetCopies"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -412,10 +348,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Mob.No"/>
+                            android:text="Xerox TC Submitted"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PermanentMobNo"/>
+                            android:id="@+id/xeroxTCSubmitted"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -425,10 +362,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Alternate Mob.No"/>
+                            android:text="Xerox TC Copies"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PermanentAltMobNo"/>
+                            android:id="@+id/xeroxTCCopies"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -438,10 +376,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Email ID"/>
+                            android:text="Xerox Community Certificate Submitted"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PermanentEmailId"/>
+                            android:id="@+id/xeroxCommunityCertificateSubmitted"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -451,10 +390,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Alternate Email ID"/>
+                            android:text="Xerox Community Certificate Copies"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PermanentAltEmailId"/>
+                            android:id="@+id/xeroxCommunityCertificateCopies"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -464,13 +404,112 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Reference"
-                            />
+                            android:text="Migration Certificate Submitted"/>
+
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Reference"/>
-
+                            android:id="@+id/migrationCertificateSubmitted"/>
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Migration Certificaet Sl. Number"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/migrationCertificateSlNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Conduct Certificate Submitted"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/conductCertificateSubmitted"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Conduct Certificate Sl. Number"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/conductCertificateSlNo"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Stamp Size Photo Submitted"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/stampSizePhotoSubmitted"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Stamp Size Photo Copies"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/stampSizePhotoCopies"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Pass Port Photo Submitted"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/passPortPotoSubmitted"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Pass Port Size Photo Copies"/>
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/passPortPotoCopies"/>
+                    </LinearLayout>
+
+
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
             </LinearLayout>  <!-- This if for End the First Row -->
