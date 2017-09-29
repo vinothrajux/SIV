@@ -105,13 +105,6 @@ public class DashboardActivity extends AppCompatActivity {
                 data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleViewFragment"));
                 data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
                 data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
-                data.add(new Item("College ID", R.drawable.idcard,".CollegeIdCardFragment"));
-                data.add(new Item("Bonafide", R.drawable.admission,".BonafideFragment"));
-                data.add(new Item("TC", R.drawable.admission,".TcGenerateFragment"));
-                data.add(new Item("Name List", R.drawable.admission,".NameListFragment"));
-                data.add(new Item("First Aid", R.drawable.firstaid,".FirstAidEntryFragment"));
-                data.add(new Item("Certificate Submission", R.drawable.certificate,".CertificateSubmissionViewFragment"));
-                data.add(new Item("Scholarship", R.drawable.scholarship,".ScholarshipFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
                 break;
 
@@ -127,6 +120,13 @@ public class DashboardActivity extends AppCompatActivity {
             case "OSUPDT":
                 data.add(new Item("Staff Personal", R.drawable.personalinf,".StaffPersonalFragment"));
                 data.add(new Item("Student Personal", R.drawable.personalinf,".StudentPersonalInformationFragment"));
+                data.add(new Item("College ID", R.drawable.idcard,".CollegeIdCardFragment"));
+                data.add(new Item("Bonafide", R.drawable.admission,".BonafideFragment"));
+                data.add(new Item("TC", R.drawable.admission,".TcGenerateFragment"));
+                data.add(new Item("Name List", R.drawable.admission,".NameListFragment"));
+                data.add(new Item("First Aid", R.drawable.firstaid,".FirstAidEntryFragment"));
+                data.add(new Item("Certificate Submission", R.drawable.certificate,".CertificateSubmissionViewFragment"));
+                data.add(new Item("Scholarship", R.drawable.scholarship,".ScholarshipFragment"));
                 data.add(new Item("Staff Academic", R.drawable.academic,".StaffAcademicFragment"));
                 data.add(new Item("Willing Subjects", R.drawable.subject,".WillingSubjectsFragment"));
                 data.add(new Item("Staff Transport", R.drawable.transport,".StaffTransportFragment"));
@@ -389,9 +389,10 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         //PieChart chart = (PieChart) findViewById(R.id.chart);
-
-        mPieChart = (PieChart) findViewById(R.id.piechart);
-        loadData();
+       //commented by me on 18.09.2017
+        //mPieChart = (PieChart) findViewById(R.id.piechart);
+        //loadData();
+        //commented by me on 18.09.2017
     }
     private void initViews(){
 
@@ -439,7 +440,9 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-        mPieChart.startAnimation();
+        //commented by me on 18.09.2017
+        //mPieChart.startAnimation();
+        //commented by me on 18.09.2017
     }
 
 //    @Override
@@ -451,11 +454,12 @@ public class DashboardActivity extends AppCompatActivity {
 //    public void onReset() {
 //
 //    }
-
-    private void loadData() {
-        mPieChart.addPieSlice(new PieModel("Absent", 15, Color.parseColor("#FE6DA8")));
-        mPieChart.addPieSlice(new PieModel("Present", 85, Color.parseColor("#56B7F1")));
+    //commented by me on 18.09.2017
+//    private void loadData() {
+//        mPieChart.addPieSlice(new PieModel("Absent", 15, Color.parseColor("#FE6DA8")));
+//        mPieChart.addPieSlice(new PieModel("Present", 85, Color.parseColor("#56B7F1")));
 //        mPieChart.addPieSlice(new PieModel("Work", 35, Color.parseColor("#CDA67F")));
+    //commented by me on 18.09.2017
 //        mPieChart.addPieSlice(new PieModel("Eating", 9, Color.parseColor("#FED70E")));
 
 //        mPieChart.setOnItemFocusChangedListener(new IOnItemFocusChangedListener() {
@@ -464,8 +468,12 @@ public class DashboardActivity extends AppCompatActivity {
 ////                Log.d("PieChart", "Position: " + _Position);
 //            }
 //        });
-    }
+    //commented by me on 18.09.2017
+  //  }
 
-    private PieChart mPieChart;
+
+ //   private PieChart mPieChart;
+
+    //commented by me on 18.09.2017
 
 }

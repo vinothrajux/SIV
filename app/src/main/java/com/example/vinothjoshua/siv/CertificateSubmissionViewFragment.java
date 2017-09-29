@@ -202,18 +202,21 @@ public class CertificateSubmissionViewFragment extends Fragment {
                 String XeroxCommunityCertificateCopies,Migrationcertificatesubmitted,MigrationCertificateSlNo,Conductcertificatesubmitted;
                 String ConductCertificateSlNo,StampSizePhotosubmitted,StampSizePhotoCopies,PassPortPhotosubmitted;
                 String PassportSizePhotoCopies;
+                String Status_True,Status_False;
+                Status_True = "Submitted";
+                Status_False ="Not Submitted";
 
                 Regno=jsonObj.getString("regno");
                 Admissionno=jsonObj.getString("admissionno");
-                name = jsonObj.getString("studentname");
-                //Log.d("appfor:",AppFor);
+                name = jsonObj.getString("candidatename");
+              //  Log.d("appfor:",Regno);
                 Semester = jsonObj.getString("semester");
                 Branch = jsonObj.getString("branch");
-                BranchCode = jsonObj.getString("branchcode");
+                BranchCode = jsonObj.getString("branchCode");
                // Batch = jsonObj.getString("batch");
 
-                AcademicYear=jsonObj.getString("academicyear");
-                StudentType = jsonObj.getString("studenttype");
+                AcademicYear=jsonObj.getString("academicYear");
+                StudentType = jsonObj.getString("studentType");
                 FoloiNo = jsonObj.getString("foloiNo");
                 Marksheetsubmitted = jsonObj.getString("marksheetsubmitted");
                 MarksheetSlNo = jsonObj.getString("marksheetSlNo");
@@ -248,25 +251,85 @@ public class CertificateSubmissionViewFragment extends Fragment {
                 academicYearText.setText(AcademicYear);
                 studentTypeText.setText(StudentType);
                 foloiNoText.setText(FoloiNo);
-                marksheetsubmittedText.setText(Marksheetsubmitted);
+                if (Marksheetsubmitted == "true") {
+                    marksheetsubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    marksheetsubmittedText.setText(Status_False);
+                }
                 marksheetSlNoText.setText(MarksheetSlNo);
-                transfercertificatesubmittedText.setText(Transfercertificatesubmitted);
+                if (Transfercertificatesubmitted == "true") {
+                    transfercertificatesubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    transfercertificatesubmittedText.setText(Status_False);
+                }
                 transferCertificateSlNoText.setText(TransferCertificateSlNo);
-                communitycertificatesubmittedText.setText(Communitycertificatesubmitted);
+                if (Communitycertificatesubmitted == "true") {
+                    communitycertificatesubmittedText.setText(Status_True);
+                }
+                else
+                    {
+                        communitycertificatesubmittedText.setText(Status_False);
+                    }
                 communityCertificateSlNoText.setText(CommunityCertificateSlNo);
-                xeroxmarksheetsubmittedText.setText(Xeroxmarksheetsubmitted);
+                if (Xeroxmarksheetsubmitted == "true") {
+                    xeroxmarksheetsubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    xeroxmarksheetsubmittedText.setText(Status_False);
+                }
                 xeroxMarksheetCopiesText.setText(XeroxMarksheetCopies);
-                xeroxTransfercertificatesubmittedText.setText(XeroxTransfercertificatesubmitted);
+                if (XeroxTransfercertificatesubmitted == "true") {
+                    xeroxTransfercertificatesubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    xeroxTransfercertificatesubmittedText.setText(Status_False);
+                }
                 xeroxTransferCertificateCopiesText.setText(XeroxTransferCertificateCopies);
-                xeroxCommunitycertificatesubmittedText.setText(XeroxCommunitycertificatesubmitted);
+                if (XeroxCommunitycertificatesubmitted == "true") {
+                    xeroxCommunitycertificatesubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    xeroxCommunitycertificatesubmittedText.setText(Status_False);
+                }
                 xeroxCommunityCertificateCopiesText.setText(XeroxCommunityCertificateCopies);
-                migrationcertificatesubmittedText.setText(Migrationcertificatesubmitted);
+                if (Migrationcertificatesubmitted == "true") {
+                    migrationcertificatesubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    migrationcertificatesubmittedText.setText(Status_False);
+                }
                 migrationCertificateSlNoText.setText(MigrationCertificateSlNo);
-                conductcertificatesubmittedText.setText(Conductcertificatesubmitted);
+                if (Conductcertificatesubmitted == "true") {
+                    conductcertificatesubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    conductcertificatesubmittedText.setText(Status_False);
+                }
                 conductCertificateSlNoText.setText(ConductCertificateSlNo);
-                stampSizePhotosubmittedText.setText(StampSizePhotosubmitted);
+                if (StampSizePhotosubmitted == "true") {
+                    stampSizePhotosubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    stampSizePhotosubmittedText.setText(Status_False);
+                }
                 stampSizePhotoCopiesText.setText(StampSizePhotoCopies);
-                passPortPhotosubmittedText.setText(PassPortPhotosubmitted);
+                if (PassPortPhotosubmitted == "true") {
+                    passPortPhotosubmittedText.setText(Status_True);
+                }
+                else
+                {
+                    passPortPhotosubmittedText.setText(Status_False);
+                }
                 passportSizePhotoCopiesText.setText(PassportSizePhotoCopies);
 
 

@@ -20,7 +20,7 @@
             </intent-filter>
        </activity>
         <activity android:name=".DashboardActivity"
-            android:label="Dashboard">
+            android:label="Steno Dashboard">
         </activity>
         <activity android:name=".OfficeDashboardActivity"
             android:label="Office Dashboard">
