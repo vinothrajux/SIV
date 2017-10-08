@@ -139,22 +139,6 @@
 
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="DashBoard Attendance,Performance"
-                            />
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Performance"
-                            />
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -165,13 +149,30 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Parent Name"
+                            android:text="Father Name"
                             />
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/ParentName"
+                            android:id="@+id/Fathername"
                             />
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Mother Name"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Mothername"
+                            />
+                    </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -182,7 +183,7 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Parent Address"
+                            android:text="Present Address"
                             />
                     </LinearLayout>
 
@@ -195,7 +196,7 @@
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/ParentAddress1"
+                            android:id="@+id/Presentaddress1"
                             />
                     </LinearLayout>
 
@@ -208,7 +209,7 @@
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/ParentAddress2"
+                            android:id="@+id/Presentaddress2"
                             />
                     </LinearLayout>
 
@@ -221,7 +222,31 @@
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/ParentAddress3"
+                            android:id="@+id/PresentArea"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Presentpin"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Presentstate"
                             />
                     </LinearLayout>
 
@@ -240,7 +265,26 @@
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/contactNo"
+                            android:id="@+id/Presentmobileno"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Alternate Contact No"
+                            />
+
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Presentaltmobileno"
                             />
 
                     </LinearLayout>
@@ -258,10 +302,9 @@
                             />
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/EmailId"
+                            android:id="@+id/PresentEmailId"
                             />
                     </LinearLayout>
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -269,20 +312,16 @@
                         style="@style/datapanel">
 
 
-                        <Button
-                            android:id="@+id/loginButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Change Password"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:background="#919978"
-                            android:textColor="#fff"
-                            android:paddingLeft="35dp"
-                            android:paddingRight="35dp"
-                            android:onClick="dashboard"
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Alternate E mail ID"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PresentaltEmailId"
                             />
                     </LinearLayout>
+
 
                 </LinearLayout>
             </LinearLayout>

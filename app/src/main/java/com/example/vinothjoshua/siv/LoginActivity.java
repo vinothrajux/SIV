@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity{
     String password;
     String role;
 
+
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
     @Override
@@ -72,6 +73,7 @@ public class LoginActivity extends AppCompatActivity{
                 runLoginAccessTask.execute();
                 username=usernameEditText.getText().toString();
                 password=passwordEditTExt.getText().toString();
+
 
             }
         });
@@ -165,6 +167,7 @@ public class LoginActivity extends AppCompatActivity{
                 //JSONArray jsonArr = new JSONArray(result);
                 JSONObject jsonObj = new JSONObject(result);
                 role = jsonObj.getString("userRole");
+                utils.setUserId(jsonObj.getString("username"));
 //                for (int i = 0; i < jsonArr.length(); i++) {
 //                    JSONObject jsonObj = jsonArr.getJSONObject(i);
 //                    role = jsonObj.getString("userRole");

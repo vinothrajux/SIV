@@ -1,5 +1,7 @@
 package com.example.vinothjoshua.siv;
 
+import android.util.Log;
+
 import org.json.JSONObject;
 
 import java.net.URLEncoder;
@@ -10,8 +12,23 @@ import java.util.Iterator;
  */
 
 public class Utils {
+    public static String userId;
+
+    public Utils()
+    {
+    }
+
+    public String getUserId()
+    {
+        return userId;
+    }
+    public void setUserId(String userid)
+    {
+        userId = userid;
+    }
+
     public String getApiHost(){
-        return "192.168.43.195:8080";
+        return "192.168.43.38:8080";
     }
 
     public String getPostDataString(JSONObject params) throws Exception {
