@@ -118,6 +118,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Office Supdt":
             case "OSUPDT":
+                data.add(new Item("Staff Search", R.drawable.personalinf,".StaffSearchFragment"));
                 data.add(new Item("Staff Personal", R.drawable.personalinf,".StaffPersonalFragment"));
                 data.add(new Item("Student Personal", R.drawable.personalinf,".StudentPersonalInformationFragment"));
                 data.add(new Item("College ID", R.drawable.idcard,".CollegeIdCardFragment"));
