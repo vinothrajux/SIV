@@ -43,12 +43,12 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Qualification"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Qualification"/>
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Total Teaching Experience"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/TotalteachingExperience"/>
 
                     </LinearLayout>
 
@@ -60,11 +60,13 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Degree"/>
+                            android:text="Theory Subject1 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Degree"/>
-
+                            android:id="@+id/TheorySubject1Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimestheorysubject1handled"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -75,128 +77,13 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Course"/>
+                            android:text="Theory Subject2 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Course"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Board"/>
+                            android:id="@+id/TheorySubject2Name"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Board"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Percentage"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Percentage"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Month and Year of Passing"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/MonthYearOfPassing"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Experience Field"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ExperienceField"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Organisation Name"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/OrganisationName"/>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Designated As"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ExperienceDesignation"/>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="No of Years"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/NoOfYears"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Skill sets"/>
-
+                            android:id="@+id/Nooftimestheorysubject2handled"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -207,11 +94,13 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Award Winner ?"/>
+                            android:text="Theory Subject3 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/AwardWinner"/>
-
+                            android:id="@+id/TheorySubject3Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimestheorysubject3handled"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -222,12 +111,15 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether attended any Training ?"/>
+                            android:text="Theory Subject4 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Training"/>
-
+                            android:id="@+id/TheorySubject4Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimestheorysubject4handled"/>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -236,12 +128,15 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Conducted any Seminars ?"/>
+                            android:text="Theory Subject5 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Seminars"/>
-
+                            android:id="@+id/TheorySubject5Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimestheorysubject5handled"/>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -250,12 +145,15 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Participated in any Paper Presentation ?"/>
+                            android:text="Pratical Subject1 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PaperPresentation"/>
-
+                            android:id="@+id/PracticalSubject1Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimespracticalsubject1handled"/>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -264,12 +162,15 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Participated in any NSS ?"/>
+                            android:text="Pratical Subject2 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Nss"/>
-
+                            android:id="@+id/PracticalSubject2Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimespracticalsubject2handled"/>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -278,12 +179,52 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Participated in any NCC ?"/>
+                            android:text="Pratical Subject3 and No of Times Handled"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Ncc"/>
-
+                            android:id="@+id/PracticalSubject3Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimespracticalsubject3handled"/>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Pratical Subject4 and No of Times Handled"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PracticalSubject4Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimespracticalsubject4handled"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Pratical Subject5 and No of Times Handled"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/PracticalSubject5Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Nooftimespracticalsubject5handled"/>
+                    </LinearLayout>
+
+
+
+
 
                 </LinearLayout>
             </LinearLayout>

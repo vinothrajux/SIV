@@ -10,18 +10,18 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
-        <!-- LinearLayout Rows-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <!-- LinearLayout Columns-->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="5dp">
-                <!-- This is for First Icon Start Row 1 Col 1 -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -35,6 +35,25 @@
                     android:paddingRight="5dp"
                     >
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter StaffId"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/applicationno"
+                            style="@style/SearchBox"
+                            >
+
+                        </SearchView>
+                    </LinearLayout>
 
 
                     <LinearLayout
@@ -43,12 +62,54 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Qualification"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Qualification"/>
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Staff ID"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/StaffId"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Staff Name"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/StaffName"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Date of Join"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/DateofJoin"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Designation"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Designation"/>
 
                     </LinearLayout>
 
@@ -60,10 +121,24 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Degree"/>
+                            android:text="Branch Code"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Degree"/>
+                            android:id="@+id/BranchCode"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Branch"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Branch"/>
 
                     </LinearLayout>
 
@@ -75,38 +150,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Course"/>
+                            android:text="Staff Status"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Course"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Board"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Board"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Percentage"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Percentage"/>
+                            android:id="@+id/StaffStatus"/>
 
                     </LinearLayout>
 
@@ -116,12 +163,15 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Month and Year of Passing"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/MonthYearOfPassing"/>
+                        <Button
+                            android:id="@+id/staffPersonalInformationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Personal Information"
+                            android:background="#00c4ff"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="20dp"
+                            />
 
                     </LinearLayout>
 
@@ -131,101 +181,15 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Experience Field"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ExperienceField"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Organisation Name"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/OrganisationName"/>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Designated As"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ExperienceDesignation"/>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="No of Years"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/NoOfYears"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Skill sets"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether Award Winner ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/AwardWinner"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether attended any Training ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Training"/>
+                        <Button
+                            android:id="@+id/staffAcademicInformationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Academic Information"
+                            android:background="#00c4ff"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="20dp"
+                            />
 
                     </LinearLayout>
                     <LinearLayout
@@ -234,12 +198,15 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether Conducted any Seminars ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Seminars"/>
+                        <Button
+                            android:id="@+id/staffDepositInformationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Deposit Information"
+                            android:background="#00c4ff"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="20dp"
+                            />
 
                     </LinearLayout>
                     <LinearLayout
@@ -248,12 +215,15 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether Participated in any Paper Presentation ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PaperPresentation"/>
+                        <Button
+                            android:id="@+id/staffEligibilityInformationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Eligibility Information"
+                            android:background="#00c4ff"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="20dp"
+                            />
 
                     </LinearLayout>
                     <LinearLayout
@@ -262,12 +232,15 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether Participated in any NSS ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Nss"/>
+                        <Button
+                            android:id="@+id/staffWillingSubjectsInformationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Willing Subjects Information"
+                            android:background="#00c4ff"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="20dp"
+                            />
 
                     </LinearLayout>
                     <LinearLayout
@@ -276,12 +249,15 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether Participated in any NCC ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Ncc"/>
+                        <Button
+                            android:id="@+id/staffTransportInformationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Transport Information"
+                            android:background="#00c4ff"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="20dp"
+                            />
 
                     </LinearLayout>
 

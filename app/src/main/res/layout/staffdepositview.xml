@@ -43,12 +43,12 @@
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Qualification"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Qualification"/>
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Deposit Method"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/TypeofDeposit"/>
 
                     </LinearLayout>
 
@@ -60,10 +60,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Degree"/>
+                            android:text="Whether Original Degree Certificate Submitted ?"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Degree"/>
+                            android:id="@+id/OriginalDegreeCertificate"/>
 
                     </LinearLayout>
 
@@ -75,10 +75,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Course"/>
+                            android:text="Degree Certifcate Serial No"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Course"/>
+                            android:id="@+id/DegreeCertificateSlno"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -89,10 +89,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Board"/>
+                            android:text="Whether Original TC Submitted ?"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Board"/>
+                            android:id="@+id/OriginalTransferCertificate"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -103,99 +103,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Percentage"/>
+                            android:text="Transfer Certificate Serial No"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Percentage"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Month and Year of Passing"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/MonthYearOfPassing"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Experience Field"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ExperienceField"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Organisation Name"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/OrganisationName"/>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Designated As"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/ExperienceDesignation"/>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="No of Years"/>
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/NoOfYears"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                    <TextView
-                        style="@style/TextViewLabel"
-                        android:text="Skill sets"/>
+                            android:id="@+id/TransferCertificateSlno"/>
 
                     </LinearLayout>
 
@@ -207,10 +118,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Award Winner ?"/>
+                            android:text="Whether Original Marksheet Submitted ?"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/AwardWinner"/>
+                            android:id="@+id/OriginalMarkSheet"/>
 
                     </LinearLayout>
 
@@ -222,12 +133,13 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether attended any Training ?"/>
+                            android:text="Mark Sheet Serial No"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Training"/>
+                            android:id="@+id/Marksheetslno"/>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -236,12 +148,14 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Conducted any Seminars ?"/>
+                            android:text="Whether Any other certificate submitted ?"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Seminars"/>
+                            android:id="@+id/OtherCertificate"/>
 
                     </LinearLayout>
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -250,12 +164,14 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Participated in any Paper Presentation ?"/>
+                            android:text="Other Certificate Serial No"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/PaperPresentation"/>
+                            android:id="@+id/OtherCertificateSlNo"/>
 
                     </LinearLayout>
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -264,24 +180,10 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Whether Participated in any NSS ?"/>
+                            android:text="Salary Deposited"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Nss"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Whether Participated in any NCC ?"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Ncc"/>
+                            android:id="@+id/SalaryDeposited"/>
 
                     </LinearLayout>
 
