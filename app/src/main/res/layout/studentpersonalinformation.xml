@@ -135,11 +135,26 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Name"
+                            android:text="Name(loaded from Table1)"
                             />
                         <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/name"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Student Type(loaded from Table2)"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/studentType"
                             />
                     </LinearLayout>
                     <LinearLayout

@@ -12,6 +12,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -38,7 +39,7 @@ public class StudentPersonalInformationFragment extends Fragment {
     TextView PresentEmailText,PresentAltEmailText,PermanentAddress1Text,PermanentAddress2Text;
     TextView PermanentAreaText,PermanentPinCodeText,PermanentStateText,PermanentMobileNoText;
     TextView PermanentAltMobNoText,PermanentEmailText,PermanentAltEmailText;
-    TextView ReferenceText;
+    TextView ReferenceText,StudentTypeText;
 
     SearchView searchView;
     Utils utils = new Utils();
@@ -58,6 +59,7 @@ public class StudentPersonalInformationFragment extends Fragment {
         regnoText=(TextView)view.findViewById(R.id.registerNumber);
         admissionnoText=(TextView)view.findViewById(R.id.admissionNumber);
         nameText =(TextView) view.findViewById(R.id.name);
+        StudentTypeText =(TextView) view.findViewById(R.id.studentType);
         academicyearText=(TextView)view.findViewById(R.id.academicYear);
         dateofbirthText=(TextView) view.findViewById(R.id.dateOfBirth);
         genderText=(TextView) view.findViewById(R.id.Gender);
@@ -152,7 +154,7 @@ public class StudentPersonalInformationFragment extends Fragment {
 
                     StringBuffer sb = new StringBuffer("");
                     String line="";
-
+                    Log.e("check string:",in.readLine());
                     while((line = in.readLine()) != null) {
 
                         sb.append(line);
@@ -188,72 +190,75 @@ public class StudentPersonalInformationFragment extends Fragment {
 
             Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
-                //JSONArray jsonArr = new JSONArray(result);
-
-                JSONObject jsonObj = new JSONObject(result);
+                Log.e("array:",result);
+                JSONArray jsonArr = new JSONArray(result);
+                JSONObject studentPersonalObj=jsonArr.getJSONObject(0);
+                JSONObject studentBaseObj=jsonArr.getJSONObject(1);
+                //JSONObject jsonObj = new JSONObject(result);
                 String Regno,Admissionno,name,AcademicYear, DateOfBirth, GenderStr,CandidateFatherName, CandidateMotherName;
                 String PreA1,PreA2,PreArea,PrePin,PreMob,PreAltMob,PreState,PreEmail,PreAltEmail,Reference;
-                String PerA1,PerA2,PerArea,PerPin,PerMob,PerAltMob,PerState,PerEmail,PerAltEmail;
+                String PerA1,PerA2,PerArea,PerPin,PerMob,PerAltMob,PerState,PerEmail,PerAltEmail, studentType;
 
-                Regno=jsonObj.getString("regno");
-                Admissionno=jsonObj.getString("admissionno");
-                name = jsonObj.getString("name");
+                //Regno=studentPersonalObj.getString("regno");
+                name = studentPersonalObj.getString("name");
+                studentType=studentBaseObj.getString("studenttype");
+
                 //Log.d("appfor:",AppFor);
-                AcademicYear=jsonObj.getString("academicyear");
-                DateOfBirth = jsonObj.getString("dateofbirth");
-                GenderStr = jsonObj.getString("gender");
-                CandidateFatherName = jsonObj.getString("fathername");
-                CandidateMotherName = jsonObj.getString("mothername");
+//                AcademicYear=jsonObj.getString("academicyear");
+//                DateOfBirth = jsonObj.getString("dateofbirth");
+//                GenderStr = jsonObj.getString("gender");
+//                CandidateFatherName = jsonObj.getString("fathername");
+//                CandidateMotherName = jsonObj.getString("mothername");
+//
+//                PreA1=jsonObj.getString("presentaddress1");
+//                PreA2=jsonObj.getString("presentaddress2");
+//                PreArea=jsonObj.getString("presentarea");
+//                PrePin=jsonObj.getString("presentpincode");
+//                PreState=jsonObj.getString("presentstate");
+//                PreMob=jsonObj.getString("presentmobileno");
+//                PreAltMob=jsonObj.getString("presentaltmobileno");
+//                PreEmail=jsonObj.getString("presentemail");
+//                PreAltEmail=jsonObj.getString("presentaltemail");
+//
+//                PerA1=jsonObj.getString("permanentaddress1");
+//                PerA2=jsonObj.getString("permanentaddress2");
+//                PerArea=jsonObj.getString("permanentarea");
+//                PerPin=jsonObj.getString("permanentpincode");
+//                PerState=jsonObj.getString("permanentstate");
+//                PerMob=jsonObj.getString("permanentmobileno");
+//                PerAltMob=jsonObj.getString("permanentaltmobileno");
+//                PerEmail=jsonObj.getString("permanentemail");
+//                PerAltEmail=jsonObj.getString("permanentaltemail");
+//                Reference=jsonObj.getString("reference");
 
-                PreA1=jsonObj.getString("presentaddress1");
-                PreA2=jsonObj.getString("presentaddress2");
-                PreArea=jsonObj.getString("presentarea");
-                PrePin=jsonObj.getString("presentpincode");
-                PreState=jsonObj.getString("presentstate");
-                PreMob=jsonObj.getString("presentmobileno");
-                PreAltMob=jsonObj.getString("presentaltmobileno");
-                PreEmail=jsonObj.getString("presentemail");
-                PreAltEmail=jsonObj.getString("presentaltemail");
-
-                PerA1=jsonObj.getString("permanentaddress1");
-                PerA2=jsonObj.getString("permanentaddress2");
-                PerArea=jsonObj.getString("permanentarea");
-                PerPin=jsonObj.getString("permanentpincode");
-                PerState=jsonObj.getString("permanentstate");
-                PerMob=jsonObj.getString("permanentmobileno");
-                PerAltMob=jsonObj.getString("permanentaltmobileno");
-                PerEmail=jsonObj.getString("permanentemail");
-                PerAltEmail=jsonObj.getString("permanentaltemail");
-                Reference=jsonObj.getString("reference");
-
-                regnoText.setText(Regno);
-                admissionnoText.setText(Admissionno);
-                nameText.setText(name);
-                academicyearText.setText(AcademicYear);
-                dateofbirthText.setText(DateOfBirth);
-                genderText.setText(GenderStr);
-                fathernameText.setText(CandidateFatherName);
-                mothernameText.setText(CandidateMotherName);
-
-                PresentAddress1Text.setText(PreA1);
-                PresentAddress2Text.setText(PreA2);
-                PresentAreaText.setText(PreArea);
-                PresentPinCodeText.setText(PrePin);
-                PresentStateText.setText(PreState);
-                PresentMobileNoText.setText(PreMob);
-                PresentAltMobileNoText.setText(PreAltMob);
-                PresentEmailText.setText(PreEmail);
-                PresentAltEmailText.setText(PreAltEmail);
-                PermanentAddress1Text.setText(PerA1);
-                PermanentAddress2Text.setText(PerA2);
-                PermanentAreaText.setText(PerArea);
-                PermanentPinCodeText.setText(PerPin);
-                PermanentStateText.setText(PerState);
-                PermanentMobileNoText.setText(PerMob);
-                PermanentAltMobNoText.setText(PerAltMob);
-                PermanentEmailText.setText(PerEmail);
-                PermanentAltEmailText.setText(PerAltEmail);
-                ReferenceText.setText(Reference);
+                regnoText.setText(name);
+                StudentTypeText.setText(studentType);
+//                nameText.setText(name);
+//                academicyearText.setText(AcademicYear);
+//                dateofbirthText.setText(DateOfBirth);
+//                genderText.setText(GenderStr);
+//                fathernameText.setText(CandidateFatherName);
+//                mothernameText.setText(CandidateMotherName);
+//
+//                PresentAddress1Text.setText(PreA1);
+//                PresentAddress2Text.setText(PreA2);
+//                PresentAreaText.setText(PreArea);
+//                PresentPinCodeText.setText(PrePin);
+//                PresentStateText.setText(PreState);
+//                PresentMobileNoText.setText(PreMob);
+//                PresentAltMobileNoText.setText(PreAltMob);
+//                PresentEmailText.setText(PreEmail);
+//                PresentAltEmailText.setText(PreAltEmail);
+//                PermanentAddress1Text.setText(PerA1);
+//                PermanentAddress2Text.setText(PerA2);
+//                PermanentAreaText.setText(PerArea);
+//                PermanentPinCodeText.setText(PerPin);
+//                PermanentStateText.setText(PerState);
+//                PermanentMobileNoText.setText(PerMob);
+//                PermanentAltMobNoText.setText(PerAltMob);
+//                PermanentEmailText.setText(PerEmail);
+//                PermanentAltEmailText.setText(PerAltEmail);
+//                ReferenceText.setText(Reference);
 
 
 

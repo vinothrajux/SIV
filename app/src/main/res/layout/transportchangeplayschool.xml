@@ -220,7 +220,7 @@
                             />
                         <TextView
                             style="@style/TextViewLabel"
-                            android:id="@+id/TranspoortTerm-IFees"
+                            android:id="@+id/TranspoortTermIFees"
                             />
                     </LinearLayout>
 
@@ -238,7 +238,7 @@
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/TransportTerm-IIFees"
+                            android:id="@+id/TransportTermIIFees"
                             />
                     </LinearLayout>
 
