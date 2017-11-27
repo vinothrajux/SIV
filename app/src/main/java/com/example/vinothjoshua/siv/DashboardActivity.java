@@ -274,7 +274,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Parent":
             case "STUD":
-
+                data.add(new Item("Profile PS", R.drawable.profile,".PlaySchoolStudentProfileViewFragment"));
                 data.add(new Item("Profile", R.drawable.profile,".ParentProfileViewFragment"));
                 data.add(new Item("Daily Attendance", R.drawable.attendance,".ParentDailyAttfragment"));
                 data.add(new Item("Test Performance", R.drawable.performance,".ParentTestPerFragment"));
