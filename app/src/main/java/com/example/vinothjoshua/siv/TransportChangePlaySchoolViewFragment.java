@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,7 +33,8 @@ import javax.net.ssl.HttpsURLConnection;
 public class TransportChangePlaySchoolViewFragment extends Fragment {
     String transportChangeId;
     EditText transportChangeIdText;
-    TextView TransportChangeIdText,EntryDateText,RegisterNumberText,NameText,ProgramText,SectionText,TransportRequiredText,StageText,TransportinitfeesText,TransportTerm1FeesText,TransportTerm2FeesText;
+    TextView TransportChangeIdText,EntryDateText,RegisterNumberText,NameText,ProgramText,SectionText,TransportinitfeesText,TransportTerm1FeesText,TransportTerm2FeesText;
+    Spinner TransportRequiredSpinner, StageSpinner;
     TextView TransportTotalFeesText,AcademicYearText,RemarksText;
     //Button searchBtn;
     SearchView searchView;
@@ -55,8 +57,10 @@ public class TransportChangePlaySchoolViewFragment extends Fragment {
         NameText = (TextView) view.findViewById(R.id.Name);
         ProgramText = (TextView) view.findViewById(R.id.Program);
         SectionText = (TextView) view.findViewById(R.id.Section);
-        TransportRequiredText = (TextView) view.findViewById(R.id.Transport);
-        StageText = (TextView) view.findViewById(R.id.Stage);
+        //TransportRequiredText = (TextView) view.findViewById(R.id.Transport);
+        TransportRequiredSpinner = (Spinner) view.findViewById(R.id.Transport);
+        //StageText = (TextView) view.findViewById(R.id.Stage);
+        StageSpinner = (Spinner) view.findViewById(R.id.Stage);
         TransportinitfeesText =(TextView) view.findViewById(R.id.TransportInitFees);
         TransportTerm1FeesText=(TextView) view.findViewById(R.id.TranspoortTermIFees);
         TransportTerm2FeesText=(TextView) view.findViewById(R.id.TransportTermIIFees);
@@ -210,8 +214,8 @@ public class TransportChangePlaySchoolViewFragment extends Fragment {
                 ProgramText.setText(Program);
                 SectionText.setText(Section);
 
-                TransportRequiredText.setText(TransportRequired);
-                StageText.setText(Stage);
+//                TransportRequiredText.setText(TransportRequired);
+//                StageText.setText(Stage);
                 TransportinitfeesText.setText(TransportInitFees);
                 TransportTerm1FeesText.setText(TransportTerm1Fees);
                 TransportTerm2FeesText.setText(TransportTerm2Fees);
