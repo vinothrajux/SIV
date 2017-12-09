@@ -22,6 +22,8 @@
                 android:orientation="horizontal"
                 android:layout_marginBottom="5dp">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
+
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -34,6 +36,23 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter Transport Change ID"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TransportChangeId"
+                            style="@style/SearchBox"
+                            ></SearchView>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -275,22 +294,6 @@
                             />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Login User"
-                            />
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Loginuser"
-                            />
-
-                    </LinearLayout>
 
                 </LinearLayout>
 

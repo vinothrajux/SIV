@@ -61,11 +61,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Date"
+                            android:text="Sale Date"
                             />
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Date"
+                            android:id="@+id/SaleDate"
                             />
                     </LinearLayout>
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
@@ -97,11 +97,11 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Action"
+                            android:text="Category"
                             />
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Action"
+                            android:id="@+id/Category"
                             />
                     </LinearLayout>
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
@@ -490,6 +490,21 @@
                             android:id="@+id/Remarks"/>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Academic Year"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/AcademicYear"/>
+
+                    </LinearLayout>
+
                 </LinearLayout>  <!-- This is for First Icon End Row 1 Col 1 -->
 
             </LinearLayout>  <!-- This if for End the First Row -->

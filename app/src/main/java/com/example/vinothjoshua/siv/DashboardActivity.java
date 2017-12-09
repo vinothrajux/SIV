@@ -103,6 +103,7 @@ public class DashboardActivity extends AppCompatActivity {
             //case "Office Admission":
             case "OADMSN":
                 data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleViewFragment"));
+                data.add(new Item("Application Sale PS", R.drawable.application,".ApplicationSaleViewPlaySchoolFragment"));
                 data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
                 data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
@@ -111,6 +112,7 @@ public class DashboardActivity extends AppCompatActivity {
             //case "Office Fees":
             case "FEES":
                 data.add(new Item("Fees Payment",R.drawable.feespayment,".FeesPaymentFragment"));
+                data.add(new Item("Fees Payment PS",R.drawable.feespayment,".FeesPaymentPlaySchoolViewFragment"));
                 data.add(new Item("Exam Fees", R.drawable.examfees,".ExamFeesFragment"));
                 data.add(new Item("Follow up", R.drawable.follow,".FollowupFeesFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".ReportFeeCounterFragment"));
@@ -172,6 +174,7 @@ public class DashboardActivity extends AppCompatActivity {
             //case "Office Transport" :
             case "OTRAN" :
                 data.add(new Item("Transport ID", R.drawable.idcard,".TransportIdFragment"));
+                data.add(new Item("Transport Change PS", R.drawable.idcard,".TransportChangePlaySchoolViewFragment"));
                 data.add(new Item("Route Change", R.drawable.admission,".RouteChangeFragment"));
                 data.add(new Item("MTC Concession", R.drawable.admission,".MTCConcessionFragment"));
                 data.add(new Item("Train Concession", R.drawable.admission,".TrainConcessionFragment"));
