@@ -55,6 +55,21 @@
                         </SearchView>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Date of Join"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/DateofJoin"/>
+
+                    </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -115,6 +130,20 @@
                             android:id="@+id/Age"/>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Blood Group"/>
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/BloodGroup"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -130,7 +159,6 @@
                             android:id="@+id/Gender"/>
 
                     </LinearLayout>
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -139,12 +167,13 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Blood Group"/>
+                            android:text="Marital Status"/>
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/BloodGroup"/>
+                            android:id="@+id/MaritalStatus"/>
 
                     </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -203,24 +232,6 @@
                             android:id="@+id/MothersName"/>
 
                     </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Marital Status"/>
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/MaritalStatus"/>
-
-                    </LinearLayout>
-
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
