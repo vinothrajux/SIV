@@ -197,6 +197,7 @@ public class DashboardActivity extends AppCompatActivity {
                 data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestFragment"));
                 data.add(new Item("Events", R.drawable.events,".StaffEventsFragment"));
                 data.add(new Item("Reports", R.drawable.reports,".StaffReportsFragment"));
+                data.add(new Item("Image Upload", R.drawable.reports,".PhotoGalleryUploadPlaySchoolFragment"));
 
                 break;
 

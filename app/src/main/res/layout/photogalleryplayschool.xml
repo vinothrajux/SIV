@@ -51,8 +51,14 @@
                             android:id="@+id/image"
                             />
 
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="250dp"
+                            android:id="@+id/chosenImage"
+                            android:visibility="gone"
+                            />
                         <Button
-                            android:id="@+id/loginButton2"
+                            android:id="@+id/chooseImageBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Upload"
@@ -62,7 +68,18 @@
                             android:textColor="#fff"
                             android:paddingLeft="50dp"
                             android:paddingRight="50dp"
-                            android:onClick="dashboard"
+                            />
+                        <Button
+                            android:id="@+id/uploadImageBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#919978"
+                            android:textColor="#fff"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
                             />
 
                     </LinearLayout>

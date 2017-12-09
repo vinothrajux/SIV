@@ -28,7 +28,7 @@ public class Utils {
     }
 
     public String getApiHost(){
-        return "192.168.43.38:8080";
+        return "192.168.43.195:8080";
     }
 
     public String getPostDataString(JSONObject params) throws Exception {
