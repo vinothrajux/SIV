@@ -156,7 +156,7 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
 
                 JSONObject postDataParams = new JSONObject();
                 registerNumber = utils.getUserId();
-                postDataParams.put("regno", "TOD101");
+                postDataParams.put("registernumber", registerNumber);
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 //                conn.setReadTimeout(15000 /* milliseconds */);
@@ -289,7 +289,7 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
                 academicyearText.setText(AcademicYear);
                 programText.setText(Program);
                 sectionText.setText(Section);
-                dateofbirthText.setText(DateofBirth);
+                dateofbirthText.setText(utils.convertToDateFormat(DateofBirth));
                 ageText.setText(Age);
                 genderText.setText(Gender);
                 candfathernameText.setText(CandFatherName);

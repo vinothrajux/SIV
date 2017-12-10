@@ -114,12 +114,12 @@ public class FeesPaymentPlaySchoolViewFragment extends Fragment {
 
 
             try {
-                URL url = new URL("http://"+apiUrl+"/api/v1/playschoolstudentpersonalinformation/getPlaySchoolStudentProfileInformationDetail");
+                URL url = new URL("http://"+apiUrl+"/api/v1/feespaymentplayschool/getPlaySchoolFeesPaymentInformationDetail");
 
 
                 JSONObject postDataParams = new JSONObject();
-                billNumber = utils.getUserId();
-                postDataParams.put("billno", "101");
+                //billNumber = utils.getUserId();
+                postDataParams.put("billno", billNumber);
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 //                conn.setReadTimeout(15000 /* milliseconds */);

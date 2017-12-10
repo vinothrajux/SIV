@@ -34,6 +34,23 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter Pick up ID"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/PickupId"
+                            style="@style/SearchBox"
+                            ></SearchView>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -70,6 +87,102 @@
                             android:id="@+id/Day"
                             />
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Time"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Time"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Register Number"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/RegisterNumber"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Name"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Name"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Program"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Program"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Section"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Section"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Academic Year"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/AcademicYear"
+                            />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -85,6 +198,22 @@
                             style="@style/TextViewContent"
                             android:id="@+id/PickupPersonName"
                             />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Relationship"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Relationship"
+                            />
+
                     </LinearLayout>
 
 
@@ -104,41 +233,6 @@
                             />
 
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="Relationship"
-                            />
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/Relationship"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
-                            android:text="pickUpTime"
-                            />
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/PickupTime"
-                            />
-
-                    </LinearLayout>
-
 
                     <LinearLayout
                         android:layout_width="match_parent"

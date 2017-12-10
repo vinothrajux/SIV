@@ -123,7 +123,7 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
 
 
             try {
-                URL url = new URL("http://"+apiUrl+"/api/v1/admissioncounselling/getApplcationDetail");
+                URL url = new URL("http://"+apiUrl+"/api/v1/playschoolapplicationsale/getPlaySchoolApplcationDetail");
 
 
                 JSONObject postDataParams = new JSONObject();

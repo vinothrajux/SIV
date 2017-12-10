@@ -34,6 +34,23 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter Remark ID"
+                            />
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/RemarkId"
+                            style="@style/SearchBox"
+                            ></SearchView>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -79,7 +96,7 @@
                             style="@style/TextViewLabel"
                             android:text="From Month to To Month"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/FromMonth"
                             />
@@ -127,23 +144,6 @@
 
                         <TextView
                             style="@style/TextViewLabel"
-                            android:text="Academic Year"
-                            />
-                        <TextView
-                            style="@style/TextViewContent"
-                            android:id="@+id/AcademicYear"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
-
-                        <TextView
-                            style="@style/TextViewLabel"
                             android:text="Program"
                             />
                         <TextView
@@ -169,6 +169,22 @@
                             />
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Academic Year"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/AcademicYear"
+                            />
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -180,7 +196,7 @@
                             style="@style/TextViewLabel"
                             android:text="Category 1"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category1"
                             />
@@ -196,7 +212,7 @@
                             style="@style/TextViewLabel"
                             android:text="Category 2"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category2"
                             />
@@ -212,7 +228,7 @@
                             style="@style/TextViewLabel"
                             android:text="Category 3"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category3"
                             />
@@ -228,7 +244,7 @@
                             style="@style/TextViewLabel"
                             android:text="Category 4"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category4"
                             />
@@ -244,7 +260,7 @@
                             style="@style/TextViewLabel"
                             android:text="Category 5"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category5"
                             />
@@ -260,7 +276,7 @@
                             style="@style/TextViewLabel"
                             android:text="Category 6"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category6"
                             />
@@ -276,32 +292,57 @@
                             style="@style/TextViewLabel"
                             android:text="Category 7"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/Category7"
                             />
                     </LinearLayout>
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         style="@style/datapanel">
 
-                        <Button
-                            android:id="@+id/loginButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="View Progress"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:background="#919978"
-                            android:textColor="#fff"
-                            android:paddingLeft="50dp"
-                            android:paddingRight="50dp"
-                            android:onClick="dashboard"
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Category 8"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Category8"
                             />
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Category 9"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Category9"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Category 10"
+                            />
+                        <TextView
+                            style="@style/TextViewContent"
+                            android:id="@+id/Category10"
+                            />
+                    </LinearLayout>
+
 
 
 

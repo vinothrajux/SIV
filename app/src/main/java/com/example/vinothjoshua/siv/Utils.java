@@ -1,11 +1,19 @@
 package com.example.vinothjoshua.siv;
 
+import android.text.format.DateFormat;
 import android.util.Log;
 
 import org.json.JSONObject;
 
 import java.net.URLEncoder;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Iterator;
+import java.util.Locale;
+
+import static com.example.vinothjoshua.siv.R.id.time;
 
 /**
  * Created by VinothJoshua on 8/3/2017.
@@ -54,5 +62,13 @@ public class Utils {
 
         }
         return result.toString();
+    }
+
+    public String convertToDateFormat(String getdate){
+        long l = Long.parseLong(getdate);
+        Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+        cal.setTimeInMillis(l);
+        String date = DateFormat.format("dd-MM-yyyy", cal).toString();
+        return date;
     }
 }

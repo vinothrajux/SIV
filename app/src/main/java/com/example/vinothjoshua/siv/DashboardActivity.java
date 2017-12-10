@@ -120,6 +120,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Office Supdt":
             case "OSUPDT":
+                data.add(new Item("Staff Personal PS", R.drawable.personalinf,".StaffBioDataViewPlaySchoolFragment"));
                 data.add(new Item("Staff Search", R.drawable.personalinf,".StaffSearchFragment"));
                 data.add(new Item("Staff Personal", R.drawable.personalinf,".StaffPersonalFragment"));
                 data.add(new Item("Student Personal", R.drawable.personalinf,".StudentPersonalInformationFragment"));
@@ -147,6 +148,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Office Steno":
             case "OSTN":
+                data.add(new Item("Events PS", R.drawable.fees,".EventsPlaySchoolViewFragment"));
                 data.add(new Item("Fees Events", R.drawable.fees,".FeesEventsActivity"));
                 data.add(new Item("Branch Events", R.drawable.branches,".BranchEventsActivity"));
                 data.add(new Item("Exam Events", R.drawable.exam,".ExamEventsActivity"));
@@ -191,6 +193,9 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Teaching Staff":
             case "TSTAFF":
+                data.add(new Item("Home Work Entry PS", R.drawable.homework,".HomeWorkPlaySchoolViewFragment"));
+                data.add(new Item("Childs Pickup PS", R.drawable.homework,".ChildPickupViewPlaySchoolFragment"));
+                data.add(new Item("Childs Progress PS", R.drawable.homework,".IndividualStudentProgressPlaySchoolViewFragment"));
                 data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
                 data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
                 data.add(new Item("View Internal Mark", R.drawable.internal,".TSViewInternalFragment"));
