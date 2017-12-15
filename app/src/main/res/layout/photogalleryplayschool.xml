@@ -61,7 +61,7 @@
                             android:id="@+id/chooseImageBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Upload"
+                            android:text="Select Photo"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
                             android:background="#919978"

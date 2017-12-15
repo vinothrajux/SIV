@@ -46,29 +46,41 @@ public class DashboardActivity extends AppCompatActivity {
     {
          switch(userRole){
             case "MGMT":
-                data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingFragment"));
-                data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionStatusFragment"));
-                data.add(new Item("College Fees Setting", R.drawable.accounts1,".CollegeFeesSettingFragment"));
-                data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".TransportFeesSettingFragment"));
-                data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".HostelFeesSettingFragment"));
-                data.add(new Item("Food Fees Setting", R.drawable.accounts1,".HostelFeesSettingFragment"));
-                data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".StaffAttendanceFragment"));
-                data.add(new Item("Student Attendance", R.drawable.attendance,".StudentAttendanceFragment"));
-                data.add(new Item("Staff Performance", R.drawable.performance,".StaffPerformanceFragment"));
-                data.add(new Item("Department Performance", R.drawable.performance,".DepartmentPerformanceFragment"));
-                data.add(new Item("Salary Calculation", R.drawable.salary,".SalaryCalculationFragment"));
-                data.add(new Item("Staff Requirement", R.drawable.admission,".StaffReqFragment"));
-                data.add(new Item("Locate Staff", R.drawable.locatestaff,"LocateStaffFragment"));
-                data.add(new Item("Admin Removal", R.drawable.adminremoval,".AdminRemovalFragment"));
-                data.add(new Item("Placement Performance", R.drawable.performance,".PlacementPerformFragment"));
-                data.add(new Item("Promote Staff", R.drawable.promotestaff,".PromoteStaffFragment"));
-                data.add(new Item("Relieve Staff", R.drawable.relievestaff,".RelieveStaffFragment"));
-                data.add(new Item("Approvals", R.drawable.approval,".ApprovalsFragment"));
-                data.add(new Item("Events", R.drawable.events,".EventsFragment"));
-                data.add(new Item("Transport Maintenance", R.drawable.transport,".TransportMaintenanceFragment"));
-                data.add(new Item("Hostel", R.drawable.hostel,".HostelManagementFragment"));
-                data.add(new Item("Reports", R.drawable.reports,".ReportsFragment"));
-                data.add(new Item("Sports Performance", R.drawable.sports,".SportsPerformFragment"));
+
+                data.add(new Item("Student Attendance",R.drawable.attendance,".AdmissionCounsellingFragment"));
+                data.add(new Item("Staff Attendance",R.drawable.staff_attendance,".AdmissionCounsellingFragment"));
+                data.add(new Item("School Fees Set",R.drawable.accounts1,".AdmissionCounsellingFragment"));
+                data.add(new Item("Transport Fees Set",R.drawable.accounts1,".AdmissionCounsellingFragment"));
+                data.add(new Item("Daily Fees Report",R.drawable.reports,".AdmissionCounsellingFragment"));
+                data.add(new Item("Admission Status",R.drawable.accounts,".AdmissionCounsellingFragment"));
+                data.add(new Item("Student Progress",R.drawable.performance,".AdmissionCounsellingFragment"));
+                data.add(new Item("Class Progress",R.drawable.performance,".AdmissionCounsellingFragment"));
+                data.add(new Item("Parent FeedBack",R.drawable.feedback,".AdmissionCounsellingFragment"));
+                data.add(new Item("Reports",R.drawable.reports,".AdmissionCounsellingFragment"));
+
+//                data.add(new Item("Admission Counselling",R.drawable.admission,".AdmissionCounsellingFragment"));
+//                data.add(new Item("Admission Status", R.drawable.accounts,".AdmissionStatusFragment"));
+//                data.add(new Item("College Fees Setting", R.drawable.accounts1,".CollegeFeesSettingFragment"));
+//                data.add(new Item("Transport Fees Setting", R.drawable.accounts1,".TransportFeesSettingFragment"));
+//                data.add(new Item("Hostel Fees Setting", R.drawable.accounts1,".HostelFeesSettingFragment"));
+//                data.add(new Item("Food Fees Setting", R.drawable.accounts1,".HostelFeesSettingFragment"));
+//                data.add(new Item("Staff Attendance", R.drawable.staff_attendance,".StaffAttendanceFragment"));
+//                data.add(new Item("Student Attendance", R.drawable.attendance,".StudentAttendanceFragment"));
+//                data.add(new Item("Staff Performance", R.drawable.performance,".StaffPerformanceFragment"));
+//                data.add(new Item("Department Performance", R.drawable.performance,".DepartmentPerformanceFragment"));
+//                data.add(new Item("Salary Calculation", R.drawable.salary,".SalaryCalculationFragment"));
+//                data.add(new Item("Staff Requirement", R.drawable.admission,".StaffReqFragment"));
+//                data.add(new Item("Locate Staff", R.drawable.locatestaff,"LocateStaffFragment"));
+//                data.add(new Item("Admin Removal", R.drawable.adminremoval,".AdminRemovalFragment"));
+//                data.add(new Item("Placement Performance", R.drawable.performance,".PlacementPerformFragment"));
+//                data.add(new Item("Promote Staff", R.drawable.promotestaff,".PromoteStaffFragment"));
+//                data.add(new Item("Relieve Staff", R.drawable.relievestaff,".RelieveStaffFragment"));
+//                data.add(new Item("Approvals", R.drawable.approval,".ApprovalsFragment"));
+//                data.add(new Item("Events", R.drawable.events,".EventsFragment"));
+//                data.add(new Item("Transport Maintenance", R.drawable.transport,".TransportMaintenanceFragment"));
+//                data.add(new Item("Hostel", R.drawable.hostel,".HostelManagementFragment"));
+//                data.add(new Item("Reports", R.drawable.reports,".ReportsFragment"));
+//                data.add(new Item("Sports Performance", R.drawable.sports,".SportsPerformFragment"));
                 break;
 
             case "PRPL":
@@ -102,11 +114,20 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Office Admission":
             case "OADMSN":
-                data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleViewFragment"));
-                data.add(new Item("Application Sale PS", R.drawable.application,".ApplicationSaleViewPlaySchoolFragment"));
-                data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
-                data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
-                data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
+                //data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleViewFragment"));
+                data.add(new Item("Application Sale", R.drawable.application,".ApplicationSaleViewPlaySchoolFragment"));
+                data.add(new Item("Admission", R.drawable.admissionent,".AdmissionPlaySchoolViewFragment"));
+                data.add(new Item("Cash Counter", R.drawable.feespayment,".FeesPaymentPlaySchoolViewFragment"));
+                data.add(new Item("Transport Change", R.drawable.idcard,".TransportChangePlaySchoolViewFragment"));
+                data.add(new Item("Events Update", R.drawable.events,".EventsPlaySchoolViewFragment"));
+                data.add(new Item("Emergency Message", R.drawable.application,".EmergencyAlarmPlaySchoolFragment"));
+                data.add(new Item("Name List", R.drawable.application,".EmergencyAlarmPlaySchoolFragment"));
+                data.add(new Item("Staff Bio Data", R.drawable.personalinf,".StaffBioDataViewPlaySchoolFragment"));
+                data.add(new Item("Reports", R.drawable.reports,".StaffBioDataViewPlaySchoolFragment"));
+
+                //data.add(new Item("Admission Entry", R.drawable.admissionent,".AdmissionEntryFragment"));
+                //data.add(new Item("Follow up", R.drawable.follower,".ApplicationFollowFragment"));
+                //data.add(new Item("Reports", R.drawable.reports,".OffAdmissionReportFragment"));
                 break;
 
             //case "Office Fees":
@@ -196,16 +217,20 @@ public class DashboardActivity extends AppCompatActivity {
                 data.add(new Item("Home Work Entry PS", R.drawable.homework,".HomeWorkPlaySchoolViewFragment"));
                 data.add(new Item("Childs Pickup PS", R.drawable.homework,".ChildPickupViewPlaySchoolFragment"));
                 data.add(new Item("Childs Progress PS", R.drawable.homework,".IndividualStudentProgressPlaySchoolViewFragment"));
-                data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
-                data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
-                data.add(new Item("View Internal Mark", R.drawable.internal,".TSViewInternalFragment"));
-                data.add(new Item("Time Table", R.drawable.timetable,".TSTimeTableViewerFragment"));
-                data.add(new Item("Home Work Entry", R.drawable.homework,".HomeWOrkEntryFragment"));
-                data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestFragment"));
-                data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestFragment"));
-                data.add(new Item("Events", R.drawable.events,".StaffEventsFragment"));
-                data.add(new Item("Reports", R.drawable.reports,".StaffReportsFragment"));
-                data.add(new Item("Image Upload", R.drawable.reports,".PhotoGalleryUploadPlaySchoolFragment"));
+                data.add(new Item("Attendance Entry", R.drawable.attendance,".IndividualStudentProgressPlaySchoolViewFragment"));
+                data.add(new Item("Photo Upload", R.drawable.homework,".PhotoGalleryUploadPlaySchoolFragment"));
+                data.add(new Item("Video Upload", R.drawable.homework,".IndividualStudentProgressPlaySchoolViewFragment"));
+
+//                data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
+//                data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
+//                data.add(new Item("View Internal Mark", R.drawable.internal,".TSViewInternalFragment"));
+//                data.add(new Item("Time Table", R.drawable.timetable,".TSTimeTableViewerFragment"));
+//                data.add(new Item("Home Work Entry", R.drawable.homework,".HomeWOrkEntryFragment"));
+//                data.add(new Item("Requirements Request", R.drawable.admission,".MaterialRequirementRequestFragment"));
+//                data.add(new Item("Leave Request", R.drawable.leaveletter,".StaffLeaveRequestFragment"));
+//                data.add(new Item("Events", R.drawable.events,".StaffEventsFragment"));
+//                data.add(new Item("Reports", R.drawable.reports,".StaffReportsFragment"));
+//                data.add(new Item("Image Upload", R.drawable.reports,".PhotoGalleryUploadPlaySchoolFragment"));
 
                 break;
 
@@ -283,17 +308,28 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Parent":
             case "STUD":
-                data.add(new Item("Profile PS", R.drawable.profile,".PlaySchoolStudentProfileViewFragment"));
-                data.add(new Item("Profile", R.drawable.profile,".ParentProfileViewFragment"));
-                data.add(new Item("Daily Attendance", R.drawable.attendance,".ParentDailyAttfragment"));
-                data.add(new Item("Test Performance", R.drawable.performance,".ParentTestPerFragment"));
-                data.add(new Item("Exam Performance", R.drawable.performance,".ParentExamPerFragment"));
-                data.add(new Item("Fees Payment", R.drawable.feespayment,".ParentFeesPaymentFragment"));
-                data.add(new Item("Home Work", R.drawable.homework,".ParentHomeWorkFragment"));
-                data.add(new Item("Leave Request", R.drawable.leaveletter,".ParentLeaveReqFragment"));
-                data.add(new Item("Events", R.drawable.events,".ParentEventFragment"));
-                data.add(new Item("Feed Back", R.drawable.feedback,".ParentFeedBackFragment"));
-                data.add(new Item("Remarks", R.drawable.admission,".ParentRemarksFragment"));
+                data.add(new Item("Photo Gallery", R.drawable.profile,".PhotoGalleryPlaySchoolFragment"));
+                data.add(new Item("Profile", R.drawable.profile,".PlaySchoolStudentProfileViewFragment"));
+                data.add(new Item("Attendance", R.drawable.attendance,".DailyAttendanceViewParentPlaySchoolFragment"));
+                data.add(new Item("Pickup Information", R.drawable.profile,".ChildPickupViewPlaySchoolFragment"));
+                data.add(new Item("Photo Upload", R.drawable.profile,".PhotoGalleryUploadPlaySchoolFragment"));
+                data.add(new Item("Video Gallery", R.drawable.profile,".VideoGalleryPlaySchoolFragment"));
+                data.add(new Item("Fees Payment", R.drawable.feespayment,".FeesPaymentPlaySchoolViewFragment"));
+                data.add(new Item("Home Work", R.drawable.homework,".HomeWorkPlaySchoolViewFragment"));
+                data.add(new Item("Events", R.drawable.profile,".EventsPlaySchoolViewFragment"));
+                data.add(new Item("Progress", R.drawable.profile,".IndividualStudentProgressPlaySchoolViewFragment"));
+
+
+//                data.add(new Item("Profile", R.drawable.profile,".ParentProfileViewFragment"));
+//                data.add(new Item("Daily Attendance", R.drawable.attendance,".ParentDailyAttfragment"));
+//                data.add(new Item("Test Performance", R.drawable.performance,".ParentTestPerFragment"));
+//                data.add(new Item("Exam Performance", R.drawable.performance,".ParentExamPerFragment"));
+//                data.add(new Item("Fees Payment", R.drawable.feespayment,".ParentFeesPaymentFragment"));
+//                data.add(new Item("Home Work", R.drawable.homework,".ParentHomeWorkFragment"));
+//                data.add(new Item("Leave Request", R.drawable.leaveletter,".ParentLeaveReqFragment"));
+//                data.add(new Item("Events", R.drawable.events,".ParentEventFragment"));
+//                data.add(new Item("Feed Back", R.drawable.feedback,".ParentFeedBackFragment"));
+//                data.add(new Item("Remarks", R.drawable.admission,".ParentRemarksFragment"));
 
                 break;
 
