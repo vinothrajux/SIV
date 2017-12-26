@@ -185,7 +185,7 @@ public class ChildPickupViewPlaySchoolFragment extends Fragment {
                 Pickuppersonmobileno = jsonObj.getString("pickuppersonmobileno");
                 remarks = jsonObj.getString("remarks");
                 //AppForText.setText(AppFor);
-                EntryDateText.setText(EntryDate);
+                EntryDateText.setText(utils.convertToDateFormat(EntryDate));
                 EntryDayText.setText(EntryDay);
                 EntryTimeText.setText(EntryTime);
                 RegisterNumberText.setText(RegisterNumber);

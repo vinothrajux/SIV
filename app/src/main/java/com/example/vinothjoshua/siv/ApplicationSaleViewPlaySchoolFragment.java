@@ -32,7 +32,7 @@ import javax.net.ssl.HttpsURLConnection;
 public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
     String applicationNumber;
     EditText appNoText;
-    TextView AppSaleDateText,CategoryText,AppForText,CandidateFirstNameText,CandidateMiddleNameText,CandidateLastNameText,DateofBirthText,AgeText,GenderText,FatherNameText;
+    TextView AppSaleDateText,CategoryText,AppForText,ApplicationNoText,CandidateFirstNameText,CandidateMiddleNameText,CandidateLastNameText,DateofBirthText,AgeText,GenderText,FatherNameText;
     TextView MotherNameText,PresentAddress1Text,PresentAddress2Text,PresentAreaText;
     TextView PresentPinCodeText,PresentStateText,FathersMobileNoText,FathersAltMobileNoText;
     TextView MothersMobileNoText,MothersAltMobileNoText,FathersEmailText,MothersEmailText;
@@ -55,6 +55,7 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
         searchView.setSubmitButtonEnabled(true);
         AppSaleDateText=(TextView) view.findViewById(R.id.SaleDate);
         CategoryText=(TextView) view.findViewById(R.id.Category);
+        ApplicationNoText =(TextView) view.findViewById(R.id.EnquiryNo);
         AppForText = (TextView) view.findViewById(R.id.AppFor);
         CandidateFirstNameText = (TextView) view.findViewById(R.id.FirstName);
         CandidateMiddleNameText = (TextView) view.findViewById(R.id.MiddleName);
@@ -196,7 +197,7 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
                 //JSONArray jsonArr = new JSONArray(result);
 
                 JSONObject jsonObj = new JSONObject(result);
-                String AppSaleDate,Category,AppFor, CandidateFirstName, CandidateMiddleName, CandidateLastName,DateofBirth,Age,Gender, CandidateFatherName, CandidateMotherName, CandidateName;
+                String AppSaleDate,Category,AppFor,ApplicationNo, CandidateFirstName, CandidateMiddleName, CandidateLastName,DateofBirth,Age,Gender, CandidateFatherName, CandidateMotherName, CandidateName;
                 String AddressL1,AddressL2,PreA1,PreA2,PreArea,PrePin,PreState,FathersMobileNo,FathersAltMobNo,MothersMobNo,MothersAltMobNo,FathersEmail,MothersEmail,Reference;
                 String Willingtojoin;
                 String FollowupDate,ApplicationPrice,ApplicationPaidMode,Remarks,AcademicYear;
@@ -205,6 +206,7 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
                 AppSaleDate=jsonObj.getString("saledate");
                 Category=jsonObj.getString("category");
                 AppFor = jsonObj.getString("appfor");
+                ApplicationNo = jsonObj.getString("applno");
                 Log.d("appfor:",AppFor);
 
                 CandidateFirstName = jsonObj.getString("candfirstname");
@@ -243,9 +245,10 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
 
                 Log.e("applicationsale:",CandidateFirstName);
                 //AppForText.setText(AppFor);
-                AppSaleDateText.setText(AppSaleDate);
+                AppSaleDateText.setText(utils.convertToDateFormat(AppSaleDate));
                 CategoryText.setText(Category);
                 AppForText.setText(AppFor);
+                ApplicationNoText.setText(ApplicationNo);
 
                 CandidateFirstNameText.setText(CandidateFirstName);
 //                if(CandidateMiddleName == '0'){
@@ -258,7 +261,7 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
                 CandidateMiddleNameText.setText(CandidateMiddleName);
                 CandidateLastNameText.setText(CandidateLastName);
 
-                DateofBirthText.setText(DateofBirth);
+                DateofBirthText.setText(utils.convertToDateFormat(DateofBirth));
                 AgeText.setText(Age);
                 GenderText.setText(Gender);
                 FatherNameText.setText(CandidateFatherName);
@@ -277,7 +280,7 @@ public class ApplicationSaleViewPlaySchoolFragment extends Fragment {
                 MothersEmailText.setText(MothersEmail);
                 ReferenceText.setText(Reference);
                 WillingtojoinText.setText(Willingtojoin);
-                FollowupDateText.setText(FollowupDate);
+                FollowupDateText.setText(utils.convertToDateFormat(FollowupDate));
                 ApplicationPriceText.setText(ApplicationPrice);
                 ApplicationPaidModeText.setText(ApplicationPaidMode);
                 RemarksText.setText(Remarks);

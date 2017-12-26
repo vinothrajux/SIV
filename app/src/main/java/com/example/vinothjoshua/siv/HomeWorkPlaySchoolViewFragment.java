@@ -177,7 +177,7 @@ public class HomeWorkPlaySchoolViewFragment extends Fragment {
                 SubjectCategory = jsonObj.getString("subjectcategory");
                 HomeWorkContent = jsonObj.getString("homeworkcontent");
                 //AppForText.setText(AppFor);
-                EntryDateText.setText(EntryDate);
+                EntryDateText.setText(utils.convertToDateFormat(EntryDate));
                 EntryDayText.setText(EntryDay);
                 ProgramText.setText(Program);
                 SectionText.setText(Section);

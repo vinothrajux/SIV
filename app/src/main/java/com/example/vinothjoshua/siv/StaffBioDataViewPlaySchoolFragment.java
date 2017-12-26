@@ -228,10 +228,10 @@ public class StaffBioDataViewPlaySchoolFragment extends Fragment {
                 NoofYears=jsonObj.getString("noofyears");
 
                 //AppForText.setText(AppFor);
-                DateofJoinText.setText(DateofJoin);
+                DateofJoinText.setText(utils.convertToDateFormat(DateofJoin));
                 StaffNameText.setText(StaffName);
                 DesignationText.setText(Designation);
-                DateofBirthText.setText(DateofBirth);
+                DateofBirthText.setText(utils.convertToDateFormat(DateofBirth));
                 AgeText.setText(Age);
                 BloodGroupText.setText(BloodGroup);
                 GenderText.setText(Gender);

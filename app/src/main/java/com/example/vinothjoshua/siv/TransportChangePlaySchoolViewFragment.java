@@ -200,7 +200,7 @@ public class TransportChangePlaySchoolViewFragment extends Fragment {
                 Remarks=jsonObj.getString("remarks");
                 //AppForText.setText(AppFor);
                 TransportChangeIdText.setText(TransportChangeId);
-                EntryDateText.setText(EntryDate);
+                EntryDateText.setText(utils.convertToDateFormat(EntryDate));
                 RegisterNumberText.setText(RegisterNumber);
 
                 NameText.setText(Name);

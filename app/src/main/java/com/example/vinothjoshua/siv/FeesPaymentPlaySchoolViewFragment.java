@@ -213,7 +213,7 @@ public class FeesPaymentPlaySchoolViewFragment extends Fragment {
                 ChequeDate = tabletwoObj.getString("chequedate");
                 BankName = tabletwoObj.getString("bankname");
 
-                DateText.setText(BillDate);
+                DateText.setText(utils.convertToDateFormat(BillDate));
                 registerNumberText.setText(Registernumber);
                 nameText.setText(name);
                 programText.setText(Program);
@@ -228,7 +228,7 @@ public class FeesPaymentPlaySchoolViewFragment extends Fragment {
                 totalFeesText.setText(TotalFees);
                 totalFeesPaidText.setText(TotalFeesPaid);
                 balanceText.setText(Balance);
-                dueDateText.setText(DueDate);
+                dueDateText.setText(utils.convertToDateFormat(DueDate));
                 paymentMethodText.setText(PaymentMethod);
                 chequeNoText.setText(Chequeno);
                 chequeDateText.setText(ChequeDate);

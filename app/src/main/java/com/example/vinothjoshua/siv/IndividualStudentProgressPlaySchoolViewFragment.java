@@ -199,7 +199,7 @@ public class IndividualStudentProgressPlaySchoolViewFragment extends Fragment {
                 Category9Rating = jsonObj.getString("category9rating");
                 Category10Rating = jsonObj.getString("category10rating");
                 //AppForText.setText(AppFor);
-                EntryDateText.setText(EntryDate);
+                EntryDateText.setText(utils.convertToDateFormat(EntryDate));
                 EntryDayText.setText(EntryDay);
                 MonthText.setText(Month);
                 RegisterNumberText.setText(RegisterNumber);

@@ -61,7 +61,7 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
         regnoText=(TextView)view.findViewById(R.id.RegNo);
         // admissionnoText=(TextView)view.findViewById(R.id.admissionNumber);
         nameText =(TextView) view.findViewById(R.id.Name);
-        academicyearText=(TextView)view.findViewById(R.id.AcademicYear);
+
 
         programText=(TextView)view.findViewById(R.id.Program);
         sectionText=(TextView)view.findViewById(R.id.Section);
@@ -112,6 +112,7 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
         pickuppersonrelationshipText=(TextView)view.findViewById(R.id.Pickuppersonrelationship);
         transportText=(TextView)view.findViewById(R.id.Transport);
         transportstageText=(TextView)view.findViewById(R.id.TransportStage);
+        academicyearText=(TextView)view.findViewById(R.id.AcademicYear);
 
 
         PlaySchoolStudentProfileViewFragment.GetApplicationDetailTask getPlaySchoolStudentProfileInformationDetail = new PlaySchoolStudentProfileViewFragment.GetApplicationDetailTask();
@@ -233,7 +234,7 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
                 String FathersDOB,MothersDOB,ParentsWeddingDate,Religion,PickupPersonName,PickupPersonContactNo,PickupPersonAltContactNo,PickupPersonRelationShip,Transport,TransportStage;
                 name = tableoneObj.getString("candidatename");
                 Registernumber=tableoneObj.getString("registernumber");
-                AcademicYear=tableoneObj.getString("academicyear");
+
                 Program=tableoneObj.getString("standardstudying");
                 Section=tableoneObj.getString("section");
                 DateofBirth = tabletwoObj.getString("dateofbirth");
@@ -283,10 +284,11 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
                 PickupPersonRelationShip = tabletwoObj.getString("pickuppersonrelationship");
                 Transport = tabletwoObj.getString("transport");
                 TransportStage = tabletwoObj.getString("transportstage");
+                AcademicYear=tableoneObj.getString("academicyear");
 
                 nameText.setText(name);
                 regnoText.setText(Registernumber);
-                academicyearText.setText(AcademicYear);
+
                 programText.setText(Program);
                 sectionText.setText(Section);
                 dateofbirthText.setText(utils.convertToDateFormat(DateofBirth));
@@ -326,9 +328,9 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
                 mothersofficephonenoText.setText(MothersOfficePhoneNo);
                 mothersofficealtphonenoText.setText(MothersOfficeAltPhoneNo);
                 mothersofficeextensionnoText.setText(MothersOfficeExtensionNo);
-                fathersdobText.setText(FathersDOB);
-                mothersdobText.setText(MothersDOB);
-                parentsweddingdateText.setText(ParentsWeddingDate);
+                fathersdobText.setText(utils.convertToDateFormat(FathersDOB));
+                mothersdobText.setText(utils.convertToDateFormat(MothersDOB));
+                parentsweddingdateText.setText(utils.convertToDateFormat(ParentsWeddingDate));
                 religionText.setText(Religion);
                 pickuppersonnameText.setText(PickupPersonName);
                 pickuppersoncontactnoText.setText(PickupPersonContactNo);
@@ -336,6 +338,7 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
                 pickuppersonrelationshipText.setText(PickupPersonRelationShip);
                 transportText.setText(Transport);
                 transportstageText.setText(TransportStage);
+                academicyearText.setText(AcademicYear);
 
 
             }

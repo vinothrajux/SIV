@@ -176,8 +176,8 @@ public class EventsPlaySchoolViewFragment extends Fragment {
                 AcademicYear=jsonObj.getString("academicyear");
                 Message = jsonObj.getString("message");
                 //AppForText.setText(AppFor);
-                EntryDateText.setText(EntryDate);
-                EventDateText.setText(EventDate);
+                EntryDateText.setText(utils.convertToDateFormat(EntryDate));
+                EventDateText.setText(utils.convertToDateFormat(EventDate));
                 EventDayText.setText(EventDay);
                 ProgramText.setText(Program);
                 SectionText.setText(Section);
