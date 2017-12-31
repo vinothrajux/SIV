@@ -36,7 +36,7 @@ public class Utils {
     }
 
     public String getApiHost(){
-        return "192.168.43.38:8080";
+        return "192.168.43.195:8080";
    }
   //  public String getApiHost(){
  //       return "ec2-18-221-7-74.us-east-2.compute.amazonaws.com:8080";
