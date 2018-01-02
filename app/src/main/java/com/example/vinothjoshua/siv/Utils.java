@@ -72,7 +72,7 @@ public class Utils {
         long l = Long.parseLong(getdate);
         Calendar cal = Calendar.getInstance(Locale.ENGLISH);
         cal.setTimeInMillis(l);
-        String date = DateFormat.format("dd-MM-yyyy", cal).toString();
+        String date = DateFormat.format("dd/MM/yyyy", cal).toString();
         return date;
     }
 }
