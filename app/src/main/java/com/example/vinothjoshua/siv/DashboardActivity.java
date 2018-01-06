@@ -316,7 +316,7 @@ public class DashboardActivity extends AppCompatActivity {
                 data.add(new Item("Video Gallery", R.drawable.profile,".VideoGalleryPlaySchoolFragment"));
                 data.add(new Item("Fees Payment", R.drawable.feespayment,".FeesPaymentPlaySchoolViewFragment"));
                 data.add(new Item("Home Work", R.drawable.homework,".ParentHomeWorkFragment"));
-                data.add(new Item("Events", R.drawable.profile,".EventsPlaySchoolViewFragment"));
+                data.add(new Item("Events", R.drawable.profile,".ParentEventCircularsPlayschoolViewFragment"));
                 data.add(new Item("Progress", R.drawable.profile,".IndividualStudentProgressPlaySchoolViewFragment"));
 
 
