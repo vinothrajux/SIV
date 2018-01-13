@@ -308,16 +308,16 @@ public class DashboardActivity extends AppCompatActivity {
 
             //case "Parent":
             case "STUD":
-                data.add(new Item("Photo Gallery", R.drawable.profile,".PhotoGalleryPlaySchoolFragment"));
                 data.add(new Item("Profile", R.drawable.profile,".PlaySchoolStudentProfileViewFragment"));
                 data.add(new Item("Attendance", R.drawable.attendance,".DailyAttendanceViewParentPlaySchoolFragment"));
-                data.add(new Item("Pickup Information", R.drawable.profile,".ChildPickupViewPlaySchoolFragment"));
-                data.add(new Item("Photo Upload", R.drawable.profile,".PhotoGalleryUploadPlaySchoolFragment"));
-                data.add(new Item("Video Gallery", R.drawable.profile,".VideoGalleryPlaySchoolFragment"));
+                data.add(new Item("Pickup Information", R.drawable.pickup,".ChildPickupViewPlaySchoolFragment"));
+//                data.add(new Item("Photo Upload", R.drawable.profile,".PhotoGalleryUploadPlaySchoolFragment"));
+                data.add(new Item("Photo Gallery", R.drawable.photogallery,".PhotoGalleryPlaySchoolFragment"));
+                data.add(new Item("Video Gallery", R.drawable.videogallery,".VideoGalleryPlaySchoolFragment"));
                 data.add(new Item("Fees Payment", R.drawable.feespayment,".FeesPaymentPlaySchoolViewFragment"));
                 data.add(new Item("Home Work", R.drawable.homework,".ParentHomeWorkFragment"));
-                data.add(new Item("Events", R.drawable.profile,".ParentEventCircularsPlayschoolViewFragment"));
-                data.add(new Item("Progress", R.drawable.profile,".IndividualStudentProgressPlaySchoolViewFragment"));
+                data.add(new Item("Events", R.drawable.events,".ParentEventCircularsPlayschoolViewFragment"));
+                data.add(new Item("Progress", R.drawable.performance,".IndividualStudentProgressPlaySchoolViewFragment"));
 
 
 //                data.add(new Item("Profile", R.drawable.profile,".ParentProfileViewFragment"));
