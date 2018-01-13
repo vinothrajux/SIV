@@ -321,7 +321,7 @@
                         />
                     <TextView
                         style="@style/TextViewContent"
-                        android:id="@+id/AcademicYear"
+                        android:id="@+id/academicYear1"
                         />
 
                     </LinearLayout>
