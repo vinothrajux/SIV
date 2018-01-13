@@ -159,7 +159,7 @@
                         android:text="Scholarship Amount"/>
                     <TextView
                         style="@style/TextViewContent"
-                        android:id="@+id/ScholarshipAmount"/>
+                        android:id="@+id/ScholarshipAmount1"/>
 
                     </LinearLayout>
 
