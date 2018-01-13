@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vinothjoshua.siv" >
+    package="com.gbcorp.sivbeta" >
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <application
@@ -10,111 +10,111 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".MyApp"
+        android:name="com.gbcorp.sivbeta.MyApp"
         >
 
-        <activity android:name=".LoginActivity" >
+        <activity android:name="com.gbcorp.sivbeta.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
        </activity>
-        <activity android:name=".DashboardActivity"
+        <activity android:name="com.gbcorp.sivbeta.DashboardActivity"
             android:label="Steno Dashboard">
         </activity>
-        <activity android:name=".OfficeDashboardActivity"
+        <activity android:name="com.gbcorp.sivbeta.OfficeDashboardActivity"
             android:label="Office Dashboard">
         </activity>
-        <activity android:name=".DashboardDemoActivity"
+        <activity android:name="com.gbcorp.sivbeta.DashboardDemoActivity"
             android:label="DEMO">
         </activity>
-        <activity android:name=".DeptStaffActivity"
+        <activity android:name="com.gbcorp.sivbeta.DeptStaffActivity"
             android:label="Department Staff Dashboard">
         </activity>
-        <activity android:name=".PrincipalDashBoardActivity"
+        <activity android:name="com.gbcorp.sivbeta.PrincipalDashBoardActivity"
             android:label="Principal Dashboard">
         </activity>
-        <activity android:name=".AdmissionActivity"
+        <activity android:name="com.gbcorp.sivbeta.AdmissionActivity"
             android:label="Admission">
         </activity>
-        <activity android:name=".StenoCircularsActivity"
+        <activity android:name="com.gbcorp.sivbeta.StenoCircularsActivity"
             android:label="Circulars">
         </activity>
-        <activity android:name=".EventHandlerActivity"
+        <activity android:name="com.gbcorp.sivbeta.EventHandlerActivity"
             android:label="Events">
         </activity>
-        <activity android:name=".FeeCounterActivity"
+        <activity android:name="com.gbcorp.sivbeta.FeeCounterActivity"
             android:label="Fee Counter">
         </activity>
-        <activity android:name=".HostelActivity"
+        <activity android:name="com.gbcorp.sivbeta.HostelActivity"
             android:label="Hostel">
         </activity>
-        <activity android:name=".OfficeStaffInfoActivity"
+        <activity android:name="com.gbcorp.sivbeta.OfficeStaffInfoActivity"
             android:label="Office Staff Information">
         </activity>
-        <activity android:name=".OfficeStudentInfoActivity"
+        <activity android:name="com.gbcorp.sivbeta.OfficeStudentInfoActivity"
             android:label="Office Student Information">
         </activity>
-        <activity android:name=".SportsActivity"
+        <activity android:name="com.gbcorp.sivbeta.SportsActivity"
             android:label="Sports Dashboard">
         </activity>
-        <activity android:name=".StoresActivity"
+        <activity android:name="com.gbcorp.sivbeta.StoresActivity"
             android:label="Stores">
         </activity>
-        <activity android:name=".TransportActivity"
+        <activity android:name="com.gbcorp.sivbeta.TransportActivity"
             android:label="Transport">
         </activity>
-        <activity android:name=".ExamActivity"
+        <activity android:name="com.gbcorp.sivbeta.ExamActivity"
             android:label="Exam">
         </activity>
-        <activity android:name=".EGovernanceActivity"
+        <activity android:name="com.gbcorp.sivbeta.EGovernanceActivity"
             android:label="E-Governance">
         </activity>
-        <activity android:name=".PlacementActivity"
+        <activity android:name="com.gbcorp.sivbeta.PlacementActivity"
             android:label="Placement Dashboard">
         </activity>
-        <activity android:name=".ManagementActivity"
+        <activity android:name="com.gbcorp.sivbeta.ManagementActivity"
             android:label="Management Dashboard">
         </activity>
         <!--Newly Added -->
-        <activity android:name=".CircularsActivity"
+        <activity android:name="com.gbcorp.sivbeta.CircularsActivity"
             android:label="Circulars">
         </activity>
-        <activity android:name=".EgovSpellEntryActivity"
+        <activity android:name="com.gbcorp.sivbeta.EgovSpellEntryActivity"
             android:label="EGovernance Spell">
         </activity>
-        <activity android:name=".EquivalenceSubjectEntryActivity"
+        <activity android:name="com.gbcorp.sivbeta.EquivalenceSubjectEntryActivity"
             android:label="Equivalence Subject">
         </activity>
-        <activity android:name=".MtcConcessionActivity"
+        <activity android:name="com.gbcorp.sivbeta.MtcConcessionActivity"
             android:label="MTC Concession">
         </activity>
-        <activity android:name=".NominalEntryActivity"
+        <activity android:name="com.gbcorp.sivbeta.NominalEntryActivity"
             android:label="Nominal Entry">
         </activity>
-        <activity android:name=".OfficeStenoReportsActivity"
+        <activity android:name="com.gbcorp.sivbeta.OfficeStenoReportsActivity"
             android:label="Office Steno Report">
         </activity>
-        <activity android:name=".StaffAttendanceActivity"
+        <activity android:name="com.gbcorp.sivbeta.StaffAttendanceActivity"
             android:label="Staff Attendance">
         </activity>
-        <activity android:name=".StaffLeaveEntryActivity"
+        <activity android:name="com.gbcorp.sivbeta.StaffLeaveEntryActivity"
             android:label="Staff Leave Entry">
         </activity>
-        <activity android:name=".StaffTransportActivity"
+        <activity android:name="com.gbcorp.sivbeta.StaffTransportActivity"
             android:label="Staff Transport">
         </activity>
-        <activity android:name=".TrainConcessionActivity"
+        <activity android:name="com.gbcorp.sivbeta.TrainConcessionActivity"
             android:label="Train Concession">
         </activity>
-        <activity android:name=".TransportIDCardActivity"
+        <activity android:name="com.gbcorp.sivbeta.TransportIDCardActivity"
             android:label="Transport ID">
         </activity>
-        <activity android:name=".TransportRouteChangeActivity"
+        <activity android:name="com.gbcorp.sivbeta.TransportRouteChangeActivity"
             android:label="Transport Route Change">
         </activity>
-        <activity android:name=".DetailsActivity"
+        <activity android:name="com.gbcorp.sivbeta.DetailsActivity"
             android:label="Details Activity">
         </activity>
 
