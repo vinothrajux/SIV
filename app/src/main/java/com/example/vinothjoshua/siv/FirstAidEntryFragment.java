@@ -161,7 +161,7 @@ public class FirstAidEntryFragment extends Fragment {
 
         protected void onPostExecute(String result) {
 
-            Toast.makeText(getActivity(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getActivity(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
                 JSONArray jsonArr = new JSONArray(result);
                 String currentdate, reasonforfirstaid, firstaiddetails, hospitalname, hospitalfees, remarks;

@@ -310,7 +310,7 @@ public class DashboardActivity extends AppCompatActivity {
             case "STUD":
                 data.add(new Item("Profile", R.drawable.profile,".PlaySchoolStudentProfileViewFragment"));
                 data.add(new Item("Attendance", R.drawable.attendance,".DailyAttendanceViewParentPlaySchoolFragment"));
-                data.add(new Item("Pickup Information", R.drawable.pickup,".ChildPickupViewPlaySchoolFragment"));
+                data.add(new Item("Pickup Information", R.drawable.pickup,".ChildPickupPlaySchoolParentViewFragment"));
 //                data.add(new Item("Photo Upload", R.drawable.profile,".PhotoGalleryUploadPlaySchoolFragment"));
                 data.add(new Item("Photo Gallery", R.drawable.photogallery,".PhotoGalleryPlaySchoolFragment"));
                 data.add(new Item("Video Gallery", R.drawable.videogallery,".VideoGalleryPlaySchoolFragment"));

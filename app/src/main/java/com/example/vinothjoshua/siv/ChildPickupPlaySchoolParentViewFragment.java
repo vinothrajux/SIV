@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.SearchView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,83 +22,66 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 
 import javax.net.ssl.HttpsURLConnection;
 
 /**
- * Created by Seetha on 10-Dec-17.
+ * Created by Seetha on 13-Jan-18.
  */
 
-public class HomeWorkPlaySchoolViewFragment extends Fragment {
+public class ChildPickupPlaySchoolParentViewFragment extends Fragment {
 
-    String homeWorkId;
-    EditText homeWorkIdText;
-    TextView EntryDateText,EntryDayText,ProgramText,SectionText,AcademicYearText,SubjectCategoryText,HomeWorkContentText;
-    //Button searchBtn;
+    String registerNumber;
+    EditText regNumberText;
+    Date hwdate;
+    TextView regnoText,pickupDateText,pickupPersonNameText,relationshipText,pickupPersonContactNoText,pickUpTimeText,remarksText;
+
     SearchView searchView;
+    String SearchNo;
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
-
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.homeworkplayschoolview, container, false);
 
-        searchView = (SearchView) view.findViewById(R.id.HomeWorkId);
+        View view = inflater.inflate(R.layout.childpickupplayschoolparentview, container, false);
 
-        searchView.setSubmitButtonEnabled(true);
-        EntryDateText=(TextView) view.findViewById(R.id.Date);
-        EntryDayText = (TextView) view.findViewById(R.id.Day);
-        ProgramText = (TextView) view.findViewById(R.id.Program);
-        SectionText = (TextView) view.findViewById(R.id.Section);
-        AcademicYearText=(TextView) view.findViewById(R.id.AcademicYear);
-        SubjectCategoryText = (TextView) view.findViewById(R.id.SubjectCategory);
-        HomeWorkContentText = (TextView) view.findViewById(R.id.Homework);
+        //searchView = (SearchView) view.findViewById(R.id.registerno);
+        //registerNumber = LoginActivity.uid;
 
+        //searchView.setSubmitButtonEnabled(true);
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                //callSearch(query);
-                homeWorkId=query;
-                HomeWorkPlaySchoolViewFragment.GetApplicationDetailTask getStudentHomeWorkPlaySchoolDetail = new HomeWorkPlaySchoolViewFragment.GetApplicationDetailTask();
-                getStudentHomeWorkPlaySchoolDetail.execute();
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                //              if (searchView.isExpanded() && TextUtils.isEmpty(newText)) {
-                callSearch(newText);
-                //              }
-                return true;
-            }
-
-            public void callSearch(String query) {
-                //Do searching
-            }
-
-        });
+        pickupDateText=(TextView)view.findViewById(R.id.pickupDate);
+        pickupPersonNameText =(TextView) view.findViewById(R.id.pickuppersonname);
+        relationshipText =(TextView) view.findViewById(R.id.Relationship);
+        pickupPersonContactNoText=(TextView)view.findViewById(R.id.pickuppersoncontactno);
+        pickUpTimeText=(TextView) view.findViewById(R.id.pickupTime);
+        remarksText=(TextView) view.findViewById(R.id.Remarks);
+        ChildPickupPlaySchoolParentViewFragment.GetPickupDetailTask getStudentPickupDetail = new ChildPickupPlaySchoolParentViewFragment.GetPickupDetailTask();
+        getStudentPickupDetail.execute();
         return view;
-        //usernameEditText = (EditText) findViewById(R.id.username);
     }
     //API starts copy from here
-    private class GetApplicationDetailTask extends AsyncTask<String, Void, String> {
+    private class GetPickupDetailTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
             // TODO Auto-generated method stub
             String res = null;
 
 
+
             try {
-                URL url = new URL("http://"+apiUrl+"/api/v1/studenthomeworkplayschool/getStudentHomeWorkPlaySchoolDetail");
+                URL url = new URL("http://"+apiUrl+"/api/v1/childspickupplayschool/getStudentPickupPlaySchool");
 
-
+                String registernumber = utils.getUserId();
                 JSONObject postDataParams = new JSONObject();
-                postDataParams.put("homeworkid", homeWorkId);
-                Log.e("params",postDataParams.toString());
+
+                postDataParams.put("registernumber", registernumber);
+                postDataParams.put("pickupddate", hwdate);
+
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 //                conn.setReadTimeout(15000 /* milliseconds */);
@@ -163,27 +145,23 @@ public class HomeWorkPlaySchoolViewFragment extends Fragment {
         protected void onPostExecute(String result) {
 
             //Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+            Log.e("infobase:",result);
             try {
-                //JSONArray jsonArr = new JSONArray(result);
-
                 JSONObject jsonObj = new JSONObject(result);
-                String EntryDate,EntryDay, Program, Section,AcademicYear,SubjectCategory,HomeWorkContent;
+                String PickupDate,PickupPersonName, PickupPersonRelationship, PickupPersonContactNo,Pickuptime,Remarks;
+                PickupDate = jsonObj.getString("pickupddate");
+                PickupPersonName = jsonObj.getString("pickuppersonname");
+                PickupPersonRelationship = jsonObj.getString("pickuppersonrelation");
+                PickupPersonContactNo = jsonObj.getString("pickuppersonmobileno");
+                Pickuptime = jsonObj.getString("pickuptime");
+                Remarks = jsonObj.getString("remarks");
 
-                EntryDate=jsonObj.getString("entrydate");
-                EntryDay=jsonObj.getString("entryday");
-                Program = jsonObj.getString("program");
-                Section = jsonObj.getString("section");
-                AcademicYear=jsonObj.getString("academicyear");
-                SubjectCategory = jsonObj.getString("subjectcategory");
-                HomeWorkContent = jsonObj.getString("homeworkcontent");
-                //AppForText.setText(AppFor);
-                EntryDateText.setText(utils.convertToDateFormat(EntryDate));
-                EntryDayText.setText(EntryDay);
-                ProgramText.setText(Program);
-                SectionText.setText(Section);
-                AcademicYearText.setText(AcademicYear);
-                SubjectCategoryText.setText(SubjectCategory);
-                HomeWorkContentText.setText(HomeWorkContent);
+                pickupDateText.setText(utils.convertToDateFormat(PickupDate));
+                pickupPersonNameText.setText(PickupPersonName);
+                relationshipText.setText(PickupPersonRelationship);
+                pickupPersonContactNoText.setText(PickupPersonContactNo);
+                pickUpTimeText.setText(Pickuptime);
+                remarksText.setText(Remarks);
 
             }
             catch (Exception e){
@@ -191,8 +169,12 @@ public class HomeWorkPlaySchoolViewFragment extends Fragment {
             }
         }
 
+
+
+
+
         // Inflate the layout for this fragment
-        //   return inflater.inflate(R.layout.applicationsale, container, false);
+        // return inflater.inflate(R.layout.studentpersonalinformation, container, false);
     }
 
 

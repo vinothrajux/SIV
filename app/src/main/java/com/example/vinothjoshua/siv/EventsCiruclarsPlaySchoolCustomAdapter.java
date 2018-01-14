@@ -71,7 +71,7 @@ public class EventsCiruclarsPlaySchoolCustomAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
+                //Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
             }
         });
         return rowView;

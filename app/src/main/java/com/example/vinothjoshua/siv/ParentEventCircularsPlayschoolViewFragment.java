@@ -94,7 +94,7 @@ public class ParentEventCircularsPlayschoolViewFragment extends Fragment {
 
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("registernumber", registernumber);
-                postDataParams.put("eventdate", "06/01/2018");
+                postDataParams.put("eventdate", hwdate);
 //                postDataParams.put("currentdatestatus", datesearchStatus);
                 Log.e("params",postDataParams.toString());
 
@@ -159,7 +159,7 @@ public class ParentEventCircularsPlayschoolViewFragment extends Fragment {
 
         protected void onPostExecute(String result) {
 
-            Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
                 JSONArray jsonArr = new JSONArray(result);
                 JSONObject firsthomeworkObj=jsonArr.getJSONObject(0);

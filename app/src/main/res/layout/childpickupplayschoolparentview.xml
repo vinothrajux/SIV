@@ -48,7 +48,7 @@
                             />
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Date"
+                            android:id="@+id/pickupDate"
                             />
                     </LinearLayout>
 
@@ -62,7 +62,7 @@
                             style="@style/TextViewLabel"
                             android:text="Pickup Person Name"
                             />
-                        <Spinner
+                        <TextView
                             style="@style/TextViewContent"
                             android:id="@+id/pickuppersonname"
                             />
@@ -116,7 +116,7 @@
 
                         <TextView
                             style="@style/TextViewContent"
-                            android:id="@+id/Time"
+                            android:id="@+id/pickupTime"
                             />
                     </LinearLayout>
 
