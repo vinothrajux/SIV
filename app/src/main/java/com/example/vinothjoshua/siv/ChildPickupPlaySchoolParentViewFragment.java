@@ -12,6 +12,9 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gbcorp.sivbeta.R;
+import com.gbcorp.sivbeta.Utils;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;

@@ -80,7 +80,7 @@ public class DetailsActivity extends AppCompatActivity {
         FragmentManager fragmentManager  = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         try {
-            Fragment fragment = (Fragment) (Class.forName("com.example.siv"+selectedFragmentName).newInstance());
+            Fragment fragment = (Fragment) (Class.forName("com.gbcorp.sivbeta"+selectedFragmentName).newInstance());
 //        AdmissionCounsellingFragment fragment = new AdmissionCounsellingFragment();
             fragmentTransaction.replace(R.id.details_fragment, fragment);
             fragmentTransaction.commit();
