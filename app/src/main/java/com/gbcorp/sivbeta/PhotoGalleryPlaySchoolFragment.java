@@ -5,6 +5,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -46,7 +48,7 @@ public class PhotoGalleryPlaySchoolFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.playschoolphotogalleryview, container, false);
-        testimage=(ImageView) view.findViewById(R.id.testimg);
+        testimage=  view.findViewById(R.id.testImageView);
 //        URL url = null;
 //        try {
 //            url = new URL("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg");
@@ -60,14 +62,13 @@ public class PhotoGalleryPlaySchoolFragment extends Fragment {
 //            e.printStackTrace();
 //        }
 //        testimage.setImageBitmap(bmp);
-        Picasso.with(getActivity()).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
-//        GlideApp.with(this).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
+        // Picasso.with(getActivity()).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
+        Glide.with(this).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
         //PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask getPhotoGalleryTask = new PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask();
         //getPhotoGalleryTask.execute();
         // Inflate the layout for this fragment
         return view;
     }
-
 
 
     //API starts copy from here
