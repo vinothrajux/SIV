@@ -129,7 +129,7 @@ public class ParentProfileViewFragment extends Fragment {
 
                 JSONObject postDataParams = new JSONObject();
                 registerNumber = utils.getUserId();
-                postDataParams.put("regno", "12MECHI01");
+                postDataParams.put("registernumbersearch", registerNumber);
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 //                conn.setReadTimeout(15000 /* milliseconds */);

@@ -1,6 +1,7 @@
 package com.gbcorp.sivbeta;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,7 @@ public class EventsCiruclarsPlaySchoolCustomAdapter extends BaseAdapter {
     public class Holder
     {
         TextView eventtitle;
+        TextView eventdateday;
         TextView eventmessage;
     }
     @Override
@@ -58,10 +60,13 @@ public class EventsCiruclarsPlaySchoolCustomAdapter extends BaseAdapter {
         View rowView;
         rowView = inflater.inflate(R.layout.eventscircularsplayschool_list, null);
         holder.eventtitle=(TextView) rowView.findViewById(R.id.eventtitle);
+        holder.eventdateday=(TextView) rowView.findViewById(R.id.eventDateDay);
         holder.eventmessage=(TextView) rowView.findViewById(R.id.eventmessage);
         try {
             JSONObject homeworkObj=homeworkJsonArray.getJSONObject(position);
             holder.eventtitle.setText(homeworkObj.getString("eventtitle"));
+            Utils utils = new Utils();
+            holder.eventdateday.setText(utils.convertToDateFormat(homeworkObj.getString("eventdate"))+", "+utils.getDayOfDate(homeworkObj.getString("eventdate")));
             holder.eventmessage.setText(homeworkObj.getString("message"));
         } catch (JSONException e) {
             e.printStackTrace();

@@ -44,24 +44,28 @@
 
                     <TextView
                         style="@style/TextViewLabel"
-                        android:text="FeedBack Entry"
+                        android:text="Enter Feedback About School"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:inputType="text|textMultiLine"
+                        android:id="@+id/schoolfeedback"
                         />
                     <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Line1"
+                        style="@style/TextViewLabel"
+                        android:text="Rate School Activities"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Line2"
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="1.0"
+                        android:id="@+id/RateSchool"
+                        style="@style/RatingBar"
                         />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Line3"
-                        />
-                    <TextView
-                        style="@style/TextViewContent"
-                        android:id="@+id/Line4"
-                        />
+
+
                      </LinearLayout>
 
                     <LinearLayout
@@ -71,8 +75,42 @@
                         style="@style/datapanel">
 
 
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Enter Feedback About SIV App"
+                            />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:inputType="text|textMultiLine"
+                            android:id="@+id/appfeedback"
+                            />
+                        <TextView
+                            style="@style/TextViewLabel"
+                            android:text="Rate Mobile App"
+                            />
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="1.0"
+                            android:id="@+id/RateMobileApp"
+                            style="@style/RatingBar"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/datapanel">
+
+
                     <Button
-                        android:id="@+id/loginButton"
+                        android:id="@+id/feedbackButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submit"

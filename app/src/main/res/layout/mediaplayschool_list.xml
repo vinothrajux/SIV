@@ -13,7 +13,7 @@
         android:orientation="vertical">
         <TextView
             style="@style/TextViewContent"
-            android:id="@+id/eventtitle"
+            android:id="@+id/mediatitle"
             android:textStyle="bold"
             android:textColor="#fff"
             android:padding="5dp"
@@ -22,7 +22,7 @@
             />
         <TextView
             style="@style/TextViewContent"
-            android:id="@+id/eventDateDay"
+            android:id="@+id/uploaddate"
             android:textSize="14sp"
             android:textStyle="bold|italic"
             android:textColor="#fff"
@@ -34,12 +34,9 @@
     </LinearLayout>
 
 
-    <TextView
-        style="@style/TextViewContent"
-        android:id="@+id/eventmessage"
-        android:textStyle="bold"
-        android:layout_marginTop="5dp"
-        />
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/galleryimage" />
 
 </LinearLayout>

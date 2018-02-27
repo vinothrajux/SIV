@@ -1,5 +1,6 @@
 package com.gbcorp.sivbeta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -28,6 +29,8 @@ public class DetailsActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     private DrawerLayout mDrawerLayout;
     String[] menu;
+    ArrayList<Item> data = new ArrayList<Item>();
+    Utils utils = new Utils();
     private ActionBarDrawerToggle mDrawerToggle;
     public DetailsActivity() {
         // Required empty public constructor
@@ -52,13 +55,14 @@ public class DetailsActivity extends AppCompatActivity {
         initViews();
 
 
+        data = utils.fillData();
+        Item generateMenuList= new Item();
         //menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
         ArrayList<String> menulist = new ArrayList<String>();
-        menulist.add("test1");
-        menulist.add("test2");
-        menulist.add("test3");
-        menulist.add("test4");
-        menulist.add("test5");
+        for (int i = 0; i < data.size(); i++) {
+            generateMenuList=data.get(i);
+            menulist.add(generateMenuList.getTitle());
+        }
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         dList = (ListView) findViewById(R.id.left_drawer);
 
@@ -73,7 +77,28 @@ public class DetailsActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
 
                 dLayout.closeDrawers();
+                Item generateMenuListMenu= new Item();
+                generateMenuListMenu=data.get(position);
+                String selectedFragmentName = generateMenuListMenu.getFragmentName();
+                String selectedFragmentTitle = generateMenuListMenu.getTitle();
+                getSupportActionBar().setTitle(selectedFragmentTitle);
 
+
+                FragmentManager fragmentManager  = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                try {
+                    Fragment fragment = (Fragment) (Class.forName("com.gbcorp.sivbeta"+selectedFragmentName).newInstance());
+//        AdmissionCounsellingFragment fragment = new AdmissionCounsellingFragment();
+                    fragmentTransaction.replace(R.id.details_fragment, fragment);
+                    fragmentTransaction.commit();
+                }
+                catch (ClassNotFoundException e){
+
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
             }
 
         });

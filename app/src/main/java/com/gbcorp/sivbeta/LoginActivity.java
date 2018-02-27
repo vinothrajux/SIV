@@ -149,6 +149,10 @@ public class LoginActivity extends AppCompatActivity{
                 JSONObject jsonObj = new JSONObject(result);
                 role = jsonObj.getString("userRole");
                 utils.setUserId(jsonObj.getString("username"));
+                utils.setUserRole(role);
+
+                int instId = Integer.parseInt(jsonObj.getString("instituteid"));
+                utils.setInstituteId(instId);
 //                for (int i = 0; i < jsonArr.length(); i++) {
 //                    JSONObject jsonObj = jsonArr.getJSONObject(i);
 //                    role = jsonObj.getString("userRole");

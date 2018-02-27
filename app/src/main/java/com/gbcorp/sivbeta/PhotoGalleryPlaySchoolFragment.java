@@ -1,5 +1,8 @@
 package com.gbcorp.sivbeta;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,8 +10,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -18,6 +27,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -29,14 +39,33 @@ import javax.net.ssl.HttpsURLConnection;
 public class PhotoGalleryPlaySchoolFragment extends Fragment {
     Utils utils = new Utils();
     String apiUrl= utils.getApiHost();
+    ListView medialist;
+    Context context;
+    ImageView testimage;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask getPhotoGalleryTask = new PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask();
-        getPhotoGalleryTask.execute();
+        View view = inflater.inflate(R.layout.playschoolphotogalleryview, container, false);
+        testimage=(ImageView) view.findViewById(R.id.testimg);
+//        URL url = null;
+//        try {
+//            url = new URL("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg");
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace();
+//        }
+//        Bitmap bmp = null;
+//        try {
+//            bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        testimage.setImageBitmap(bmp);
+        Picasso.with(getActivity()).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
+//        GlideApp.with(this).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
+        //PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask getPhotoGalleryTask = new PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask();
+        //getPhotoGalleryTask.execute();
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.playschoolphotogalleryview, container, false);
+        return view;
     }
 
 
@@ -50,11 +79,15 @@ public class PhotoGalleryPlaySchoolFragment extends Fragment {
 
 
             try {
-                URL url = new URL("http://"+apiUrl+"/api/v1/playschoolphotogallery/all");
+                URL url = new URL("http://"+apiUrl+"/api/v1/playschoolphotogallery/getMediaList");
 
+//                Utils utils = new Utils();
+                Integer instituteid = utils.getInstituteId();
+                String registernumber= utils.getUserId();
 
                 JSONObject postDataParams = new JSONObject();
-                //postDataParams.put("applno", applicationNumber);
+                postDataParams.put("registernumber", registernumber);
+                postDataParams.put("instituteid", instituteid);
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -118,12 +151,17 @@ public class PhotoGalleryPlaySchoolFragment extends Fragment {
 
         protected void onPostExecute(String result) {
 
-            //Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
                 //JSONArray jsonArr = new JSONArray(result);
 
-                JSONObject jsonObj = new JSONObject(result);
+//                JSONObject jsonObj = new JSONObject(result);
 
+                JSONArray jsonArr = new JSONArray(result);
+
+
+                medialist=(ListView) getActivity().findViewById(R.id.mediaListView);
+                medialist.setAdapter(new MediaListPlaySchoolCustomAdaptor(getActivity(),jsonArr));
 
             }
             catch (Exception e){

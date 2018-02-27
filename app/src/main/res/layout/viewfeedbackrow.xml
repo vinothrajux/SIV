@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6600"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextViewContent"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            style="@style/TextViewContent"
+            android:id="@+id/feedbackDate"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextViewContent"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textColor="#aaa"
+        android:text="Feedback About School"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        style="@style/TextViewContent"
+        android:id="@+id/schoolFeedback"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        style="@style/TextViewContent"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textColor="#aaa"
+        android:text="School Rating"
+        android:layout_marginTop="15dp"
+        />
+    <!--<TextView-->
+        <!--style="@style/TextViewContent"-->
+        <!--android:id="@+id/schoolRating"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--/>-->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schoolRating"
+        android:layout_marginTop="5dp"
+        android:stepSize="1.0"
+        android:numStars="5"
+        style="@style/RatingBar"
+        android:isIndicator="true"
+        />
+
+    <TextView
+        style="@style/TextViewContent"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textColor="#aaa"
+        android:text="Feedback About SIV App"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        style="@style/TextViewContent"
+        android:id="@+id/appFeedback"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        style="@style/TextViewContent"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textColor="#aaa"
+        android:text="SIV App Rating"
+        android:layout_marginTop="15dp"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appRating"
+        android:layout_marginTop="5dp"
+        android:stepSize="1.0"
+        android:numStars="5"
+        style="@style/RatingBar"
+        android:isIndicator="true"
+        />
+
+
+</LinearLayout>

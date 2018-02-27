@@ -157,7 +157,9 @@ public class PlaySchoolStudentProfileViewFragment extends Fragment {
 
                 JSONObject postDataParams = new JSONObject();
                 registerNumber = utils.getUserId();
+                int instituteId = utils.getInstituteId();
                 postDataParams.put("registernumber", registerNumber);
+                postDataParams.put("instituteid", instituteId);
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 //                conn.setReadTimeout(15000 /* milliseconds */);

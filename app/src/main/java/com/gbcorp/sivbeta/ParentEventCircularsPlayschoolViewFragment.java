@@ -46,35 +46,8 @@ public class ParentEventCircularsPlayschoolViewFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.parenteventcircularsplayschoolview, container, false);
-       // hwDateText = (SearchView) view.findViewById(R.id.homeworkdate);
-       // hwDateText.setSubmitButtonEnabled(true);
         ParentEventCircularsPlayschoolViewFragment.GetEventCircularTask getEventCircularDetailInitial = new ParentEventCircularsPlayschoolViewFragment.GetEventCircularTask();
         getEventCircularDetailInitial.execute();
-
-
-//        hwDateText.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                //callSearch(query);
-//                hwdate=query;
-//                datesearchStatus = false;
-//                ParentHomeWorkFragment.GetHomeworkTask getHomeWorkDetail = new ParentHomeWorkFragment.GetHomeworkTask();
-//                getHomeWorkDetail.execute();
-//                return true;
-//
-//            }
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                //              if (searchView.isExpanded() && TextUtils.isEmpty(newText)) {
-//                callSearch(newText);
-//                //              }
-//                return true;
-//            }
-//            public void callSearch(String query) {
-//                //Do searching
-//            }
-//
-//        });
         return view;
     }
 
@@ -91,11 +64,11 @@ public class ParentEventCircularsPlayschoolViewFragment extends Fragment {
                 URL url = new URL("http://"+apiUrl+"/api/v1/eventscircularsplayschool/getStudentEventCircularListPlaySchool");
 
                 String registernumber = utils.getUserId();
-
+                int instituteID = utils.getInstituteId();
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("registernumber", registernumber);
                 postDataParams.put("eventdate", hwdate);
-//                postDataParams.put("currentdatestatus", datesearchStatus);
+                postDataParams.put("instituteid", instituteID);
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -163,14 +136,6 @@ public class ParentEventCircularsPlayschoolViewFragment extends Fragment {
             try {
                 JSONArray jsonArr = new JSONArray(result);
                 JSONObject firsthomeworkObj=jsonArr.getJSONObject(0);
- //               String homeworkdate = firsthomeworkObj.getString("eventdate");
-//                hwDateText.setText(utils.convertToDateFormat(homeworkdate));
-//                hwDateText.setQuery(utils.convertToDateFormat(homeworkdate),false);
-//                JSONObject jsonObj = new JSONObject(result);
-//                String EntryDate,EntryDay,EntryTime,RegisterNumber,Name,Program, Section,AcademicYear,Pickuppersonname,Pickuppersonrelation,Pickuppersonmobileno,remarks;
-//
-//                EntryDate=jsonObj.getString("pickupddate");
-//                RemarksText.setText(remarks);
 
 
                 hwlist=(ListView) getActivity().findViewById(R.id.eventcircularListView);
