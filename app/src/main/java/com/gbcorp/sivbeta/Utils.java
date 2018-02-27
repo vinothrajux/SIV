@@ -52,12 +52,12 @@ public class Utils {
         instituteId = instituteid;
     }
 
-    public String getApiHost(){
-        return "192.168.43.195:8080";
-   }
 //    public String getApiHost(){
-//        return "ec2-18-221-7-74.us-east-2.compute.amazonaws.com:8080";
-//    }
+//        return "192.168.43.195:8080";
+//   }
+    public String getApiHost(){
+        return "ec2-18-221-7-74.us-east-2.compute.amazonaws.com:8080";
+    }
 
 
     public String getPostDataString(JSONObject params) throws Exception {
@@ -277,8 +277,8 @@ public class Utils {
                 data.add(new Item("Childs Pickup", R.drawable.pickup,".ChildPickupViewPlaySchoolFragment"));
                 data.add(new Item("Childs Progress", R.drawable.performance,".IndividualStudentProgressPlaySchoolViewFragment"));
                 data.add(new Item("Attendance Entry", R.drawable.attendance,".IndividualStudentProgressPlaySchoolViewFragment"));
-                data.add(new Item("Photo Upload", R.drawable.photogallery,".PhotoGalleryUploadPlaySchoolFragment"));
-                data.add(new Item("Video Upload", R.drawable.videogallery,".IndividualStudentProgressPlaySchoolViewFragment"));
+                data.add(new Item("Photo/Video Upload", R.drawable.photogallery,".PhotoGalleryUploadPlaySchoolFragment"));
+//                data.add(new Item("Video Upload", R.drawable.videogallery,".IndividualStudentProgressPlaySchoolViewFragment"));
 
 //                data.add(new Item("Student Attendance", R.drawable.attendance,".TeachstaffStudAttEntryFragment"));
 //                data.add(new Item("Exam Mark Entry", R.drawable.admission,".TSExamMarkEntryFragment"));
@@ -371,8 +371,8 @@ public class Utils {
                 data.add(new Item("Attendance", R.drawable.attendance,".DailyAttendanceViewParentPlaySchoolFragment"));
                 data.add(new Item("Pickup Information", R.drawable.pickup,".ChildPickupPlaySchoolParentViewFragment"));
 //                data.add(new Item("Photo Upload", R.drawable.profile,".PhotoGalleryUploadPlaySchoolFragment"));
-                data.add(new Item("Photo Gallery", R.drawable.photogallery,".PhotoGalleryPlaySchoolFragment"));
-                data.add(new Item("Video Gallery", R.drawable.videogallery,".VideoGalleryPlaySchoolFragment"));
+                data.add(new Item("Photo/Video Gallery", R.drawable.photogallery,".PhotoGalleryPlaySchoolFragment"));
+//                data.add(new Item("Video Gallery", R.drawable.videogallery,".VideoGalleryPlaySchoolFragment"));
                 data.add(new Item("Fees Payment", R.drawable.feespayment,".FeesPaymentPlaySchoolViewFragment"));
                 data.add(new Item("Home Work/Activity", R.drawable.homework,".ParentHomeWorkFragment"));
                 data.add(new Item("Events", R.drawable.events,".ParentEventCircularsPlayschoolViewFragment"));

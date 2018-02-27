@@ -11,11 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+
         <!-- LinearLayout Rows-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +20,7 @@
             <!-- LinearLayout Columns-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginBottom="5dp">
                 <!-- This is for First Icon Start Row 1 Col 1 -->
@@ -43,7 +39,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         style="@style/datapanel">
 
@@ -101,5 +97,4 @@
 
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 </RelativeLayout>

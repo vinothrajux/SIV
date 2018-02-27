@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -75,14 +78,14 @@ public class MediaListPlaySchoolCustomAdaptor extends BaseAdapter {
             URL url = null;
             try {
                 url = new URL(mediaObj.getString("imagepath"));
-
-                Bitmap bmp = null;
-                try {
-                    Log.e("ur:",url.toString());
-                    bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                Glide.with(context).load(url).into(holder.galleryimage);
+//                Bitmap bmp = null;
+//                try {
+//                    Log.e("ur:",url.toString());
+//                    bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
@@ -97,7 +100,7 @@ public class MediaListPlaySchoolCustomAdaptor extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                //Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
             }
         });
         return rowView;

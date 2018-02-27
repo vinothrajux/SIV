@@ -63,9 +63,9 @@ public class PhotoGalleryPlaySchoolFragment extends Fragment {
 //        }
 //        testimage.setImageBitmap(bmp);
         // Picasso.with(getActivity()).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
-        Glide.with(this).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
-        //PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask getPhotoGalleryTask = new PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask();
-        //getPhotoGalleryTask.execute();
+//        Glide.with(this).load("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg").into(testimage);
+        PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask getPhotoGalleryTask = new PhotoGalleryPlaySchoolFragment.GetPhotoGalleryTask();
+        getPhotoGalleryTask.execute();
         // Inflate the layout for this fragment
         return view;
     }
