@@ -83,49 +83,49 @@
 
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                        <Button
-                            android:id="@+id/loginButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="View Present Detail"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/bluegradient"
-                            android:textColor="#fff"
-                            android:paddingLeft="50dp"
-                            android:paddingRight="50dp"
-                            android:onClick="dashboard"
-                            />
-                    </LinearLayout>
+                        <!--<Button-->
+                            <!--android:id="@+id/loginButton"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="View Present Detail"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:background="@drawable/bluegradient"-->
+                            <!--android:textColor="#fff"-->
+                            <!--android:paddingLeft="50dp"-->
+                            <!--android:paddingRight="50dp"-->
+                            <!--android:onClick="dashboard"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/datapanel">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--style="@style/datapanel">-->
 
-                        <Button
-                            android:id="@+id/loginButton1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="View Absent Detail"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/bluegradient"
-                            android:textColor="#fff"
-                            android:paddingLeft="50dp"
-                            android:paddingRight="50dp"
-                            android:onClick="dashboard"
-                            />
-                    </LinearLayout>
+                        <!--<Button-->
+                            <!--android:id="@+id/loginButton1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="View Absent Detail"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:background="@drawable/bluegradient"-->
+                            <!--android:textColor="#fff"-->
+                            <!--android:paddingLeft="50dp"-->
+                            <!--android:paddingRight="50dp"-->
+                            <!--android:onClick="dashboard"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
 
 
 

@@ -89,10 +89,12 @@ public class ParentHomeWorkFragment  extends Fragment {
                 URL url = new URL("http://"+apiUrl+"/api/v1/studenthomeworkplayschool/getStudentHomeWorkListPlaySchool");
 
                 String registernumber = utils.getUserId();
+                Integer instituteid = utils.getInstituteId();
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("registernumber", registernumber);
                 postDataParams.put("hwdate", hwdate);
                 postDataParams.put("currentdatestatus", datesearchStatus);
+                postDataParams.put("instituteid", instituteid);
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();

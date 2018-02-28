@@ -152,7 +152,7 @@ public class PhotoGalleryPlaySchoolFragment extends Fragment {
 
         protected void onPostExecute(String result) {
 
-            Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getActivity().getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
             try {
                 //JSONArray jsonArr = new JSONArray(result);
 

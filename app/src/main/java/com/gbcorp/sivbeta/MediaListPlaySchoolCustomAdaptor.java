@@ -3,6 +3,7 @@ package com.gbcorp.sivbeta;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +19,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -100,7 +106,52 @@ public class MediaListPlaySchoolCustomAdaptor extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
+//                Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
+//                URL url = null;
+//                try {
+//                    url = new URL("http://siv.gbcorp.in/images/uploaded/1519324032251banner-manikkavasakar.jpg");
+//                } catch (MalformedURLException e) {
+//                    e.printStackTrace();
+//                }
+//                InputStream input = null;
+//                try {
+//                    input = url.openStream();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                try {
+////The sdcard directory e.g. '/sdcard' can be used directly, or
+////more safely abstracted with getExternalStorageDirectory()
+////                    File storagePath = Environment.getExternalStorageDirectory();
+////                    OutputStream output = null;
+////                    try {
+////                        output = new FileOutputStream(storagePath + "/myImage.png");
+////                    } catch (FileNotFoundException e) {
+////                        e.printStackTrace();
+////                    }
+////                    try {
+////                        byte[] buffer = new byte[1024];
+////                        int bytesRead = 0;
+////                        while ((bytesRead = input.read(buffer, 0, buffer.length)) >= 0) {
+////                            output.write(buffer, 0, bytesRead);
+////                        }
+////                    } catch (IOException e) {
+////                        e.printStackTrace();
+////                    }
+////                    finally {
+////                        try {
+////                            output.close();
+////                        } catch (IOException e) {
+////                            e.printStackTrace();
+////                        }
+////                    }
+//                } finally {
+////                    try {
+////                        input.close();
+////                    } catch (IOException e) {
+////                        e.printStackTrace();
+////                    }
+//                }
             }
         });
         return rowView;

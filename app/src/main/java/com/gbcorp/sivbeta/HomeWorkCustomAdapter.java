@@ -50,19 +50,23 @@ public class HomeWorkCustomAdapter extends BaseAdapter {
     {
         TextView subject;
         TextView homeworkcontent;
+        TextView homeworkdate;
     }
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
         Holder holder=new Holder();
         View rowView;
+        Utils utils = new Utils();
         rowView = inflater.inflate(R.layout.homework_list, null);
         holder.subject=(TextView) rowView.findViewById(R.id.subjectname);
         holder.homeworkcontent=(TextView) rowView.findViewById(R.id.homeworkcontent);
+        holder.homeworkdate=(TextView) rowView.findViewById(R.id.homeworkDateDay);
         try {
             JSONObject homeworkObj=homeworkJsonArray.getJSONObject(position);
             holder.subject.setText(homeworkObj.getString("subjectcategory"));
             holder.homeworkcontent.setText(homeworkObj.getString("homeworkcontent"));
+            holder.homeworkdate.setText(utils.convertToDateFormat(homeworkObj.getString("entrydate")));
         } catch (JSONException e) {
             e.printStackTrace();
         }
