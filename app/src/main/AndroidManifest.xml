@@ -23,7 +23,7 @@
             </intent-filter>
        </activity>
         <activity android:name=".DashboardActivity"
-            android:label="Teaching Staff Dashboard">
+            android:label="Parent Dashboard">
         </activity>
         <activity android:name=".OfficeDashboardActivity"
             android:label="Office Dashboard">
