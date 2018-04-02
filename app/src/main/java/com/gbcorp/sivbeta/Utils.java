@@ -52,11 +52,11 @@ public class Utils {
         instituteId = instituteid;
     }
 
-//    public String getApiHost(){
+//   public String getApiHost(){
 //        return "192.168.43.195:8080";
 //   }
     public String getApiHost(){
-        return "ec2-18-221-7-74.us-east-2.compute.amazonaws.com:8080";
+        return "ec2-13-59-171-34.us-east-2.compute.amazonaws.com:8080";
     }
 
 
