@@ -50,6 +50,9 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         initViews();
+
+
+
 //        Bundle bundle = getIntent().getExtras();
 //        if(bundle.getString("userRole")!=null){
 //            userRole = bundle.getString("userRole");
@@ -57,6 +60,75 @@ public class DashboardActivity extends AppCompatActivity {
         userRole = utils.getUserRole();
         data = utils.fillData();
 
+        switch(userRole){
+            case "MGMT":
+                getSupportActionBar().setTitle("Management Dashboard");
+                break;
+
+            case "PRPL":
+                getSupportActionBar().setTitle("Principal Dashboard");
+                break;
+
+            case "OADMSN":
+                getSupportActionBar().setTitle("Front Office Dashboard");
+                break;
+
+            case "TSTAFF":
+                getSupportActionBar().setTitle("Teaching Staff Dashboard");
+                break;
+
+            case "FEES":
+                getSupportActionBar().setTitle("Cashier Dashboard");
+                break;
+
+            case "OSUPDT":
+                getSupportActionBar().setTitle("Superintendent Dashboard");
+                break;
+
+            case "OSTN":
+                getSupportActionBar().setTitle("Steno Dashboard");
+                break;
+
+            case "OSTO":
+                getSupportActionBar().setTitle("Stores Dashboard");
+                break;
+
+            case "OTRAN":
+                getSupportActionBar().setTitle("Transport Dashboard");
+                break;
+
+            case "HOD":
+                getSupportActionBar().setTitle("HOD Dashboard");
+                break;
+
+            case "PLO":
+                getSupportActionBar().setTitle("Placement Officer Dashboard");
+                break;
+
+            case "SPRT":
+                getSupportActionBar().setTitle("Sports Dashboard");
+                break;
+
+            case "LIB":
+                getSupportActionBar().setTitle("Library Dashboard");
+                break;
+
+            case "HOS":
+                getSupportActionBar().setTitle("Hostel Dashboard");
+                break;
+
+            case "STUD":
+                getSupportActionBar().setTitle("Parent Dashboard");
+                break;
+
+            case "SYSADM":
+                getSupportActionBar().setTitle("System Admin Dashboard");
+                break;
+
+            default:
+                getSupportActionBar().setTitle("Dashboard");
+                break;
+        }
 
         //menu = new String[]{"Home","Android","Windows","Linux","Raspberry Pi","WordPress","Videos","Contact Us"};
         Item generateMenuList= new Item();

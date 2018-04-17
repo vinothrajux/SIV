@@ -25,6 +25,9 @@
         <activity android:name=".DashboardActivity"
             android:label="Parent Dashboard">
         </activity>
+        <activity android:name=".InstituteSplashScreenActivity"
+            android:label="Welcome">
+        </activity>
         <activity android:name=".OfficeDashboardActivity"
             android:label="Office Dashboard">
         </activity>

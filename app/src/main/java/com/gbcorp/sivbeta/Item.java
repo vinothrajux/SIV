@@ -7,7 +7,7 @@ package com.gbcorp.sivbeta;
 public class Item {
     String title;
     String FragmentName;
-    int drawableId;
+    String drawableId;
 
     // Empty Constructor
     public Item()
@@ -16,7 +16,7 @@ public class Item {
     }
 
     // Constructor
-    public Item(String title, int drawableId, String FragmentName)
+    public Item(String title, String drawableId, String FragmentName)
     {
         super();
         this.title = title;
@@ -35,12 +35,12 @@ public class Item {
         this.title = title;
     }
 
-    public int getImage()
+    public String getImage()
     {
         return drawableId;
     }
 
-    public void setImage(int drawableId)
+    public void setImage(String drawableId)
     {
         this.drawableId = drawableId;
     }

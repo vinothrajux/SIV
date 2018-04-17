@@ -2,6 +2,7 @@ package com.gbcorp.sivbeta;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,7 +76,9 @@ public class DashboardGrid extends ArrayAdapter<Item> {
         }
 
         Item item = getItem(position);
-        holder.imgItem.setImageResource(item.getImage());
+        int id = mContext.getResources().getIdentifier(item.getImage(), "drawable", mContext.getPackageName());
+        Drawable drawable = mContext.getResources().getDrawable(id);
+        holder.imgItem.setImageDrawable(drawable);
         holder.txtItem.setText(item.getTitle());
         recursivePosition = position%6;
         holder.dashSingleLinear.setBackgroundColor(Color.parseColor(dashboardColors[recursivePosition]));

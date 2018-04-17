@@ -32,7 +32,7 @@
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/modernkidslogo"
+                android:src="@drawable/sivlogo"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:layout_marginTop="30dp"

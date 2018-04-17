@@ -81,6 +81,7 @@ public class LoginActivity extends AppCompatActivity{
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("username", username);
                 postDataParams.put("password", password);
+                postDataParams.put("sourceDevice", "app");
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -143,11 +144,14 @@ public class LoginActivity extends AppCompatActivity{
         }
 
         protected void onPostExecute(String result) {
-            Toast.makeText(getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getApplicationContext(), "From Server: " + result, Toast.LENGTH_SHORT).show();
+//            Log.e("loginoutput",result);
             try {
                 //JSONArray jsonArr = new JSONArray(result);
                 JSONObject jsonObj = new JSONObject(result);
+                utils.setUserData(jsonObj);
                 role = jsonObj.getString("userRole");
+
                 utils.setUserId(jsonObj.getString("username"));
                 utils.setUserRole(role);
 
@@ -158,8 +162,8 @@ public class LoginActivity extends AppCompatActivity{
 //                    role = jsonObj.getString("userRole");
 //                    System.out.println(jsonObj);
 //                }
-                Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
-                intent.putExtra("userRole", role);
+                Intent intent = new Intent(LoginActivity.this, InstituteSplashScreenActivity.class);
+//                intent.putExtra("userRole", role);
                 startActivity(intent);
             }
             catch (Exception e){
