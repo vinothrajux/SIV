@@ -4,6 +4,10 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -64,13 +68,31 @@ public class Utils {
         instituteId = instituteid;
     }
 
-//   public String getApiHost(){
-//        return "192.168.43.195:8080";
-//   }
-    public String getApiHost(){
-        return "ec2-13-59-171-34.us-east-2.compute.amazonaws.com:8080";
-    }
+   public String getApiHost(){
+        return "192.168.43.195:8080";
+   }
+//    public String getApiHost(){
+//        return "ec2-13-59-171-34.us-east-2.compute.amazonaws.com:8080";
+//    }
+    public static void setListViewHeightBasedOnChildren(ListView listView) {
+        ListAdapter listAdapter = listView.getAdapter();
+        if (listAdapter == null) {
+            // pre-condition
+            return;
+        }
 
+        int totalHeight = 0;
+        for (int i = 0; i < listAdapter.getCount(); i++) {
+            View listItem = listAdapter.getView(i, null, listView);
+            listItem.measure(0, 0);
+            totalHeight += listItem.getMeasuredHeight();
+        }
+
+        ViewGroup.LayoutParams params = listView.getLayoutParams();
+        params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
+        listView.setLayoutParams(params);
+        listView.requestLayout();
+    }
 
     public String getPostDataString(JSONObject params) throws Exception {
 

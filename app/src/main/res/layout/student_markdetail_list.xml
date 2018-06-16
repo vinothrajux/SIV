@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6600"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextViewContent"
+            android:id="@+id/testtype"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextViewContent"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximum marks: "
+                />
+            <TextView
+                style="@style/TextViewContent"
+                android:id="@+id/maxmarks"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextViewContent"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum marks: "
+                />
+            <TextView
+                style="@style/TextViewContent"
+                android:id="@+id/minmarks"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextViewContent"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Total Marks: "
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            style="@style/TextViewContent"
+            android:id="@+id/totalmark"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextViewContent"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Percentage: "
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            style="@style/TextViewContent"
+            android:id="@+id/percentage"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/studentmarkslist"></ListView>
+
+
+</LinearLayout>
