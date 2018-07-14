@@ -1,9 +1,13 @@
 package com.gbcorp.sivbeta;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -106,6 +112,25 @@ public class MediaListPlaySchoolCustomAdaptor extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
+                try {
+                    JSONObject mediaObj=mediaJsonArray.getJSONObject(position);
+                    String url = null;
+                        MediaListPlaySchoolCustomAdaptor.Holder holder=new MediaListPlaySchoolCustomAdaptor.Holder();
+
+                        url = mediaObj.getString("imagepath");
+//                        Glide.with(context).load(url).into(holder.galleryimage);
+                    final String imagetitleforsave= url.substring(url.lastIndexOf("/")+1);
+                        Glide.with(context).asBitmap().load(url)
+                                .into(new SimpleTarget<Bitmap>() {
+                                    @Override
+                                    public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
+                                        saveImage(resource,imagetitleforsave);
+                                    }
+                                });
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
 //                Toast.makeText(context, "You Clicked "+position, Toast.LENGTH_LONG).show();
 //                URL url = null;
 //                try {
@@ -152,8 +177,45 @@ public class MediaListPlaySchoolCustomAdaptor extends BaseAdapter {
 ////                        e.printStackTrace();
 ////                    }
 //                }
+
             }
         });
         return rowView;
+    }
+
+    private String saveImage(Bitmap image, String imagetitleforsave) {
+        String savedImagePath = null;
+
+        String imageFileName = imagetitleforsave;
+        File storageDir = new File(            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+                + "/SIV_Gallery");
+        boolean success = true;
+        if (!storageDir.exists()) {
+            success = storageDir.mkdirs();
+        }
+        if (success) {
+            File imageFile = new File(storageDir, imageFileName);
+            savedImagePath = imageFile.getAbsolutePath();
+            try {
+                OutputStream fOut = new FileOutputStream(imageFile);
+                image.compress(Bitmap.CompressFormat.JPEG, 20, fOut);
+                fOut.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            // Add the image to the system gallery
+            galleryAddPic(savedImagePath);
+            Toast.makeText(context, "IMAGE SAVED", Toast.LENGTH_LONG).show();
+        }
+        return savedImagePath;
+    }
+
+    private void galleryAddPic(String imagePath) {
+        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File f = new File(imagePath);
+        Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        context.sendBroadcast(mediaScanIntent);
     }
 }

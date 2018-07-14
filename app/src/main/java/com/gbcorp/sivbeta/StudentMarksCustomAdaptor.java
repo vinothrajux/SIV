@@ -1,6 +1,7 @@
 package com.gbcorp.sivbeta;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,10 +21,12 @@ public class StudentMarksCustomAdaptor extends BaseAdapter {
     JSONArray studentMarksArray;
     Context context;
     private static LayoutInflater inflater=null;
-    public StudentMarksCustomAdaptor(Context studentMarkFragment, JSONArray jsonArr) {
+    int passmark;
+    public StudentMarksCustomAdaptor(Context studentMarkFragment, JSONArray jsonArr, int passMark) {
         // TODO Auto-generated constructor stub
         studentMarksArray=jsonArr;
         context=studentMarkFragment;
+        passmark= passMark;
 //        inflater = ( LayoutInflater )context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -49,6 +52,7 @@ public class StudentMarksCustomAdaptor extends BaseAdapter {
     {
         TextView subjectname;
         TextView mark;
+        TextView subjectresult;
     }
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -59,6 +63,8 @@ public class StudentMarksCustomAdaptor extends BaseAdapter {
         rowView = inflater.inflate(R.layout.student_marks_list, parent, false);
         holder.subjectname=(TextView) rowView.findViewById(R.id.subjectname);
         holder.mark=(TextView) rowView.findViewById(R.id.mark);
+        holder.subjectresult= (TextView) rowView.findViewById(R.id.subjectresult);
+        String SubjectResult = "";
 //        ViewGroup.LayoutParams params = rowView.getLayoutParams();
 //        params.height = 300;
         try {
@@ -67,6 +73,18 @@ public class StudentMarksCustomAdaptor extends BaseAdapter {
 
             holder.subjectname.setText(studentMarksObj.getString("subjectname"));
             holder.mark.setText(studentMarksObj.getString("mark"));
+            try {
+                int markint = Integer.parseInt(studentMarksObj.getString("mark"));
+                if(markint < passmark){
+                    holder.subjectresult.setText("Fail");
+                    holder.subjectresult.setTextColor(Color.parseColor("#ff0000"));
+                }else {
+                    holder.subjectresult.setText("Pass");
+                }
+            } catch(NumberFormatException nfe) {
+                // Handle parse error.
+            }
+
 //            holder.minmarks.setText(utils.convertToDateFormat(homeworkObj.getString("entrydate")));
         } catch (JSONException e) {
             e.printStackTrace();

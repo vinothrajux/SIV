@@ -56,6 +56,9 @@ public class StudentMarkDetailCustomAdaptor extends BaseAdapter {
         TextView minmarks;
         TextView percentage;
         TextView totalmark;
+        TextView grade;
+        TextView result;
+        TextView remarks;
         ListView studentmarkslistview;
     }
     @Override
@@ -70,6 +73,9 @@ public class StudentMarkDetailCustomAdaptor extends BaseAdapter {
         holder.maxmarks=(TextView) rowView.findViewById(R.id.maxmarks);
         holder.minmarks=(TextView) rowView.findViewById(R.id.minmarks);
         holder.percentage=(TextView) rowView.findViewById(R.id.percentage);
+        holder.grade=(TextView) rowView.findViewById(R.id.grade);
+        holder.result=(TextView) rowView.findViewById(R.id.result);
+        holder.remarks=(TextView) rowView.findViewById(R.id.remarks);
         holder.totalmark=(TextView) rowView.findViewById(R.id.totalmark);
         try {
             JSONObject studentMarksObj=studentMarksArray.getJSONObject(position);
@@ -81,11 +87,20 @@ public class StudentMarkDetailCustomAdaptor extends BaseAdapter {
             holder.testtype.setText(studentMarksObj.getString("testtype"));
             holder.maxmarks.setText(studentMarksObj.getString("maxmarks"));
             holder.minmarks.setText(studentMarksObj.getString("minmarks"));
+            int passmark = 0;
+            try {
+                passmark = Integer.parseInt(studentMarksObj.getString("minmarks"));
+            } catch(NumberFormatException nfe) {
+                // Handle parse error.
+            }
             holder.percentage.setText(studentMarksInnerObj.getString("percentage"));
             holder.totalmark.setText(studentMarksInnerObj.getString("totalmark"));
+            holder.grade.setText(studentMarksInnerObj.getString("grade"));
+            holder.result.setText(studentMarksInnerObj.getString("result"));
+            holder.remarks.setText(studentMarksInnerObj.getString("remarks"));
             holder.studentmarkslistview =(ListView) rowView.findViewById(R.id.studentmarkslist);
 
-            StudentMarksCustomAdaptor studentMarksCustomAdaptor = new StudentMarksCustomAdaptor(context, studentmarksArr);
+            StudentMarksCustomAdaptor studentMarksCustomAdaptor = new StudentMarksCustomAdaptor(context, studentmarksArr, passmark);
             holder.studentmarkslistview.setAdapter(studentMarksCustomAdaptor);
 
             utils.setListViewHeightBasedOnChildren(holder.studentmarkslistview);
