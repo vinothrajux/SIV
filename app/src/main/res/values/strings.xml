@@ -3,4 +3,25 @@
     <string name="forgot_password"><u>Forgot Password ?</u></string>
     <string name="drawer_open"></string>
     <string name="drawer_close"></string>
+    <string-array name="program_array">
+        <item>TODDLER PROGRAM</item>
+        <item>PRE-KG</item>
+        <item>KG1</item>
+        <item>KG2</item>
+        <item>I STD</item>
+        <item>II STD</item>
+        <item>III STD</item>
+        <item>IV STD</item>
+        <item>V STD</item>
+    </string-array>
+    <string-array name="section_array">
+        <item>SECTION - A</item>
+        <item>SECTION - B</item>
+        <item>SECTION - C</item>
+    </string-array>
+    <string-array name="academicyear_array">
+        <item>2018-2019</item>
+        <item>2019-2020</item>
+        <item>2020-2021</item>
+    </string-array>
 </resources>

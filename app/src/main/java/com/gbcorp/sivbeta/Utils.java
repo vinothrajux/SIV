@@ -31,6 +31,7 @@ public class Utils {
     public static int instituteId;
     public static String userRole;
     public static JSONObject userData;
+    public static JSONArray studentList;
 
     public Utils()
     {
@@ -73,6 +74,19 @@ public class Utils {
 //   }
     public String getApiHost(){
         return "ec2-13-59-171-34.us-east-2.compute.amazonaws.com:8080";
+    }
+    public void setPhotoGalleryStudentList(JSONArray studentListArray) {
+        studentList = studentListArray;
+    }
+    public JSONArray getPhotoGalleryStudentList() {
+        return studentList;
+    }
+    public void updatePhotoAccessForStudent(int position, int photoAccess) {
+        try {
+            studentList.getJSONObject(position).put("studentphotoaccess", photoAccess);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
     public static void setListViewHeightBasedOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
